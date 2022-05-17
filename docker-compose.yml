@@ -1,0 +1,41 @@
+version: "3"
+services:
+  # API Server
+  server:
+    container_name: sorasvl-server
+    build:
+      context: ./server
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    networks:
+      - sorasvl
+
+  # Client
+  # client:
+  #   container_name: knocap-client
+  #   build:
+  #     context: ./knocap-client
+  #     args:
+  #       - REACT_APP_SERVER_URL=${SERVER_URL}
+  #   environment:
+  #     - PORT=80
+  #   ports:
+  #     - "80"
+  #   networks:
+  #     - sorasvl
+
+  # Nginx
+  nginx:
+    container_name: sorasvl-router
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    networks:
+      - sorasvl
+
+networks:
+  sorasvl:
+    driver: bridge
