@@ -3,75 +3,112 @@ const app = express();
 const port = 3000;
 
 var EventEmitter = require("events").EventEmitter;
-var myEmitter = new EventEmitter();
+var clusterEmitter = new EventEmitter();
 
-function registerEventHandlers(req, res) {
-  // Save received parameters
-  const myParams = req.query;
+function registerClientEventHandlers(req, res) {
+    res.write(`data:{status:'OK'}\n\n`);
 
-  // Define function that adds "Hi" and send a SSE formated message
-  const sayHi = function (params) {
-    params["says"] = "Hi";
-    let payloadString = JSON.stringify(params);
-    res.write(`data: ${payloadString}\n\n`);
-  };
+    clusterEmitter.on("START:API_ONLY", (template) => {
+        res.write(`data:{"status":"Config", "data":${template}}\n\n`);
+    });
 
-  // Define function that adds "Bye" and send a SSE formated message
-  const sayBye = function (params) {
-    params["says"] = "Bye";
-    let payloadString = JSON.stringify(params);
-    res.write(`data: ${payloadString}\n\n`);
-  };
+    clusterEmitter.on("STOP", () => {
+        res.write("data:{'status':'Stop'}\n\n");
+    });
 
-  // Register what to do when inside-server 'hello' event happens
-  myEmitter.on("hello", sayHi);
+    clusterEmitter.on("DISCONNECT", () => {
+        res.write("data:{'status':'Disconnect'}\n\n");
+    });
 
-  myEmitter.on("ping", () => {
-    res.write(`data: {data: '123'}\n\n`);
-  });
-
-  // Register what to do when inside-server 'goodbye' event happens
-  myEmitter.on("goodbye", sayBye);
-
-  // Register what to do when this channel closes
-  req.on("close", () => {
-    // Emit a server 'goodbye' event with "saved" params
-    myEmitter.emit("goodbye", myParams);
-
-    // Unregister this particular client listener functions
-    myEmitter.off("hello", sayHi);
-    myEmitter.off("goodbye", sayBye);
-    console.log("<- close ", req.query);
-  });
+    // Register what to do when this channel closes
+    req.on("close", () => {
+        console.log("<- client disconnected");
+    });
 }
 
-app.get("/clusters/runScenario", (req, res, next) => {
-  console.log("runScenario");
-  myEmitter.emit("ping");
-  res.status(200).send();
+app.get("/api/v1/clusters/start/apiOnly", (req, res) => {
+    console.log('-> EMIT START:API_ONLY');
+    var templateJson = {
+        "version": "1.0",
+        "id": "067538a6-7d91-4624-8eb1-a24a32c2f91d",
+        "name": "API Only",
+        "ownerId": "4f162739-41d5-45a7-ab84-fafc75d9131d",
+        "interactive": true,
+        "headless": false,
+        "createdAt": "2020-06-08T21:50:08.000Z",
+        "updatedAt": "2020-06-08T21:50:08.000Z",
+        "template": {
+            "alias": "apiOnly",
+            "parameters": [
+                {
+                    "alias": "api-only",
+                    "parameterName": "Start Simulator API",
+                    "parameterType": "bool",
+                    "variableType": "internal",
+                    "variableName": "SIMULATOR_API_ONLY",
+                    "value": true
+                },
+            ]
+        },
+        "cluster": {
+            "id": "03abf17f-a8a5-433b-b75e-9c331dc6c1db",
+            "name": "Local Cluster",
+            "ownerId": "4f162739-41d5-45a7-ab84-fafc75d9131d",
+            "createdAt": "2020-06-08T21:49:49.000Z",
+            "updatedAt": "2020-06-08T21:49:49.000Z",
+            "instances": [
+                {
+                    "simId": "75e07d7e-9089-4e82-a5fa-d29dbb48fc63",
+                    "ip": [
+                        "127.0.0.1"
+                ],
+                "isMaster": true
+                }
+            ]
+        }
+    }
+    clusterEmitter.emit("START:API_ONLY", JSON.stringify(templateJson));
+    res.status(200).send('OK')
 });
 
-app.get("/clusters/connect", (req, res, next) => {
-  console.log("open -> ", req.query);
+app.get("/api/v1/clusters/stop", (req, res) => {
+    console.log('-> EMIT STOP');
+    clusterEmitter.emit("STOP");
+    res.status(200).send('OK');
+});
 
-  // Emit a inside-server 'hello' event with the received params
-  myEmitter.emit("hello", req.query);
+app.get("/api/v1/clusters/disconnect", (req, res) => {
+    console.log('-> EMIT DISCONNECT');
+    clusterEmitter.emit("DISCONNECT")
+    res.status(200).send('OK');
+});
 
-  // SSE Setup
-  res.writeHead(200, {
-    "Content-Type": "text/event-stream",
-    "Cache-Control": "no-cache",
-    Connection: "keep-alive",
-  });
-  res.write("\n");
 
-  // Register what to do when possible inside-server events happen
-  registerEventHandlers(req, res);
+// client connect
+app.post("/api/v1/clusters/connect", (req,res) => {
+    console.log('-> client connected')
+    // set up SSE
+    res.writeHead(200, {
+        "Content-Type": "text/event-stream",
+        "Cache-Control": "no-cache",
+        Connection: "keep-alive",
+    });
+    res.write("\n");
+    registerClientEventHandlers(req, res);
+});
 
-  // Code execution ends here but channel stays open
-  // Event handlers will use the open channel when inside-server events happen
+app.get('/api/v1/maps/aae03d2a-b7ca-4a88-9e41-9035287a12cc', (req, res) => {
+    res.status(200).send({"assetGuid":"4552b7ac-4fba-4420-88b8-ae14289bf5ac","isShared":false,"isFavored":true,"isOwned":false,"accessInfo":{"userAccessType":"favored","owner":{"id":"0d888b00-fa53-47c1-882a-b68391268a11","firstName":"SVL","lastName":"Content"}},"geoJsonUrl":"/api/v1/assets/download/geojson/4552b7ac-4fba-4420-88b8-ae14289bf5ac","supportedSimulatorVersions":["2021.3","2021.2","2021.2.2","2021.1","2021.1.1"],"id":"aae03d2a-b7ca-4a88-9e41-9035287a12cc","name":"BorregasAve","description":"The Borregas Avenue map is a Digital Twin environment of a real-world street block in Sunnyvale, CA (https://goo.gl/maps/qtCmLm2HSqbofUx8A). It features two-lane roads as well as one traffic light intersection and one stop sign intersection.","copyright":"LG Electronics Inc.","licenseName":"LG Content","ownerId":"0d888b00-fa53-47c1-882a-b68391268a11","accessType":"public","imageUrl":"/api/v1/assets/download/preview/4552b7ac-4fba-4420-88b8-ae14289bf5ac","hdmaps":"apollo30,apollo50,autoware,lanelet2,opendrive","status":"active","tags":[{"name":"lg","meta":{"sortKey":0}},{"name":"test","meta":{"sortKey":1}},{"name":"real-world","meta":{"sortKey":2}}],"owner":{"id":"0d888b00-fa53-47c1-882a-b68391268a11","firstName":"SVL","lastName":"Content"},"shareRequests":[],"favoredBy":[],"sharedWith":[]})
+})
+// app.get('/api/v1/vehicles/47b529db-0593-4908-b3e7-4b24a32a0f70', (req, res) => {
+//     res.status(200).send({"error":{"code":"notExist","message":"Vehicle 47b529db-0593-4908-b3e7-4b24a32a0f70 does not exist"}})
+// })
+
+app.get('/*', (req, res) => {
+    console.log(req.path);
+    res.status(200).send('NotImplemented');
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+    console.log(`Example app listening on port ${port}`);
 });
