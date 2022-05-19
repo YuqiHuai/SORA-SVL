@@ -36,16 +36,16 @@ services:
     networks:
       - sorasvl
   
- # MongoDB
- mongo:
-  continer_name: sorasvl-mongo
-  image: mongo
-  volumes:
-    - ./mongo/data:/data/db
-  ports:
-    - "27018:27017"
-  networks:
-    - sorasvl
+  # MongoDB
+  mongo:
+    continer_name: sorasvl-mongo
+    image: mongo
+    volumes:
+      - ./mongo/data:/data/db
+    ports:
+      - "27018:27017"
+    networks:
+      - sorasvl
 
 networks:
   sorasvl:
