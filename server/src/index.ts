@@ -2,9 +2,11 @@ import express from "express";
 import { clustersRouter } from "./routers/clusters.router";
 import { apiRouter } from "./routers/api.router";
 import { connectToDatabase } from "./services/database.service";
+import dotenv from "dotenv";
 
 const app = express();
 const port = 3000;
+dotenv.config();
 
 connectToDatabase()
   .then(() => {

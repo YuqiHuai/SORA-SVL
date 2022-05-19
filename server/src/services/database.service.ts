@@ -9,12 +9,12 @@ export const collections: {
 
 export async function connectToDatabase() {
   const client: mongoDB.MongoClient = new mongoDB.MongoClient(
-    "mongodb://localhost:27017"
+    process.env.MONGO_URL
   );
 
   await client.connect();
 
-  const db: mongoDB.Db = client.db("WISE");
+  const db: mongoDB.Db = client.db(process.env.MONGO_DB_NAME);
 
   collections.global = db.collection("global");
   collections.maps = db.collection("maps");
