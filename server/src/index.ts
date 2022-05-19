@@ -3,6 +3,7 @@ import { clustersRouter } from "./routers/clusters.router";
 import { apiRouter } from "./routers/api.router";
 import { connectToDatabase } from "./services/database.service";
 import dotenv from "dotenv";
+import { assetsRouter } from "./routers/assets.router";
 
 const app = express();
 const port = 3000;
@@ -11,6 +12,7 @@ dotenv.config();
 connectToDatabase()
   .then(() => {
     app.use("/api/v1/clusters", clustersRouter);
+    app.use("/api/v1/assets/download", assetsRouter);
     app.use("/api/v1", apiRouter);
     app.get("*", (req, res) => {
       console.log(`Caught GET at ${req.path}`);
