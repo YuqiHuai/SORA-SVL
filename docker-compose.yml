@@ -13,18 +13,14 @@ services:
       - sorasvl
 
   # Client
-  # client:
-  #   container_name: knocap-client
-  #   build:
-  #     context: ./knocap-client
-  #     args:
-  #       - REACT_APP_SERVER_URL=${SERVER_URL}
-  #   environment:
-  #     - PORT=80
-  #   ports:
-  #     - "80"
-  #   networks:
-  #     - sorasvl
+  client:
+    container_name: sorasvl-client
+    build:
+      context: ./sorasvl-client
+    ports:
+      - "8080:3000"
+    networks:
+      - sorasvl
 
   # Nginx
   nginx:
