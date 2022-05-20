@@ -51,7 +51,6 @@ clustersRouter.post("/connect", (req, res) => {
 clustersRouter.get("/start/apiOnly", (req, res) => {
   console.log(req.path);
   // start an API ONLY simulation
-  clusterEmitter.emit("STOP");
   clusterEmitter.emit("CONFIG", JSON.stringify(apiOnly));
   res.status(200).send("OK");
 });
