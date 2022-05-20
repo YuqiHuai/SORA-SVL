@@ -30,8 +30,8 @@ function registerClientEventHandlers(
   });
 
   // server notified when client closes connection
-  req.on("close", () => {
-    console.log("<- client disconnected");
+  res.on('close', () => {
+    console.log('<- client disconnected')
   });
 }
 
