@@ -38,12 +38,12 @@ services:
   
   # MongoDB
   mongo:
-    continer_name: sorasvl-mongo
+    container_name: sorasvl-mongo
     image: mongo
     volumes:
       - ./mongo/data:/data/db
     ports:
-      - "27018:27017"
+      - "27017:27017"
     networks:
       - sorasvl
 
