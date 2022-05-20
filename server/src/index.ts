@@ -4,6 +4,7 @@ import { apiRouter } from "./routers/api.router";
 import { connectToDatabase } from "./services/database.service";
 import dotenv from "dotenv";
 import { assetsRouter } from "./routers/assets.router";
+import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
@@ -11,6 +12,7 @@ dotenv.config();
 
 connectToDatabase()
   .then(() => {
+    app.use(bodyParser.urlencoded({extended: true}));
     app.use("/api/v1/clusters", clustersRouter);
     app.use("/api/v1/assets/download", assetsRouter);
     app.use("/api/v1", apiRouter);
@@ -25,6 +27,7 @@ connectToDatabase()
 
     app.post("*", (req, res) => {
       console.log(`Caught POST at ${req.path}`);
+      console.log(req.body);
       res.status(404).send({
         error: {code: 'notExist'}
       })
