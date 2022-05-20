@@ -23,6 +23,13 @@ connectToDatabase()
       });
     });
 
+    app.post("*", (req, res) => {
+      console.log(`Caught POST at ${req.path}`);
+      res.status(404).send({
+        error: {code: 'notExist'}
+      })
+    })
+
     app.listen(port, () => {
       console.log(`Server began listening on port ${port}`);
     });
