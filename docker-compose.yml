@@ -16,7 +16,7 @@ services:
   client:
     container_name: sorasvl-client
     build:
-      context: ./sorasvl-client
+      context: ./client
     ports:
       - "8080:3000"
     networks:
