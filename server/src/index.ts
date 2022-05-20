@@ -5,6 +5,7 @@ import { connectToDatabase } from "./services/database.service";
 import dotenv from "dotenv";
 import { assetsRouter } from "./routers/assets.router";
 import bodyParser from "body-parser";
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
@@ -12,7 +13,8 @@ dotenv.config();
 
 connectToDatabase()
   .then(() => {
-    app.use(bodyParser.urlencoded({extended: true}));
+    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(cors());
     app.use("/api/v1/clusters", clustersRouter);
     app.use("/api/v1/assets/download", assetsRouter);
     app.use("/api/v1", apiRouter);
