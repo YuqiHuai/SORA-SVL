@@ -8,4 +8,5 @@ RUN npm install
 ADD ./ /workdir
 
 EXPOSE 3000
-CMD [ "node", "index.js" ]
+RUN ["npm", "run", "build"]
+CMD [ "npm", "run", "start" ]
