@@ -1,11 +1,11 @@
 [{
   "_id": {
-    "$oid": "6284a5cba08ccb104efbd53c"
+    "$oid": "6287d8957334ff8da9e509c3"
   },
   "type": "maps",
   "endpoint": "/api/v1/maps",
   "data": {
-    "count": 95,
+    "count": 94,
     "rows": [
       {
         "isShared": false,
@@ -3074,45 +3074,12 @@
         },
         "favoredByCurrentUser": [],
         "shareRequests": []
-      },
-      {
-        "isShared": false,
-        "isFavored": false,
-        "isOwned": false,
-        "accessInfo": {
-          "userAccessType": "public",
-          "owner": {
-            "id": "f86468ec-231d-4484-97e8-cafdb19665a1",
-            "firstName": "Yuhan",
-            "lastName": "Long"
-          }
-        },
-        "supportedSimulatorVersions": [
-          "!x-debug-map"
-        ],
-        "id": "a9fb4d0b-9b7d-451e-a3e3-924385834bf1",
-        "name": "simulator_cube",
-        "description": "",
-        "copyright": "Yuhan Long",
-        "licenseName": "User Content",
-        "ownerId": "f86468ec-231d-4484-97e8-cafdb19665a1",
-        "accessType": "public",
-        "imageUrl": "/api/v1/assets/download/preview/82946f68-4e4b-420b-8bcf-bb5ef10f8b41",
-        "hdmaps": "apollo50,autoware,lanelet2,opendrive",
-        "status": "active",
-        "owner": {
-          "id": "f86468ec-231d-4484-97e8-cafdb19665a1",
-          "firstName": "Yuhan",
-          "lastName": "Long"
-        },
-        "favoredByCurrentUser": [],
-        "shareRequests": []
       }
     ]
   }
 },{
   "_id": {
-    "$oid": "6284a5cba08ccb104efbd53d"
+    "$oid": "6287d8957334ff8da9e509c4"
   },
   "type": "vehicles",
   "endpoint": "/api/v1/vehicles",
@@ -4105,7 +4072,7 @@
   }
 },{
   "_id": {
-    "$oid": "6284a5cca08ccb104efbd53e"
+    "$oid": "6287d8967334ff8da9e509c5"
   },
   "type": "plugins",
   "endpoint": "/api/v1/plugins",

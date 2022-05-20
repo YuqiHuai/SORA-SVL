@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "6284a72b08d2327d5e3998a5"
+    "$oid": "6287d8ab7334ff8da9e509fe"
   },
   "cid": "a6e2d149-6a18-4b83-9029-4411d7b2e69a",
   "name": "SingleLaneRoad",
@@ -8,10 +8,10 @@
   "data": {
     "assetGuid": "b819be12-5d1e-416b-8d19-609f54f50323",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -29,13 +29,21 @@
     "id": "a6e2d149-6a18-4b83-9029-4411d7b2e69a",
     "name": "SingleLaneRoad",
     "description": "This map is a simple two-way single-lane road used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/b819be12-5d1e-416b-8d19-609f54f50323",
+    "lastVersionDate": "2021-10-01T20:56:37.000Z",
+    "lastAssetGuid": "b819be12-5d1e-416b-8d19-609f54f50323",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:29.000Z",
+    "updatedAt": "2021-10-01T20:56:37.000Z",
     "tags": [
       {
         "name": "lg",
@@ -60,14 +68,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a72b08d2327d5e3998a6"
+    "$oid": "6287d8ab7334ff8da9e509ff"
   },
   "cid": "e6dc21da-0105-4534-a30d-c1939a8a4ff6",
   "name": "WideFlatMap",
@@ -75,10 +80,10 @@
   "data": {
     "assetGuid": "755177d3-4c26-4a8f-8c0d-55ed855847e4",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -96,13 +101,21 @@
     "id": "e6dc21da-0105-4534-a30d-c1939a8a4ff6",
     "name": "WideFlatMap",
     "description": "This map is a simple wise-lane road used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/755177d3-4c26-4a8f-8c0d-55ed855847e4",
+    "lastVersionDate": "2021-10-01T20:56:43.000Z",
+    "lastAssetGuid": "755177d3-4c26-4a8f-8c0d-55ed855847e4",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:33.000Z",
+    "updatedAt": "2021-10-01T20:56:43.000Z",
     "tags": [
       {
         "name": "lg",
@@ -127,14 +140,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a72c08d2327d5e3998a7"
+    "$oid": "6287d8ac7334ff8da9e50a00"
   },
   "cid": "06773677-1ce3-492f-9fe2-b3147e126e27",
   "name": "CubeTown",
@@ -142,10 +152,10 @@
   "data": {
     "assetGuid": "b606ca6e-8fc4-460c-820b-c28ea77ca2d5",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -163,13 +173,21 @@
     "id": "06773677-1ce3-492f-9fe2-b3147e126e27",
     "name": "CubeTown",
     "description": "This map is a virtual environment with block obstacles used to perform basic testing of vehicles. It also serves as an example for how to create a custom 3D environment for SVL Simulator.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/b606ca6e-8fc4-460c-820b-c28ea77ca2d5",
+    "lastVersionDate": "2021-10-01T20:56:48.000Z",
+    "lastAssetGuid": "b606ca6e-8fc4-460c-820b-c28ea77ca2d5",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:35.000Z",
+    "updatedAt": "2021-10-01T20:56:48.000Z",
     "tags": [
       {
         "name": "lg",
@@ -188,14 +206,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a72c08d2327d5e3998a8"
+    "$oid": "6287d8ac7334ff8da9e50a01"
   },
   "cid": "514ff748-47a3-4933-adc2-1c0325d6a118",
   "name": "Curve2LaneOpposing",
@@ -203,10 +218,10 @@
   "data": {
     "assetGuid": "d58a61b3-7156-4dbf-ac2a-ae8f2b9116c1",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -224,13 +239,21 @@
     "id": "514ff748-47a3-4933-adc2-1c0325d6a118",
     "name": "Curve2LaneOpposing",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d58a61b3-7156-4dbf-ac2a-ae8f2b9116c1",
+    "lastVersionDate": "2021-10-01T20:56:52.000Z",
+    "lastAssetGuid": "d58a61b3-7156-4dbf-ac2a-ae8f2b9116c1",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:36.000Z",
+    "updatedAt": "2021-10-01T20:56:52.000Z",
     "tags": [
       {
         "name": "lg",
@@ -255,14 +278,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a72c08d2327d5e3998a9"
+    "$oid": "6287d8ad7334ff8da9e50a02"
   },
   "cid": "5f78dc72-952c-47fd-889a-96c4a4049795",
   "name": "Straight2LaneOpposingCulDeSecIslandRaised",
@@ -270,10 +290,10 @@
   "data": {
     "assetGuid": "1ff90ade-4e55-4541-a19b-48f2659f48da",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -291,13 +311,21 @@
     "id": "5f78dc72-952c-47fd-889a-96c4a4049795",
     "name": "Straight2LaneOpposingCulDeSecIslandRaised",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/1ff90ade-4e55-4541-a19b-48f2659f48da",
+    "lastVersionDate": "2021-10-01T20:56:53.000Z",
+    "lastAssetGuid": "1ff90ade-4e55-4541-a19b-48f2659f48da",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:36.000Z",
+    "updatedAt": "2021-10-01T20:56:53.000Z",
     "tags": [
       {
         "name": "lg",
@@ -322,14 +350,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a72e08d2327d5e3998aa"
+    "$oid": "6287d8ad7334ff8da9e50a03"
   },
   "cid": "1e2287cf-c590-4804-bcb1-18b2fd3752d1",
   "name": "Straight1LaneSame",
@@ -337,10 +362,10 @@
   "data": {
     "assetGuid": "03621315-a971-48e2-952e-8ae16367d156",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -358,13 +383,21 @@
     "id": "1e2287cf-c590-4804-bcb1-18b2fd3752d1",
     "name": "Straight1LaneSame",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/03621315-a971-48e2-952e-8ae16367d156",
+    "lastVersionDate": "2021-10-01T20:56:52.000Z",
+    "lastAssetGuid": "03621315-a971-48e2-952e-8ae16367d156",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:39.000Z",
+    "updatedAt": "2021-10-01T20:56:52.000Z",
     "tags": [
       {
         "name": "lg",
@@ -389,14 +422,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73008d2327d5e3998ab"
+    "$oid": "6287d8ad7334ff8da9e50a04"
   },
   "cid": "7d7e88de-bec0-4e70-878b-d1d52885d7ed",
   "name": "Straight1LanePedestrian",
@@ -404,10 +434,10 @@
   "data": {
     "assetGuid": "7f47c666-d2f7-44d8-99e1-41594cecc545",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -425,13 +455,21 @@
     "id": "7d7e88de-bec0-4e70-878b-d1d52885d7ed",
     "name": "Straight1LanePedestrian",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/7f47c666-d2f7-44d8-99e1-41594cecc545",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "7f47c666-d2f7-44d8-99e1-41594cecc545",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:39.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -456,14 +494,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73208d2327d5e3998ac"
+    "$oid": "6287d8ae7334ff8da9e50a05"
   },
   "cid": "54d489b5-5682-49aa-80b3-0530bcf4ed10",
   "name": "Straight2LaneOpposingPedestrianCrosswalk",
@@ -471,10 +506,10 @@
   "data": {
     "assetGuid": "b554f105-64fb-47db-a280-67fc32af7b63",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -492,13 +527,21 @@
     "id": "54d489b5-5682-49aa-80b3-0530bcf4ed10",
     "name": "Straight2LaneOpposingPedestrianCrosswalk",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/b554f105-64fb-47db-a280-67fc32af7b63",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "b554f105-64fb-47db-a280-67fc32af7b63",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:40.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -523,14 +566,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73308d2327d5e3998ad"
+    "$oid": "6287d8ae7334ff8da9e50a06"
   },
   "cid": "671868be-44f9-44a1-913c-cb0f29d12634",
   "name": "Straight2LaneOpposing",
@@ -538,10 +578,10 @@
   "data": {
     "assetGuid": "7f4d4eb4-bef4-4af1-806f-7e3b40784164",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -559,13 +599,21 @@
     "id": "671868be-44f9-44a1-913c-cb0f29d12634",
     "name": "Straight2LaneOpposing",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/7f4d4eb4-bef4-4af1-806f-7e3b40784164",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "7f4d4eb4-bef4-4af1-806f-7e3b40784164",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:40.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -590,14 +638,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73608d2327d5e3998ae"
+    "$oid": "6287d8ae7334ff8da9e50a07"
   },
   "cid": "a1a225fc-dc50-4bba-b33c-330ea89be220",
   "name": "Straight2LaneOpposingCulDeSec",
@@ -605,10 +650,10 @@
   "data": {
     "assetGuid": "6a582ec5-e589-4c06-8fcd-575913c97956",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -626,13 +671,21 @@
     "id": "a1a225fc-dc50-4bba-b33c-330ea89be220",
     "name": "Straight2LaneOpposingCulDeSec",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/6a582ec5-e589-4c06-8fcd-575913c97956",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "6a582ec5-e589-4c06-8fcd-575913c97956",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:40.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -657,14 +710,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73808d2327d5e3998af"
+    "$oid": "6287d8af7334ff8da9e50a08"
   },
   "cid": "986187bf-02d7-44c6-820e-be39a7a58df2",
   "name": "Curve1LaneSame",
@@ -672,10 +722,10 @@
   "data": {
     "assetGuid": "decf3c08-1578-42c9-9b81-14f66eaaecae",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -693,13 +743,21 @@
     "id": "986187bf-02d7-44c6-820e-be39a7a58df2",
     "name": "Curve1LaneSame",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/decf3c08-1578-42c9-9b81-14f66eaaecae",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "decf3c08-1578-42c9-9b81-14f66eaaecae",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:42.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -724,14 +782,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73a08d2327d5e3998b0"
+    "$oid": "6287d8af7334ff8da9e50a09"
   },
   "cid": "a62ee883-91fc-4c9d-bff7-3f69d4befae1",
   "name": "Straight2LaneOpposingMedianRaisedPedestrianCrosswalk",
@@ -739,10 +794,10 @@
   "data": {
     "assetGuid": "ec9130a2-9e63-403b-b732-fc50e2e98187",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -760,13 +815,21 @@
     "id": "a62ee883-91fc-4c9d-bff7-3f69d4befae1",
     "name": "Straight2LaneOpposingMedianRaisedPedestrianCrosswalk",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/ec9130a2-9e63-403b-b732-fc50e2e98187",
+    "lastVersionDate": "2021-10-01T20:56:57.000Z",
+    "lastAssetGuid": "ec9130a2-9e63-403b-b732-fc50e2e98187",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:42.000Z",
+    "updatedAt": "2021-10-01T20:56:57.000Z",
     "tags": [
       {
         "name": "lg",
@@ -791,14 +854,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73b08d2327d5e3998b1"
+    "$oid": "6287d8af7334ff8da9e50a0a"
   },
   "cid": "b39d3ef9-21d7-409d-851b-4c90dad80a25",
   "name": "Straight2LaneSame",
@@ -806,10 +866,10 @@
   "data": {
     "assetGuid": "8cc07d43-9a62-476e-9d7e-312502b47500",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -827,13 +887,21 @@
     "id": "b39d3ef9-21d7-409d-851b-4c90dad80a25",
     "name": "Straight2LaneSame",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/8cc07d43-9a62-476e-9d7e-312502b47500",
+    "lastVersionDate": "2021-10-01T20:57:00.000Z",
+    "lastAssetGuid": "8cc07d43-9a62-476e-9d7e-312502b47500",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:42.000Z",
+    "updatedAt": "2021-10-01T20:57:00.000Z",
     "tags": [
       {
         "name": "lg",
@@ -858,14 +926,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73b08d2327d5e3998b2"
+    "$oid": "6287d8b07334ff8da9e50a0b"
   },
   "cid": "b78b543c-15dc-41d4-8db8-173f1d81d8ae",
   "name": "Straight2LaneSameCurbRight",
@@ -873,10 +938,10 @@
   "data": {
     "assetGuid": "ac65c414-7209-467c-a557-dedf75886d46",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -894,13 +959,21 @@
     "id": "b78b543c-15dc-41d4-8db8-173f1d81d8ae",
     "name": "Straight2LaneSameCurbRight",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/ac65c414-7209-467c-a557-dedf75886d46",
+    "lastVersionDate": "2021-10-01T20:56:56.000Z",
+    "lastAssetGuid": "ac65c414-7209-467c-a557-dedf75886d46",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:42.000Z",
+    "updatedAt": "2021-10-01T20:56:56.000Z",
     "tags": [
       {
         "name": "lg",
@@ -925,14 +998,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73b08d2327d5e3998b3"
+    "$oid": "6287d8b07334ff8da9e50a0c"
   },
   "cid": "e01ab79f-b796-4de5-bb2c-90924274c109",
   "name": "Straight3Lane1Opposing",
@@ -940,10 +1010,10 @@
   "data": {
     "assetGuid": "8ea672ea-f567-480a-8f51-673c04d07ab9",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -961,13 +1031,21 @@
     "id": "e01ab79f-b796-4de5-bb2c-90924274c109",
     "name": "Straight3Lane1Opposing",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/8ea672ea-f567-480a-8f51-673c04d07ab9",
+    "lastVersionDate": "2021-10-01T20:57:01.000Z",
+    "lastAssetGuid": "8ea672ea-f567-480a-8f51-673c04d07ab9",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:42.000Z",
+    "updatedAt": "2021-10-01T20:57:01.000Z",
     "tags": [
       {
         "name": "lg",
@@ -992,14 +1070,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73c08d2327d5e3998b4"
+    "$oid": "6287d8b17334ff8da9e50a0d"
   },
   "cid": "a3a818b5-c66b-488a-a780-979bd5692db1",
   "name": "Straight1LanePedestrianCrosswalk",
@@ -1007,10 +1082,10 @@
   "data": {
     "assetGuid": "f1d0d3ab-3c7f-4158-92ba-f03e16901e11",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1028,13 +1103,21 @@
     "id": "a3a818b5-c66b-488a-a780-979bd5692db1",
     "name": "Straight1LanePedestrianCrosswalk",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/f1d0d3ab-3c7f-4158-92ba-f03e16901e11",
+    "lastVersionDate": "2021-10-01T20:57:01.000Z",
+    "lastAssetGuid": "f1d0d3ab-3c7f-4158-92ba-f03e16901e11",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:43.000Z",
+    "updatedAt": "2021-10-01T20:57:01.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1059,14 +1142,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73c08d2327d5e3998b5"
+    "$oid": "6287d8b17334ff8da9e50a0e"
   },
   "cid": "c5ab65f6-4904-4369-b211-98aaeb353e24",
   "name": "Straight2LaneOpposingPedestrianCrosswalk3Ways",
@@ -1074,10 +1154,10 @@
   "data": {
     "assetGuid": "457ba5f5-277e-4d50-9e92-8cf53ea2b926",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1095,13 +1175,21 @@
     "id": "c5ab65f6-4904-4369-b211-98aaeb353e24",
     "name": "Straight2LaneOpposingPedestrianCrosswalk3Ways",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/457ba5f5-277e-4d50-9e92-8cf53ea2b926",
+    "lastVersionDate": "2021-10-01T20:57:01.000Z",
+    "lastAssetGuid": "457ba5f5-277e-4d50-9e92-8cf53ea2b926",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:43.000Z",
+    "updatedAt": "2021-10-01T20:57:01.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1126,14 +1214,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73d08d2327d5e3998b6"
+    "$oid": "6287d8b17334ff8da9e50a0f"
   },
   "cid": "1f61c797-0e03-4868-9e2d-e9041dbf6dee",
   "name": "Straight2LaneOpposingPedestrianCrosswalk3WaysTrafficSignal",
@@ -1141,10 +1226,10 @@
   "data": {
     "assetGuid": "6603ea68-284a-44da-96ea-14d2624727cc",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1162,13 +1247,21 @@
     "id": "1f61c797-0e03-4868-9e2d-e9041dbf6dee",
     "name": "Straight2LaneOpposingPedestrianCrosswalk3WaysTrafficSignal",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/6603ea68-284a-44da-96ea-14d2624727cc",
+    "lastVersionDate": "2021-10-01T20:56:47.000Z",
+    "lastAssetGuid": "6603ea68-284a-44da-96ea-14d2624727cc",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:43.000Z",
+    "updatedAt": "2021-10-01T20:56:47.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1193,14 +1286,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73d08d2327d5e3998b7"
+    "$oid": "6287d8b27334ff8da9e50a10"
   },
   "cid": "4e92bd68-f23a-458e-a521-aa15ca0d289f",
   "name": "Straight1LanePedestrianCrosswalkSign",
@@ -1208,10 +1298,10 @@
   "data": {
     "assetGuid": "7f9c3bd7-c223-4d1b-9b2d-67b8c6730854",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1229,13 +1319,21 @@
     "id": "4e92bd68-f23a-458e-a521-aa15ca0d289f",
     "name": "Straight1LanePedestrianCrosswalkSign",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/7f9c3bd7-c223-4d1b-9b2d-67b8c6730854",
+    "lastVersionDate": "2021-10-01T20:57:02.000Z",
+    "lastAssetGuid": "7f9c3bd7-c223-4d1b-9b2d-67b8c6730854",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:43.000Z",
+    "updatedAt": "2021-10-01T20:57:02.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1260,14 +1358,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73d08d2327d5e3998b8"
+    "$oid": "6287d8b27334ff8da9e50a11"
   },
   "cid": "7294b874-5f71-43a2-bbe2-f2e58800ed0d",
   "name": "Straight2LaneOpposingPedestrianCrosswalk3WaysStopSign",
@@ -1275,10 +1370,10 @@
   "data": {
     "assetGuid": "2831f329-1184-4117-9ae8-4c61902a4f33",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1296,13 +1391,21 @@
     "id": "7294b874-5f71-43a2-bbe2-f2e58800ed0d",
     "name": "Straight2LaneOpposingPedestrianCrosswalk3WaysStopSign",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/2831f329-1184-4117-9ae8-4c61902a4f33",
+    "lastVersionDate": "2021-10-01T20:56:41.000Z",
+    "lastAssetGuid": "2831f329-1184-4117-9ae8-4c61902a4f33",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:43.000Z",
+    "updatedAt": "2021-10-01T20:56:41.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1327,14 +1430,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73e08d2327d5e3998b9"
+    "$oid": "6287d8b27334ff8da9e50a12"
   },
   "cid": "378edc3f-8fce-4596-87dc-7d12fc2ad743",
   "name": "Straight2LaneSameCurbRightIntersection",
@@ -1342,10 +1442,10 @@
   "data": {
     "assetGuid": "8eeafc9b-f435-4dbe-8b40-ebffcb4a3c26",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1363,13 +1463,21 @@
     "id": "378edc3f-8fce-4596-87dc-7d12fc2ad743",
     "name": "Straight2LaneSameCurbRightIntersection",
     "description": "This map is a simple road setting used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/8eeafc9b-f435-4dbe-8b40-ebffcb4a3c26",
+    "lastVersionDate": "2021-10-01T20:57:07.000Z",
+    "lastAssetGuid": "8eeafc9b-f435-4dbe-8b40-ebffcb4a3c26",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:46.000Z",
+    "updatedAt": "2021-10-01T20:57:07.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1394,14 +1502,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73e08d2327d5e3998ba"
+    "$oid": "6287d8b37334ff8da9e50a13"
   },
   "cid": "97128028-33c7-4411-b1ec-d693ed35071f",
   "name": "Shalun",
@@ -1409,10 +1514,10 @@
   "data": {
     "assetGuid": "fce86ba3-a4d3-4a56-9b18-97975168cbc8",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1430,13 +1535,21 @@
     "id": "97128028-33c7-4411-b1ec-d693ed35071f",
     "name": "Shalun",
     "description": "Non-Digital Twin Version on Taiwan Car Lab Testing Facility (http://taiwancarlab.narlabs.org.tw/index_en.html)",
-    "copyright": "National Cheng Kung University (NCKU)",
-    "licenseName": "User Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/fce86ba3-a4d3-4a56-9b18-97975168cbc8",
+    "lastVersionDate": "2021-10-01T20:57:07.000Z",
+    "lastAssetGuid": "fce86ba3-a4d3-4a56-9b18-97975168cbc8",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "National Cheng Kung University (NCKU)",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:46.000Z",
+    "updatedAt": "2021-10-01T20:57:07.000Z",
     "tags": [
       {
         "name": "test",
@@ -1449,14 +1562,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73e08d2327d5e3998bb"
+    "$oid": "6287d8b37334ff8da9e50a14"
   },
   "cid": "efc093ec-f092-4e9e-8e4d-0df84800a011",
   "name": "IMSF1Tenth",
@@ -1464,10 +1574,10 @@
   "data": {
     "assetGuid": "79435363-2334-4580-b578-3fc9927c9cf8",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1485,13 +1595,21 @@
     "id": "efc093ec-f092-4e9e-8e4d-0df84800a011",
     "name": "IMSF1Tenth",
     "description": "The **IMS F1Tenth** map is a 1/10th scale version of the [Indianapolis Motor Speedway](maps/profile/62765742-57bf-4ccd-85e5-db8295d34ead).\n\nThe Indianapolis Motor Speedway located in Speedway, IN, is home to the IndyCar Series, **NASCAR Cup Series**, and many more. The 2.5-mile oval constructed in 1909 features the top races in the world such as the **Indianapolis 500**, **Brickyard 400**. The Indianapolis Motor Speedway also hosts a 2.439-mile road course that features the INDYCAR Grand Prix.\n\nThis map is intended for use with [F1TENTH](https://f1tenth.org/) simulation and 1/10 scale vehicles such as the [F1TENTH Traxxis vehicle](/vehicles/profile/3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea).\n\nCheck <https://www.indianapolismotorspeedway.com> for more details.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/79435363-2334-4580-b578-3fc9927c9cf8",
+    "lastVersionDate": "2021-10-01T20:57:16.000Z",
+    "lastAssetGuid": "79435363-2334-4580-b578-3fc9927c9cf8",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:48.000Z",
+    "updatedAt": "2021-10-01T20:57:16.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1522,14 +1640,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73f08d2327d5e3998bc"
+    "$oid": "6287d8b37334ff8da9e50a15"
   },
   "cid": "62765742-57bf-4ccd-85e5-db8295d34ead",
   "name": "IndianapolisMotorSpeedway",
@@ -1537,10 +1652,10 @@
   "data": {
     "assetGuid": "68b3eec6-a010-4731-948a-fcb2b4597117",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1558,13 +1673,21 @@
     "id": "62765742-57bf-4ccd-85e5-db8295d34ead",
     "name": "IndianapolisMotorSpeedway",
     "description": "The **Indianapolis Motor Speedway** located in Speedway, IN, is home to the IndyCar Series, NASCAR Cup Series, and many more.\n\nThe 2.5-mile oval constructed in 1909 features the top races in the world, such as the **Indianapolis 500**, **Brickyard 400**. The **Indianapolis Motor Speedway** also hosts a 2.439-mile road course that features the INDYCAR Grand Prix.  It is intended for use with vehicles such as the [Dallara IL-15](/vehicles/profile/e768f24a-2d51-41b2-8976-52d2ed4178a5) vehicle.\n\nCheck <https://www.indianapolismotorspeedway.com> for more details.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/68b3eec6-a010-4731-948a-fcb2b4597117",
+    "lastVersionDate": "2021-10-01T20:57:17.000Z",
+    "lastAssetGuid": "68b3eec6-a010-4731-948a-fcb2b4597117",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:48.000Z",
+    "updatedAt": "2021-10-01T20:57:17.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1595,14 +1718,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a73f08d2327d5e3998bd"
+    "$oid": "6287d8b47334ff8da9e50a16"
   },
   "cid": "aae03d2a-b7ca-4a88-9e41-9035287a12cc",
   "name": "BorregasAve",
@@ -1610,10 +1730,10 @@
   "data": {
     "assetGuid": "4552b7ac-4fba-4420-88b8-ae14289bf5ac",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1631,13 +1751,21 @@
     "id": "aae03d2a-b7ca-4a88-9e41-9035287a12cc",
     "name": "BorregasAve",
     "description": "The Borregas Avenue map is a Digital Twin environment of a real-world street block in Sunnyvale, CA (https://goo.gl/maps/qtCmLm2HSqbofUx8A). It features two-lane roads as well as one traffic light intersection and one stop sign intersection.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/4552b7ac-4fba-4420-88b8-ae14289bf5ac",
+    "lastVersionDate": "2021-10-01T20:57:26.000Z",
+    "lastAssetGuid": "4552b7ac-4fba-4420-88b8-ae14289bf5ac",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:52.000Z",
+    "updatedAt": "2021-10-01T20:57:26.000Z",
     "tags": [
       {
         "name": "lg",
@@ -1662,14 +1790,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74008d2327d5e3998be"
+    "$oid": "6287d8b47334ff8da9e50a17"
   },
   "cid": "2aae5d39-a11c-4516-87c4-cdc9ca784551",
   "name": "AutonomouStuff",
@@ -1677,10 +1802,10 @@
   "data": {
     "assetGuid": "0c86501c-d7f9-417b-a007-1627c24ae6a9",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1698,13 +1823,21 @@
     "id": "2aae5d39-a11c-4516-87c4-cdc9ca784551",
     "name": "AutonomouStuff",
     "description": "The AutonomouStuff Parking Lot map is a Digital Twin environment of a real world parking lot in San Jose, CA. This map is well suited for testing autonomous parking, as well as basic maneuvers in non-standard roadways such as office road entries.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/0c86501c-d7f9-417b-a007-1627c24ae6a9",
+    "lastVersionDate": "2021-10-01T20:57:24.000Z",
+    "lastAssetGuid": "0c86501c-d7f9-417b-a007-1627c24ae6a9",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:28:53.000Z",
+    "updatedAt": "2021-10-01T20:57:24.000Z",
     "tags": [
       {
         "name": "real-world",
@@ -1729,14 +1862,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74008d2327d5e3998bf"
+    "$oid": "6287d8b57334ff8da9e50a18"
   },
   "cid": "5d272540-f689-4355-83c7-03bf11b6865f",
   "name": "SanFrancisco",
@@ -1744,10 +1874,10 @@
   "data": {
     "assetGuid": "b7149b5c-6559-4827-9009-0b938c448c78",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1765,13 +1895,21 @@
     "id": "5d272540-f689-4355-83c7-03bf11b6865f",
     "name": "SanFrancisco",
     "description": "The San Francisco map is a re-creation of a section of SOMA San Francisco around Market Street. It features many traffic light intersections and multi-lane streets.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/b7149b5c-6559-4827-9009-0b938c448c78",
+    "lastVersionDate": "2021-10-01T20:57:36.000Z",
+    "lastAssetGuid": "b7149b5c-6559-4827-9009-0b938c448c78",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:29:02.000Z",
+    "updatedAt": "2021-10-01T20:57:36.000Z",
     "tags": [
       {
         "name": "real-world",
@@ -1802,14 +1940,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74008d2327d5e3998c0"
+    "$oid": "6287d8b57334ff8da9e50a19"
   },
   "cid": "979dd7f3-b25b-47f0-ab10-a6effb370138",
   "name": "GoMentum",
@@ -1817,10 +1952,10 @@
   "data": {
     "assetGuid": "e4c3e4dd-fd7d-42fb-8480-5593813a2243",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1838,13 +1973,21 @@
     "id": "979dd7f3-b25b-47f0-ab10-a6effb370138",
     "name": "GoMentum",
     "description": "The GoMentum Station map is a Digital Twin environment of a real-world autonomous testing facility. GoMentum Station is a dedicated testing facility for connected and automated vehicle technology, owned and operated by AAA.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/e4c3e4dd-fd7d-42fb-8480-5593813a2243",
+    "lastVersionDate": "2021-10-01T20:58:07.000Z",
+    "lastAssetGuid": "e4c3e4dd-fd7d-42fb-8480-5593813a2243",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:29:32.000Z",
+    "updatedAt": "2021-10-01T20:58:07.000Z",
     "tags": [
       {
         "name": "test",
@@ -1863,14 +2006,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74108d2327d5e3998c1"
+    "$oid": "6287d8b57334ff8da9e50a1a"
   },
   "cid": "d7b4b7b4-ce9d-4670-8c41-917eb7bc15d6",
   "name": "GoMentumDTL",
@@ -1878,10 +2018,10 @@
   "data": {
     "assetGuid": "ce7d07ec-82bc-4dde-8d8e-7a86fb148646",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1899,13 +2039,21 @@
     "id": "d7b4b7b4-ce9d-4670-8c41-917eb7bc15d6",
     "name": "GoMentumDTL",
     "description": "The GoMentumDTL map is a Digital Twin Lite environment of a real-world autonomous testing facility. GoMentum Station is a dedicated testing facility for connected and automated vehicle technology, owned and operated by AAA.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/ce7d07ec-82bc-4dde-8d8e-7a86fb148646",
+    "lastVersionDate": "2021-10-01T20:58:01.000Z",
+    "lastAssetGuid": "ce7d07ec-82bc-4dde-8d8e-7a86fb148646",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:29:38.000Z",
+    "updatedAt": "2021-10-01T20:58:01.000Z",
     "tags": [
       {
         "name": "test",
@@ -1930,14 +2078,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74108d2327d5e3998c2"
+    "$oid": "6287d8b67334ff8da9e50a1b"
   },
   "cid": "431292c2-f6f6-4f5a-ae62-0964f6018d20",
   "name": "Highway101GLE",
@@ -1945,10 +2090,10 @@
   "data": {
     "assetGuid": "62156e42-b396-4daa-8ff9-91ebcc0b22e0",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -1966,13 +2111,21 @@
     "id": "431292c2-f6f6-4f5a-ae62-0964f6018d20",
     "name": "Highway101GLE",
     "description": "The Highway101GLE map is a real-world section of Highway 101 in California (https://goo.gl/maps/ggdSTvq2ZMVZmmcV9). It features multi-lane highway road with ramps for entry and exit.",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/62156e42-b396-4daa-8ff9-91ebcc0b22e0",
+    "lastVersionDate": "2022-01-25T21:15:10.000Z",
+    "lastAssetGuid": "62156e42-b396-4daa-8ff9-91ebcc0b22e0",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-03-17T20:29:39.000Z",
+    "updatedAt": "2022-01-25T21:15:10.000Z",
     "tags": [
       {
         "name": "lg",
@@ -2003,19 +2156,17 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74208d2327d5e3998c3"
+    "$oid": "6287d8b67334ff8da9e50a1c"
   },
   "cid": "38dfd37a-7c16-4f65-a124-9aee46e4f8b4",
   "name": "CubeTown1",
   "endpoint": "/api/v1/maps/38dfd37a-7c16-4f65-a124-9aee46e4f8b4",
   "data": {
+    "assetGuid": "d818e54e-63ac-47e9-ba13-fa5b5c6406e4",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2027,6 +2178,7 @@
         "lastName": "ZHANG"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/d818e54e-63ac-47e9-ba13-fa5b5c6406e4",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2034,32 +2186,37 @@
     "id": "38dfd37a-7c16-4f65-a124-9aee46e4f8b4",
     "name": "CubeTown1",
     "description": "",
-    "copyright": "YIHAO ZHANG",
-    "licenseName": "User Content",
-    "ownerId": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d818e54e-63ac-47e9-ba13-fa5b5c6406e4",
+    "lastVersionDate": "2021-06-30T03:47:33.000Z",
+    "lastAssetGuid": "d818e54e-63ac-47e9-ba13-fa5b5c6406e4",
+    "ownerId": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "YIHAO ZHANG",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-06-30T03:47:33.000Z",
+    "updatedAt": "2021-06-30T03:47:43.000Z",
     "tags": [],
     "owner": {
       "id": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
       "firstName": "YIHAO",
       "lastName": "ZHANG"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74208d2327d5e3998c4"
+    "$oid": "6287d8b67334ff8da9e50a1d"
   },
   "cid": "88eadcad-deea-422b-b482-dc6dcd95fd73",
   "name": "small_town_america",
   "endpoint": "/api/v1/maps/88eadcad-deea-422b-b482-dc6dcd95fd73",
   "data": {
+    "assetGuid": "dee927e6-ff3d-4928-b7e2-b073354b881d",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2071,6 +2228,7 @@
         "lastName": "ZHANG"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/dee927e6-ff3d-4928-b7e2-b073354b881d",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2078,27 +2236,31 @@
     "id": "88eadcad-deea-422b-b482-dc6dcd95fd73",
     "name": "small_town_america",
     "description": "small_town_america",
-    "copyright": "YIHAO ZHANG",
-    "licenseName": "User Content",
-    "ownerId": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/dee927e6-ff3d-4928-b7e2-b073354b881d",
+    "lastVersionDate": "2021-07-05T05:49:57.000Z",
+    "lastAssetGuid": "dee927e6-ff3d-4928-b7e2-b073354b881d",
+    "ownerId": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "YIHAO ZHANG",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-07-05T05:49:57.000Z",
+    "updatedAt": "2021-07-05T05:50:03.000Z",
     "tags": [],
     "owner": {
       "id": "8ea3800c-f57d-484c-9bed-d8f7657ae147",
       "firstName": "YIHAO",
       "lastName": "ZHANG"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74208d2327d5e3998c5"
+    "$oid": "6287d8b77334ff8da9e50a1e"
   },
   "cid": "63b3d3fd-7f98-4485-90ef-0e27bfb1df1c",
   "name": "Circuit Launch",
@@ -2106,10 +2268,10 @@
   "data": {
     "assetGuid": "4c6cac03-9b20-499c-a466-80132598878a",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -2125,13 +2287,21 @@
     "id": "63b3d3fd-7f98-4485-90ef-0e27bfb1df1c",
     "name": "Circuit Launch",
     "description": "The **Circuit Launch** map is a re-creation of the indoor [F1TENTH](https://f1tenth.org/) autonomous racing track used for [DIY Robocars events](https://www.meetup.com/DIYRobocars/) at [Circuit Launch](https://www.circuitlaunch.com/) in Oakland, CA. This map is intended for use with 1/10 scale vehicles such as the [F1TENTH Traxxis vehicle](/vehicles/profile/3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea).",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/4c6cac03-9b20-499c-a466-80132598878a",
+    "lastVersionDate": "2021-10-01T20:56:36.000Z",
+    "lastAssetGuid": "4c6cac03-9b20-499c-a466-80132598878a",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-07-20T10:49:34.000Z",
+    "updatedAt": "2021-10-01T20:56:36.000Z",
     "tags": [
       {
         "name": "lg",
@@ -2174,14 +2344,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74308d2327d5e3998c6"
+    "$oid": "6287d8b77334ff8da9e50a1f"
   },
   "cid": "26546191-86e8-4b53-9432-1cecbbd95c87",
   "name": "LGSeocho",
@@ -2189,10 +2356,10 @@
   "data": {
     "assetGuid": "c391ab33-6ee2-4a9e-80c1-c83f499bbdb9",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -2208,13 +2375,21 @@
     "id": "26546191-86e8-4b53-9432-1cecbbd95c87",
     "name": "LGSeocho",
     "description": "The LGSeocho map is a Digital Twin environment of a real-world indoor office environment with multiple floors, elevators, escalators, shops, pillars, ceiling lights, outdoor lights, etc. This map can be used for Robotic simulation purposes for indoor robots like [LGCloi](/vehicles/profile/20609b67-6dbd-40ad-9b46-e6bc455278ed).\nDownload a costmap for the LGSeocho environment to be used for locatization and planning: [seocho.yaml](https://github.com/lgsvl/svl_robot_bringup/blob/master/maps/seocho.yaml).",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/c391ab33-6ee2-4a9e-80c1-c83f499bbdb9",
+    "lastVersionDate": "2021-10-01T20:57:22.000Z",
+    "lastAssetGuid": "c391ab33-6ee2-4a9e-80c1-c83f499bbdb9",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-08-19T15:04:31.000Z",
+    "updatedAt": "2021-10-01T20:57:22.000Z",
     "tags": [
       {
         "name": "lg",
@@ -2239,14 +2414,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74308d2327d5e3998c7"
+    "$oid": "6287d8b87334ff8da9e50a20"
   },
   "cid": "903118ab-7246-48a9-81a4-1be3eca5121f",
   "name": "Warehouse",
@@ -2254,10 +2426,10 @@
   "data": {
     "assetGuid": "34bfe354-34c6-4958-b681-b6d9f6949dd0",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -2273,13 +2445,21 @@
     "id": "903118ab-7246-48a9-81a4-1be3eca5121f",
     "name": "Warehouse",
     "description": "The Warehouse DT map is a sample 3D ficional warehouse for use with SVL Simulator for indoor simulations with robots like [LGCloi](/vehicles/profile/20609b67-6dbd-40ad-9b46-e6bc455278ed).\nIt contains basic objects in a virtual world which can be used to test robots in indoor enviornments to confirm robotics functionality and perform sanity checks. It also serves as an example for how to create a custom 3D indoor environment for SVL Simulator.\nDownload a costmap for the Warehouse environment to be used for locatization and planning: [warehouse.yaml](https://github.com/lgsvl/svl_robot_bringup/blob/master/maps/warehouse.yaml).",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/34bfe354-34c6-4958-b681-b6d9f6949dd0",
+    "lastVersionDate": "2021-10-01T20:57:37.000Z",
+    "lastAssetGuid": "34bfe354-34c6-4958-b681-b6d9f6949dd0",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-08-19T15:05:02.000Z",
+    "updatedAt": "2021-10-01T20:57:40.000Z",
     "tags": [
       {
         "name": "lg",
@@ -2304,14 +2484,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74408d2327d5e3998c8"
+    "$oid": "6287d8b87334ff8da9e50a21"
   },
   "cid": "bd77ac3b-fbc3-41c3-a806-25915c777022",
   "name": "Tartu Beta Release 3",
@@ -2338,32 +2515,37 @@
     "id": "bd77ac3b-fbc3-41c3-a806-25915c777022",
     "name": "Tartu Beta Release 3",
     "description": "The digital twin of Tartu City Centre in Estonia.\nNow compatible with Visual Editor and SVL 2021.3\nTutorial  for running the map with Apollo:\nhttps://github.com/UT-ADL/apollo-ut-misc/tree/master/tutorials",
-    "copyright": "Allan Mitt",
-    "licenseName": "User Content",
-    "ownerId": "641b101f-0d12-4c7a-8dca-1b4f7e5915b5",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/8c299cbe-bbc0-4805-9477-2154d5c5eaab",
+    "lastVersionDate": "2022-02-19T13:28:25.000Z",
+    "lastAssetGuid": "8c299cbe-bbc0-4805-9477-2154d5c5eaab",
+    "ownerId": "641b101f-0d12-4c7a-8dca-1b4f7e5915b5",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Allan Mitt",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-08-22T13:58:47.000Z",
+    "updatedAt": "2022-02-19T13:28:25.000Z",
     "tags": [],
     "owner": {
       "id": "641b101f-0d12-4c7a-8dca-1b4f7e5915b5",
       "firstName": "Allan",
       "lastName": "Mitt"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74408d2327d5e3998c9"
+    "$oid": "6287d8b87334ff8da9e50a22"
   },
   "cid": "7d27af35-d5b2-4b7d-b7eb-5ed37cf1d387",
   "name": "map_s1_car",
   "endpoint": "/api/v1/maps/7d27af35-d5b2-4b7d-b7eb-5ed37cf1d387",
   "data": {
+    "assetGuid": "c7b0154b-305f-476d-aadd-2bb4eb48017b",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2375,6 +2557,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/c7b0154b-305f-476d-aadd-2bb4eb48017b",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2382,32 +2565,37 @@
     "id": "7d27af35-d5b2-4b7d-b7eb-5ed37cf1d387",
     "name": "map_s1_car",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/c7b0154b-305f-476d-aadd-2bb4eb48017b",
+    "lastVersionDate": "2021-08-30T04:43:24.000Z",
+    "lastAssetGuid": "c7b0154b-305f-476d-aadd-2bb4eb48017b",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-08-30T04:43:24.000Z",
+    "updatedAt": "2021-08-30T04:43:42.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74408d2327d5e3998ca"
+    "$oid": "6287d8b97334ff8da9e50a23"
   },
   "cid": "4f190891-e7d0-40b1-bf3a-5ef1c90169a4",
   "name": "CubeTown_test",
   "endpoint": "/api/v1/maps/4f190891-e7d0-40b1-bf3a-5ef1c90169a4",
   "data": {
+    "assetGuid": "0595d9d3-c53f-4072-ac7d-1a55fe9ccf33",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2419,6 +2607,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/0595d9d3-c53f-4072-ac7d-1a55fe9ccf33",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2426,32 +2615,37 @@
     "id": "4f190891-e7d0-40b1-bf3a-5ef1c90169a4",
     "name": "CubeTown_test",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/0595d9d3-c53f-4072-ac7d-1a55fe9ccf33",
+    "lastVersionDate": "2021-09-02T01:48:40.000Z",
+    "lastAssetGuid": "0595d9d3-c53f-4072-ac7d-1a55fe9ccf33",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-02T01:48:40.000Z",
+    "updatedAt": "2021-09-02T01:48:54.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74508d2327d5e3998cb"
+    "$oid": "6287d8b97334ff8da9e50a24"
   },
   "cid": "48c04e98-531f-4211-8159-464b60ce1a8c",
   "name": "Professional Airport Scene : ServiceRoad Cross Taxiway",
   "endpoint": "/api/v1/maps/48c04e98-531f-4211-8159-464b60ce1a8c",
   "data": {
+    "assetGuid": "bdbb89e8-41ea-4920-b5e3-5ee699084a07",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2463,6 +2657,7 @@
         "lastName": "Yuan"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/bdbb89e8-41ea-4920-b5e3-5ee699084a07",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2470,32 +2665,37 @@
     "id": "48c04e98-531f-4211-8159-464b60ce1a8c",
     "name": "Professional Airport Scene : ServiceRoad Cross Taxiway",
     "description": "This map is part of airport and is a professional scene, following ICAO-14 by the international civil aviation organization.\nContact : jliang@bupt.edu.cn",
-    "copyright": "Tiger",
-    "licenseName": "User Content",
-    "ownerId": "a88e6d0c-717c-4796-8569-c672d65fb846",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/bdbb89e8-41ea-4920-b5e3-5ee699084a07",
+    "lastVersionDate": "2021-09-06T15:13:04.000Z",
+    "lastAssetGuid": "bdbb89e8-41ea-4920-b5e3-5ee699084a07",
+    "ownerId": "a88e6d0c-717c-4796-8569-c672d65fb846",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Tiger",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-06T15:13:04.000Z",
+    "updatedAt": "2022-02-27T08:55:40.000Z",
     "tags": [],
     "owner": {
       "id": "a88e6d0c-717c-4796-8569-c672d65fb846",
       "firstName": "Xuan",
       "lastName": "Yuan"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74508d2327d5e3998cc"
+    "$oid": "6287d8b97334ff8da9e50a25"
   },
   "cid": "001bba91-bb5b-46f2-a669-95eb5e0472d3",
   "name": "test36",
   "endpoint": "/api/v1/maps/001bba91-bb5b-46f2-a669-95eb5e0472d3",
   "data": {
+    "assetGuid": "16036271-70d3-4f67-8e6f-cc2325c78bc3",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2507,6 +2707,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/16036271-70d3-4f67-8e6f-cc2325c78bc3",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2514,32 +2715,37 @@
     "id": "001bba91-bb5b-46f2-a669-95eb5e0472d3",
     "name": "test36",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/16036271-70d3-4f67-8e6f-cc2325c78bc3",
+    "lastVersionDate": "2021-09-10T02:26:20.000Z",
+    "lastAssetGuid": "16036271-70d3-4f67-8e6f-cc2325c78bc3",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-10T02:26:20.000Z",
+    "updatedAt": "2021-09-10T02:27:04.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74608d2327d5e3998cd"
+    "$oid": "6287d8ba7334ff8da9e50a26"
   },
   "cid": "b9cdb107-e0c3-40f3-98bc-48c7ae54e96c",
   "name": "SingleLaneRoad_2boxes",
   "endpoint": "/api/v1/maps/b9cdb107-e0c3-40f3-98bc-48c7ae54e96c",
   "data": {
+    "assetGuid": "de1f0722-751e-4285-befc-d2c892a06ce6",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2551,6 +2757,7 @@
         "lastName": "Shen"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/de1f0722-751e-4285-befc-d2c892a06ce6",
     "supportedSimulatorVersions": [
       "2021.2",
       "2021.2.2"
@@ -2558,32 +2765,37 @@
     "id": "b9cdb107-e0c3-40f3-98bc-48c7ae54e96c",
     "name": "SingleLaneRoad_2boxes",
     "description": "SLR with boxes on road side. Used to test perception capability. ",
-    "copyright": "ZW",
-    "licenseName": "User Content",
-    "ownerId": "0afc6534-86ed-4ef5-b541-debe1f3704b8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/de1f0722-751e-4285-befc-d2c892a06ce6",
+    "lastVersionDate": "2021-09-10T20:39:44.000Z",
+    "lastAssetGuid": "de1f0722-751e-4285-befc-d2c892a06ce6",
+    "ownerId": "0afc6534-86ed-4ef5-b541-debe1f3704b8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "ZW",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-10T20:39:44.000Z",
+    "updatedAt": "2021-09-10T20:42:40.000Z",
     "tags": [],
     "owner": {
       "id": "0afc6534-86ed-4ef5-b541-debe1f3704b8",
       "firstName": "Junjie",
       "lastName": "Shen"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74608d2327d5e3998ce"
+    "$oid": "6287d8ba7334ff8da9e50a27"
   },
   "cid": "d8a0c11c-867e-47f4-9f82-f142894fef69",
   "name": "hd1",
   "endpoint": "/api/v1/maps/d8a0c11c-867e-47f4-9f82-f142894fef69",
   "data": {
+    "assetGuid": "37fbd78e-5966-4582-8233-4ea02c287ae1",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2595,6 +2807,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/37fbd78e-5966-4582-8233-4ea02c287ae1",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2602,32 +2815,37 @@
     "id": "d8a0c11c-867e-47f4-9f82-f142894fef69",
     "name": "hd1",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/37fbd78e-5966-4582-8233-4ea02c287ae1",
+    "lastVersionDate": "2021-09-16T01:38:30.000Z",
+    "lastAssetGuid": "37fbd78e-5966-4582-8233-4ea02c287ae1",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-16T01:38:30.000Z",
+    "updatedAt": "2021-09-16T01:38:40.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74608d2327d5e3998cf"
+    "$oid": "6287d8bb7334ff8da9e50a28"
   },
   "cid": "da87ce89-9e83-470c-bb28-3418da1d3fb1",
   "name": "hd2",
   "endpoint": "/api/v1/maps/da87ce89-9e83-470c-bb28-3418da1d3fb1",
   "data": {
+    "assetGuid": "164e1542-a296-4aa4-8332-312b7d530ba8",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2639,6 +2857,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/164e1542-a296-4aa4-8332-312b7d530ba8",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2646,32 +2865,37 @@
     "id": "da87ce89-9e83-470c-bb28-3418da1d3fb1",
     "name": "hd2",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/164e1542-a296-4aa4-8332-312b7d530ba8",
+    "lastVersionDate": "2021-09-16T02:28:31.000Z",
+    "lastAssetGuid": "164e1542-a296-4aa4-8332-312b7d530ba8",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-16T02:28:31.000Z",
+    "updatedAt": "2021-09-16T02:28:38.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74708d2327d5e3998d0"
+    "$oid": "6287d8bb7334ff8da9e50a29"
   },
   "cid": "33b2965f-ebcd-4f9f-8cb0-a89ce20d49a0",
   "name": "hd3",
   "endpoint": "/api/v1/maps/33b2965f-ebcd-4f9f-8cb0-a89ce20d49a0",
   "data": {
+    "assetGuid": "524f0389-4d17-470f-8cbf-1ca672bd6798",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -2683,6 +2907,7 @@
         "lastName": "Kanayama"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/524f0389-4d17-470f-8cbf-1ca672bd6798",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -2690,27 +2915,31 @@
     "id": "33b2965f-ebcd-4f9f-8cb0-a89ce20d49a0",
     "name": "hd3",
     "description": "",
-    "copyright": "Yoshiki Kanayama",
-    "licenseName": "User Content",
-    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/524f0389-4d17-470f-8cbf-1ca672bd6798",
+    "lastVersionDate": "2021-09-24T06:41:46.000Z",
+    "lastAssetGuid": "524f0389-4d17-470f-8cbf-1ca672bd6798",
+    "ownerId": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yoshiki Kanayama",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-09-24T06:41:46.000Z",
+    "updatedAt": "2021-09-24T06:41:59.000Z",
     "tags": [],
     "owner": {
       "id": "0dc399a7-123d-43f1-b633-30acbab6bbc8",
       "firstName": "Yoshiki",
       "lastName": "Kanayama"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74708d2327d5e3998d1"
+    "$oid": "6287d8bb7334ff8da9e50a2a"
   },
   "cid": "b0881caf-2727-4cb6-abe7-0f47a27899ea",
   "name": "WarehouseDT",
@@ -2718,10 +2947,10 @@
   "data": {
     "assetGuid": "cca8a560-0c11-491e-8604-c69b3eb45d91",
     "isShared": false,
-    "isFavored": true,
+    "isFavored": false,
     "isOwned": false,
     "accessInfo": {
-      "userAccessType": "favored",
+      "userAccessType": "public",
       "owner": {
         "id": "0d888b00-fa53-47c1-882a-b68391268a11",
         "firstName": "SVL",
@@ -2735,13 +2964,21 @@
     "id": "b0881caf-2727-4cb6-abe7-0f47a27899ea",
     "name": "WarehouseDT",
     "description": "The Warehouse DT map is  a sample 3D warehouse digital twin environment for use with SVL Simulator for indoor simulations with robots like [LGCloi](/vehicles/profile/20609b67-6dbd-40ad-9b46-e6bc455278ed).\nIt contains basic objects in a virtual world which can be used to test robots in indoor enviornments to confirm robotics functionality and perform sanity checks. It also serves as an example for how to create a custom 3D indoor environment for SVL Simulator.\nDownload a costmap for the WarehouseDT environment to be used for locatization and planning: [warehouseDT.yaml](https://github.com/lgsvl/svl_robot_bringup/blob/master/maps/warehouseDT.yaml).",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "LG Content",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/cca8a560-0c11-491e-8604-c69b3eb45d91",
+    "lastVersionDate": "2021-10-01T20:57:07.000Z",
+    "lastAssetGuid": "cca8a560-0c11-491e-8604-c69b3eb45d91",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-01T20:57:07.000Z",
+    "updatedAt": "2021-10-01T20:57:10.000Z",
     "tags": [
       {
         "name": "lg",
@@ -2778,14 +3015,11 @@
       "id": "0d888b00-fa53-47c1-882a-b68391268a11",
       "firstName": "SVL",
       "lastName": "Content"
-    },
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74808d2327d5e3998d2"
+    "$oid": "6287d8bc7334ff8da9e50a2b"
   },
   "cid": "befe0755-ef70-4d81-aff4-354773f1c3d5",
   "name": "Airport",
@@ -2810,13 +3044,21 @@
     "id": "befe0755-ef70-4d81-aff4-354773f1c3d5",
     "name": "Airport",
     "description": "Tacoma Airport. Autoware.Auto Cargo ODD simulation environment.\n\nWork in progress.",
-    "copyright": "Autoware Foundation",
-    "licenseName": "User Content",
-    "ownerId": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/0a4026cb-39eb-42ce-8065-26da778d2f74",
+    "lastVersionDate": "2022-02-10T10:36:32.000Z",
+    "lastAssetGuid": "0a4026cb-39eb-42ce-8065-26da778d2f74",
+    "ownerId": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Autoware Foundation",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-11T10:49:00.000Z",
+    "updatedAt": "2022-02-10T10:36:32.000Z",
     "tags": [
       {
         "name": "airport",
@@ -2853,15 +3095,11 @@
       "id": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
       "firstName": "Robotec.ai",
       "lastName": "Content"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74808d2327d5e3998d3"
+    "$oid": "6287d8bc7334ff8da9e50a2c"
   },
   "cid": "4deef492-598b-4de8-b78a-7022ccd70f24",
   "name": "Parking2",
@@ -2886,27 +3124,31 @@
     "id": "4deef492-598b-4de8-b78a-7022ccd70f24",
     "name": "Parking2",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/bca42fdd-cd4c-42c9-8d4a-8558b2e8b5c8",
+    "lastVersionDate": "2021-10-12T21:48:33.000Z",
+    "lastAssetGuid": "bca42fdd-cd4c-42c9-8d4a-8558b2e8b5c8",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-12T21:48:33.000Z",
+    "updatedAt": "2021-10-12T21:48:43.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74808d2327d5e3998d4"
+    "$oid": "6287d8bc7334ff8da9e50a2d"
   },
   "cid": "4235707e-1ad5-4c09-9041-28034638aba7",
   "name": "ParallelParking",
@@ -2931,27 +3173,31 @@
     "id": "4235707e-1ad5-4c09-9041-28034638aba7",
     "name": "ParallelParking",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/da7c8a8b-e4c5-4002-b8ce-22c66cb4f2ac",
+    "lastVersionDate": "2021-10-13T11:31:49.000Z",
+    "lastAssetGuid": "da7c8a8b-e4c5-4002-b8ce-22c66cb4f2ac",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-13T08:33:10.000Z",
+    "updatedAt": "2021-10-13T11:31:49.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74908d2327d5e3998d5"
+    "$oid": "6287d8bd7334ff8da9e50a2e"
   },
   "cid": "8840c869-abb5-429f-b9ed-f01d931b922b",
   "name": "CubeTown333",
@@ -2976,27 +3222,31 @@
     "id": "8840c869-abb5-429f-b9ed-f01d931b922b",
     "name": "CubeTown333",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/0eefb0f6-69e5-4953-95c5-09f92d3e9830",
+    "lastVersionDate": "2021-10-18T09:28:27.000Z",
+    "lastAssetGuid": "0eefb0f6-69e5-4953-95c5-09f92d3e9830",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-18T09:28:27.000Z",
+    "updatedAt": "2021-10-18T09:28:46.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74908d2327d5e3998d6"
+    "$oid": "6287d8bd7334ff8da9e50a2f"
   },
   "cid": "45dd30b0-4be1-4eb7-820a-3e175b0117fc",
   "name": "ModernCity",
@@ -3023,27 +3273,31 @@
     "id": "45dd30b0-4be1-4eb7-820a-3e175b0117fc",
     "name": "ModernCity",
     "description": "ModernCity",
-    "copyright": "Li Fei",
-    "licenseName": "User Content",
-    "ownerId": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/927f9b19-1113-4c8a-9fc7-0a01c1af76b8",
+    "lastVersionDate": "2021-12-24T07:06:30.000Z",
+    "lastAssetGuid": "927f9b19-1113-4c8a-9fc7-0a01c1af76b8",
+    "ownerId": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Li Fei",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-20T11:24:41.000Z",
+    "updatedAt": "2021-12-24T07:06:30.000Z",
     "tags": [],
     "owner": {
       "id": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
       "firstName": "Li",
       "lastName": "Fei"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74a08d2327d5e3998d7"
+    "$oid": "6287d8bd7334ff8da9e50a30"
   },
   "cid": "63a76bf8-b352-415b-929c-b41bb118877d",
   "name": "TestSceneParking",
@@ -3068,27 +3322,31 @@
     "id": "63a76bf8-b352-415b-929c-b41bb118877d",
     "name": "TestSceneParking",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/362c4de7-f83e-4ee4-9d39-28eb4b068692",
+    "lastVersionDate": "2021-10-27T20:42:23.000Z",
+    "lastAssetGuid": "362c4de7-f83e-4ee4-9d39-28eb4b068692",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-27T10:41:43.000Z",
+    "updatedAt": "2021-10-27T20:42:23.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74a08d2327d5e3998d8"
+    "$oid": "6287d8be7334ff8da9e50a31"
   },
   "cid": "ed881aa3-0181-4838-be63-9a3957dcaa0f",
   "name": "NewMap",
@@ -3113,27 +3371,31 @@
     "id": "ed881aa3-0181-4838-be63-9a3957dcaa0f",
     "name": "NewMap",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/dc9861cb-c53d-4782-9dcb-fe310f98b618",
+    "lastVersionDate": "2021-10-31T10:41:00.000Z",
+    "lastAssetGuid": "dc9861cb-c53d-4782-9dcb-fe310f98b618",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-10-31T10:41:00.000Z",
+    "updatedAt": "2021-10-31T10:41:08.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74a08d2327d5e3998d9"
+    "$oid": "6287d8be7334ff8da9e50a32"
   },
   "cid": "95088a4f-4dbc-49b8-b7c8-b781d060de52",
   "name": "TestSceneParkingWindows",
@@ -3158,27 +3420,31 @@
     "id": "95088a4f-4dbc-49b8-b7c8-b781d060de52",
     "name": "TestSceneParkingWindows",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/add53c5e-b406-41f8-98bf-ed9743453f3e",
+    "lastVersionDate": "2021-11-05T14:42:26.000Z",
+    "lastAssetGuid": "add53c5e-b406-41f8-98bf-ed9743453f3e",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-03T10:36:12.000Z",
+    "updatedAt": "2021-11-05T14:42:26.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74b08d2327d5e3998da"
+    "$oid": "6287d8bf7334ff8da9e50a33"
   },
   "cid": "a3be7bf6-b5a6-4e48-833d-a1f1dd6d7a1e",
   "name": "LasVegasMotorSpeedway",
@@ -3203,13 +3469,21 @@
     "id": "a3be7bf6-b5a6-4e48-833d-a1f1dd6d7a1e",
     "name": "LasVegasMotorSpeedway",
     "description": "Las Vegas Motor Speedway, located in Clark County, Nevada about 15 miles northeast of the Las Vegas Strip, is a 1,200-acre complex of multiple tracks for motorsports racing.\n\nThe 1.5-mile oval has hosted everything from NASCAR races, concerts and the Electric Daisy Carnival to the ReMax World Long Drive Championship and Red Bull Air Race World Championships through the years, and it is a facility like none other. The track features 20-degree banking in the turns and 9- to 12-degree straightaways, and NASCAR's elite can reach speeds nearing 200 miles per hour. LVMS has been known to create highly competitive races for decades and is a favorite among drivers.\n\nUpdated 11/17/2021: Rotated map and added additional spawn points for multi-ego simulations",
-    "copyright": "LG Electronics Inc.",
-    "licenseName": "User Content",
-    "ownerId": "455e6ba1-dc75-4e38-9163-590e2a52c9b2",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/c28d5f6a-5fa2-4bb2-8cde-2e471de0a2bd",
+    "lastVersionDate": "2021-11-17T10:24:35.000Z",
+    "lastAssetGuid": "c28d5f6a-5fa2-4bb2-8cde-2e471de0a2bd",
+    "ownerId": "455e6ba1-dc75-4e38-9163-590e2a52c9b2",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-04T07:52:07.000Z",
+    "updatedAt": "2021-11-17T10:28:29.000Z",
     "tags": [
       {
         "name": "indycar",
@@ -3234,15 +3508,11 @@
       "id": "455e6ba1-dc75-4e38-9163-590e2a52c9b2",
       "firstName": "Steve",
       "lastName": "Lemke"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74b08d2327d5e3998db"
+    "$oid": "6287d8bf7334ff8da9e50a34"
   },
   "cid": "781b04c8-43b4-431e-af55-1ae2b2efc873",
   "name": "Red Bull Ring Racetrack - F1TENTH",
@@ -3267,13 +3537,21 @@
     "id": "781b04c8-43b4-431e-af55-1ae2b2efc873",
     "name": "Red Bull Ring Racetrack - F1TENTH",
     "description": "This is the Red Bull Racetrack from Austria downscaled to 1:10 size for usage of the F1TENTH vehicle.\n\nThe Red Bull Ring is located Spielberg, Styria, Austria and is hosting Formula 1, Formula 2, Moto Gp and DTM competitions. We also created a corresponding 2D dataset that includes the X- and Y-position of the inner and outer bounds of the racetrack which can be found here: \nhttps://github.com/f1tenth/f1tenth_racetracks/tree/main/Spielberg\n\nThis also include a raceline (X-and Y-waypoints) that can be followed to drive fast around the track.",
-    "copyright": "Johannes Betz, Hongrui Zheng",
-    "licenseName": "User Content",
-    "ownerId": "4fd6309f-23e8-4189-9c74-aac6a14d5ff9",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d7747848-14b0-4c4e-b95a-1bf4a33e6f59",
+    "lastVersionDate": "2021-11-17T22:15:52.000Z",
+    "lastAssetGuid": "d7747848-14b0-4c4e-b95a-1bf4a33e6f59",
+    "ownerId": "4fd6309f-23e8-4189-9c74-aac6a14d5ff9",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Johannes Betz, Hongrui Zheng",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-05T19:38:59.000Z",
+    "updatedAt": "2021-11-17T22:15:52.000Z",
     "tags": [
       {
         "name": "f1tenth",
@@ -3322,15 +3600,11 @@
       "id": "4fd6309f-23e8-4189-9c74-aac6a14d5ff9",
       "firstName": "Johannes",
       "lastName": "Betz"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74c08d2327d5e3998dc"
+    "$oid": "6287d8bf7334ff8da9e50a35"
   },
   "cid": "9f88e25e-b2a5-4693-82b0-0b472e2bcbf1",
   "name": "CubeTownOfLeak",
@@ -3355,32 +3629,37 @@
     "id": "9f88e25e-b2a5-4693-82b0-0b472e2bcbf1",
     "name": "CubeTownOfLeak",
     "description": "testing UNITY3D",
-    "copyright": "Dong 308",
-    "licenseName": "User Content",
-    "ownerId": "a292e943-ed2b-4eea-b5a3-b3a97bd1dbb9",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d959797b-7ccf-4432-a78a-cd5d8c470f29",
+    "lastVersionDate": "2021-11-20T15:44:43.000Z",
+    "lastAssetGuid": "d959797b-7ccf-4432-a78a-cd5d8c470f29",
+    "ownerId": "a292e943-ed2b-4eea-b5a3-b3a97bd1dbb9",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Dong 308",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-19T14:53:20.000Z",
+    "updatedAt": "2021-11-20T15:44:43.000Z",
     "tags": [],
     "owner": {
       "id": "a292e943-ed2b-4eea-b5a3-b3a97bd1dbb9",
       "firstName": "Dong",
       "lastName": "308"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74c08d2327d5e3998dd"
+    "$oid": "6287d8c07334ff8da9e50a36"
   },
   "cid": "1ee387c5-e0b8-4f96-96fc-bbf7420bae7c",
   "name": "SAN Campus",
   "endpoint": "/api/v1/maps/1ee387c5-e0b8-4f96-96fc-bbf7420bae7c",
   "data": {
+    "assetGuid": "912f1f66-620a-42e4-88e0-7866d791f733",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -3392,6 +3671,7 @@
         "lastName": "Shaklab"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/912f1f66-620a-42e4-88e0-7866d791f733",
     "supportedSimulatorVersions": [
       "2021.1",
       "2021.1.1"
@@ -3399,32 +3679,37 @@
     "id": "1ee387c5-e0b8-4f96-96fc-bbf7420bae7c",
     "name": "SAN Campus",
     "description": "Digital twin of Khalifa University's SAN Campus with texture extracted from real photos.\nNPC paths need improvement, since road network is not extensive.\nPedestrians are not added yet.\nProject by AV Lab, KUCARS\nAbu Dhabi, United Arab Emirates\n",
-    "copyright": "Eyad Shaklab",
-    "licenseName": "User Content",
-    "ownerId": "c56d6523-3041-4dac-9628-50370a6173d2",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/912f1f66-620a-42e4-88e0-7866d791f733",
+    "lastVersionDate": "2021-11-20T19:37:41.000Z",
+    "lastAssetGuid": "912f1f66-620a-42e4-88e0-7866d791f733",
+    "ownerId": "c56d6523-3041-4dac-9628-50370a6173d2",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Eyad Shaklab",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-20T19:37:41.000Z",
+    "updatedAt": "2022-03-02T08:43:34.000Z",
     "tags": [],
     "owner": {
       "id": "c56d6523-3041-4dac-9628-50370a6173d2",
       "firstName": "Eyad",
       "lastName": "Shaklab"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74c08d2327d5e3998de"
+    "$oid": "6287d8c07334ff8da9e50a37"
   },
   "cid": "028556f2-b15f-4b74-ac25-665e73ba356f",
   "name": "Highway",
   "endpoint": "/api/v1/maps/028556f2-b15f-4b74-ac25-665e73ba356f",
   "data": {
+    "assetGuid": "8ca2fc23-f4d5-4655-8f28-52bb9e2a77c0",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -3436,6 +3721,7 @@
         "lastName": "Kench"
       }
     },
+    "geoJsonUrl": "/api/v1/assets/download/geojson/8ca2fc23-f4d5-4655-8f28-52bb9e2a77c0",
     "supportedSimulatorVersions": [
       "2021.2",
       "2021.2.2",
@@ -3445,27 +3731,31 @@
     "id": "028556f2-b15f-4b74-ac25-665e73ba356f",
     "name": "Highway",
     "description": "",
-    "copyright": "Yasuo",
-    "licenseName": "User Content",
-    "ownerId": "28cac999-55cd-4b09-94bf-0e07ddd916b3",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/8ca2fc23-f4d5-4655-8f28-52bb9e2a77c0",
+    "lastVersionDate": "2021-11-29T01:47:05.000Z",
+    "lastAssetGuid": "8ca2fc23-f4d5-4655-8f28-52bb9e2a77c0",
+    "ownerId": "28cac999-55cd-4b09-94bf-0e07ddd916b3",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yasuo",
     "hdmaps": "apollo30,apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-23T10:30:28.000Z",
+    "updatedAt": "2021-11-29T01:47:05.000Z",
     "tags": [],
     "owner": {
       "id": "28cac999-55cd-4b09-94bf-0e07ddd916b3",
       "firstName": "Tahm",
       "lastName": "Kench"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74d08d2327d5e3998df"
+    "$oid": "6287d8c17334ff8da9e50a38"
   },
   "cid": "736709ef-8a65-46e2-ae32-d564cf5753b8",
   "name": "ParkingLot1",
@@ -3490,27 +3780,31 @@
     "id": "736709ef-8a65-46e2-ae32-d564cf5753b8",
     "name": "ParkingLot1",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/1e251ace-a45d-40f2-beb5-837896d4aa60",
+    "lastVersionDate": "2021-11-24T09:57:35.000Z",
+    "lastAssetGuid": "1e251ace-a45d-40f2-beb5-837896d4aa60",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-11-24T09:31:58.000Z",
+    "updatedAt": "2021-11-24T09:57:35.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74d08d2327d5e3998e0"
+    "$oid": "6287d8c17334ff8da9e50a39"
   },
   "cid": "08a90728-c32c-40b2-ac51-d065b31f5aab",
   "name": "NarrowLane",
@@ -3535,27 +3829,31 @@
     "id": "08a90728-c32c-40b2-ac51-d065b31f5aab",
     "name": "NarrowLane",
     "description": "",
-    "copyright": "Mais Jamal",
-    "licenseName": "User Content",
-    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/3680d398-4f15-430b-9d2c-4e2a4ee6650f",
+    "lastVersionDate": "2021-12-01T13:36:35.000Z",
+    "lastAssetGuid": "3680d398-4f15-430b-9d2c-4e2a4ee6650f",
+    "ownerId": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Mais Jamal",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-01T09:54:27.000Z",
+    "updatedAt": "2021-12-01T13:36:35.000Z",
     "tags": [],
     "owner": {
       "id": "d0c68d95-f8e8-4e92-ad7f-85f100e76ab1",
       "firstName": "Mais",
       "lastName": "Jamal"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74e08d2327d5e3998e1"
+    "$oid": "6287d8c17334ff8da9e50a3a"
   },
   "cid": "87fb50c8-848a-43f4-9437-19c9b66fbf72",
   "name": "SFITIC_demo_01",
@@ -3580,27 +3878,31 @@
     "id": "87fb50c8-848a-43f4-9437-19c9b66fbf72",
     "name": "SFITIC_demo_01",
     "description": "",
-    "copyright": "y haha",
-    "licenseName": "User Content",
-    "ownerId": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/80e5f06d-d3f5-467f-9d13-eef6a6f4eadf",
+    "lastVersionDate": "2021-12-07T03:46:22.000Z",
+    "lastAssetGuid": "80e5f06d-d3f5-467f-9d13-eef6a6f4eadf",
+    "ownerId": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "y haha",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-07T03:46:22.000Z",
+    "updatedAt": "2021-12-07T03:47:29.000Z",
     "tags": [],
     "owner": {
       "id": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
       "firstName": "y",
       "lastName": "haha"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74e08d2327d5e3998e2"
+    "$oid": "6287d8c27334ff8da9e50a3b"
   },
   "cid": "932757e6-6ffd-46f8-9881-ca9d466a3cd7",
   "name": "map1207_02",
@@ -3625,27 +3927,31 @@
     "id": "932757e6-6ffd-46f8-9881-ca9d466a3cd7",
     "name": "map1207_02",
     "description": "",
-    "copyright": "y haha",
-    "licenseName": "User Content",
-    "ownerId": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/dd8232c4-694d-44c7-991b-fe152d7779ce",
+    "lastVersionDate": "2021-12-13T09:05:40.000Z",
+    "lastAssetGuid": "dd8232c4-694d-44c7-991b-fe152d7779ce",
+    "ownerId": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "y haha",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-07T10:12:22.000Z",
+    "updatedAt": "2021-12-13T09:05:40.000Z",
     "tags": [],
     "owner": {
       "id": "831b3626-c34d-4cce-848d-9bbbac3b8d57",
       "firstName": "y",
       "lastName": "haha"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74e08d2327d5e3998e3"
+    "$oid": "6287d8c27334ff8da9e50a3c"
   },
   "cid": "fa5c9fde-acd5-44a0-b0f6-a237daa47f45",
   "name": "AshCity",
@@ -3670,27 +3976,31 @@
     "id": "fa5c9fde-acd5-44a0-b0f6-a237daa47f45",
     "name": "AshCity",
     "description": "AshCity",
-    "copyright": "Li Fei",
-    "licenseName": "User Content",
-    "ownerId": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/df2ffe18-dd1a-4dfc-b1f2-a44a969d5f9a",
+    "lastVersionDate": "2022-01-21T07:51:20.000Z",
+    "lastAssetGuid": "df2ffe18-dd1a-4dfc-b1f2-a44a969d5f9a",
+    "ownerId": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Li Fei",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-17T06:22:22.000Z",
+    "updatedAt": "2022-01-21T07:51:20.000Z",
     "tags": [],
     "owner": {
       "id": "44b8690b-5eb3-4d61-bb87-81c2c7fb3214",
       "firstName": "Li",
       "lastName": "Fei"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74f08d2327d5e3998e4"
+    "$oid": "6287d8c27334ff8da9e50a3d"
   },
   "cid": "40c22dbe-92bd-4ed4-acbd-4c6b4c440220",
   "name": "Test",
@@ -3715,27 +4025,31 @@
     "id": "40c22dbe-92bd-4ed4-acbd-4c6b4c440220",
     "name": "Test",
     "description": "",
-    "copyright": "erer rrree",
-    "licenseName": "User Content",
-    "ownerId": "520e9301-0409-4319-8a4f-9d918423a4a2",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/f1dbb6d2-afb6-42d3-89a2-266b3747d26b",
+    "lastVersionDate": "2021-12-19T13:34:37.000Z",
+    "lastAssetGuid": "f1dbb6d2-afb6-42d3-89a2-266b3747d26b",
+    "ownerId": "520e9301-0409-4319-8a4f-9d918423a4a2",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "erer rrree",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-18T12:53:30.000Z",
+    "updatedAt": "2021-12-19T13:34:37.000Z",
     "tags": [],
     "owner": {
       "id": "520e9301-0409-4319-8a4f-9d918423a4a2",
       "firstName": "erer",
       "lastName": "rrree"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74f08d2327d5e3998e5"
+    "$oid": "6287d8c37334ff8da9e50a3e"
   },
   "cid": "beab8990-95ce-4f15-8d30-66eb445899a8",
   "name": "my map",
@@ -3760,27 +4074,31 @@
     "id": "beab8990-95ce-4f15-8d30-66eb445899a8",
     "name": "my map",
     "description": "",
-    "copyright": "salih çakrak",
-    "licenseName": "User Content",
-    "ownerId": "1c6824a8-81f4-4404-8d5f-a937a68d5508",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d0be5c1d-f3b0-4975-953f-6d309ceac2d4",
+    "lastVersionDate": "2021-12-22T12:28:26.000Z",
+    "lastAssetGuid": "d0be5c1d-f3b0-4975-953f-6d309ceac2d4",
+    "ownerId": "1c6824a8-81f4-4404-8d5f-a937a68d5508",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "salih çakrak",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-22T12:28:26.000Z",
+    "updatedAt": "2021-12-22T13:30:40.000Z",
     "tags": [],
     "owner": {
       "id": "1c6824a8-81f4-4404-8d5f-a937a68d5508",
       "firstName": "salih",
       "lastName": "çakrak"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a74f08d2327d5e3998e6"
+    "$oid": "6287d8c37334ff8da9e50a3f"
   },
   "cid": "1181b283-5a20-4e68-98da-5796ccef5d67",
   "name": "NewMap",
@@ -3805,27 +4123,31 @@
     "id": "1181b283-5a20-4e68-98da-5796ccef5d67",
     "name": "NewMap",
     "description": "",
-    "copyright": "Dominik Schreiber",
-    "licenseName": "User Content",
-    "ownerId": "5d41b451-2a69-4e85-8fbd-def1b7fc9c51",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/29376801-f0f1-41af-b95e-ed149106de7d",
+    "lastVersionDate": "2021-12-28T16:21:44.000Z",
+    "lastAssetGuid": "29376801-f0f1-41af-b95e-ed149106de7d",
+    "ownerId": "5d41b451-2a69-4e85-8fbd-def1b7fc9c51",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Dominik Schreiber",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2021-12-28T16:21:44.000Z",
+    "updatedAt": "2022-01-17T15:51:32.000Z",
     "tags": [],
     "owner": {
       "id": "5d41b451-2a69-4e85-8fbd-def1b7fc9c51",
       "firstName": "Dominik",
       "lastName": "Schreiber"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75008d2327d5e3998e7"
+    "$oid": "6287d8c37334ff8da9e50a40"
   },
   "cid": "f5e3374c-b71a-4e30-adcb-500ffc8bae0d",
   "name": "ChancellorsPlaceV1",
@@ -3850,27 +4172,31 @@
     "id": "f5e3374c-b71a-4e30-adcb-500ffc8bae0d",
     "name": "ChancellorsPlaceV1",
     "description": "",
-    "copyright": "Vedant Bhandari",
-    "licenseName": "User Content",
-    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/cc0eba47-b814-4d65-a7a9-649980944061",
+    "lastVersionDate": "2022-01-05T00:57:11.000Z",
+    "lastAssetGuid": "cc0eba47-b814-4d65-a7a9-649980944061",
+    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Vedant Bhandari",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-05T00:14:55.000Z",
+    "updatedAt": "2022-01-05T05:20:39.000Z",
     "tags": [],
     "owner": {
       "id": "bd6c4645-3ce7-4d65-9b88-28178204e185",
       "firstName": "Vedant",
       "lastName": "Bhandari"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75008d2327d5e3998e8"
+    "$oid": "6287d8c47334ff8da9e50a41"
   },
   "cid": "9a734c9d-adfb-4efa-9a61-5ec8aa347873",
   "name": "RubisTestbed",
@@ -3895,27 +4221,31 @@
     "id": "9a734c9d-adfb-4efa-9a61-5ec8aa347873",
     "name": "RubisTestbed",
     "description": "rubis testbed",
-    "copyright": "rubis",
-    "licenseName": "User Content",
-    "ownerId": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d07a3bfe-85d1-4595-ad85-b53b08ef5e9d",
+    "lastVersionDate": "2022-01-20T03:27:58.000Z",
+    "lastAssetGuid": "d07a3bfe-85d1-4595-ad85-b53b08ef5e9d",
+    "ownerId": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "rubis",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-10T11:11:46.000Z",
+    "updatedAt": "2022-01-20T03:27:58.000Z",
     "tags": [],
     "owner": {
       "id": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
       "firstName": "dongmin",
       "lastName": "shin"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75108d2327d5e3998e9"
+    "$oid": "6287d8c47334ff8da9e50a42"
   },
   "cid": "e9e1d5ae-ea05-45b2-9871-4c41c61ba943",
   "name": "Custom2",
@@ -3940,13 +4270,21 @@
     "id": "e9e1d5ae-ea05-45b2-9871-4c41c61ba943",
     "name": "Custom2",
     "description": "Custom2",
-    "copyright": "Ruben Zuurman",
-    "licenseName": "User Content",
-    "ownerId": "504372b1-2f16-44b9-b347-c5c36851ee49",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/67119da8-87f6-4c7c-9e37-e8ab5b5312ff",
+    "lastVersionDate": "2022-01-18T15:12:31.000Z",
+    "lastAssetGuid": "67119da8-87f6-4c7c-9e37-e8ab5b5312ff",
+    "ownerId": "504372b1-2f16-44b9-b347-c5c36851ee49",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Ruben Zuurman",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-13T13:54:58.000Z",
+    "updatedAt": "2022-01-18T15:12:31.000Z",
     "tags": [
       {
         "name": "asm2",
@@ -3959,15 +4297,11 @@
       "id": "504372b1-2f16-44b9-b347-c5c36851ee49",
       "firstName": "Ruben",
       "lastName": "Zuurman"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75108d2327d5e3998ea"
+    "$oid": "6287d8c57334ff8da9e50a43"
   },
   "cid": "17950bdf-3dde-4d2f-bba0-c7eb26c18623",
   "name": "obstacleTestAddPose",
@@ -3992,13 +4326,21 @@
     "id": "17950bdf-3dde-4d2f-bba0-c7eb26c18623",
     "name": "obstacleTestAddPose",
     "description": "car--(1.25,5.8)\nobstacle1-red --(0,-3.5)\nobstacle2 --(5,-3.5)\ncg-rear --(1.5618)\ncar--(2.8118,5.8)\nobstacle1-red --(1.5618,-3.5)\nobstacle2 --(6.5618,-3.5)",
-    "copyright": "xu sha",
-    "licenseName": "User Content",
-    "ownerId": "8e9d5710-f51a-44dd-983d-b6b42b753327",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/7835bb9f-1a86-44c8-915c-81ad5889f9fb",
+    "lastVersionDate": "2022-01-17T08:59:09.000Z",
+    "lastAssetGuid": "7835bb9f-1a86-44c8-915c-81ad5889f9fb",
+    "ownerId": "8e9d5710-f51a-44dd-983d-b6b42b753327",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "xu sha",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-17T08:59:09.000Z",
+    "updatedAt": "2022-01-20T10:46:22.000Z",
     "tags": [
       {
         "name": "v1",
@@ -4011,15 +4353,11 @@
       "id": "8e9d5710-f51a-44dd-983d-b6b42b753327",
       "firstName": "xu",
       "lastName": "sha"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75108d2327d5e3998eb"
+    "$oid": "6287d8c57334ff8da9e50a44"
   },
   "cid": "28b8f6c5-f4fe-484f-9f10-f7a693d8eb79",
   "name": "RubisTestbedStatic",
@@ -4044,27 +4382,31 @@
     "id": "28b8f6c5-f4fe-484f-9f10-f7a693d8eb79",
     "name": "RubisTestbedStatic",
     "description": "",
-    "copyright": "dongmin shin",
-    "licenseName": "User Content",
-    "ownerId": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/98619789-79c8-40a2-aa22-3a3320791268",
+    "lastVersionDate": "2022-01-20T03:23:51.000Z",
+    "lastAssetGuid": "98619789-79c8-40a2-aa22-3a3320791268",
+    "ownerId": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "dongmin shin",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-20T03:23:51.000Z",
+    "updatedAt": "2022-01-20T03:24:06.000Z",
     "tags": [],
     "owner": {
       "id": "40fc9f09-56a6-47e2-a979-10019d92e8c5",
       "firstName": "dongmin",
       "lastName": "shin"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75208d2327d5e3998ec"
+    "$oid": "6287d8c57334ff8da9e50a45"
   },
   "cid": "6d1d6acc-85eb-4364-8f8e-3ff347581de0",
   "name": "Custom3",
@@ -4089,13 +4431,21 @@
     "id": "6d1d6acc-85eb-4364-8f8e-3ff347581de0",
     "name": "Custom3",
     "description": "",
-    "copyright": "Ruben Zuurman",
-    "licenseName": "User Content",
-    "ownerId": "504372b1-2f16-44b9-b347-c5c36851ee49",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/9faeba05-13cf-409a-ae6e-8769d3912889",
+    "lastVersionDate": "2022-01-20T22:16:14.000Z",
+    "lastAssetGuid": "9faeba05-13cf-409a-ae6e-8769d3912889",
+    "ownerId": "504372b1-2f16-44b9-b347-c5c36851ee49",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Ruben Zuurman",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-20T12:57:51.000Z",
+    "updatedAt": "2022-01-20T22:16:14.000Z",
     "tags": [
       {
         "name": "asm2",
@@ -4108,21 +4458,17 @@
       "id": "504372b1-2f16-44b9-b347-c5c36851ee49",
       "firstName": "Ruben",
       "lastName": "Zuurman"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75208d2327d5e3998ed"
+    "$oid": "6287d8c67334ff8da9e50a46"
   },
   "cid": "b7a731aa-0ff9-4b76-aec3-675f002c882e",
   "name": "Bearcar Course 1",
   "endpoint": "/api/v1/maps/b7a731aa-0ff9-4b76-aec3-675f002c882e",
   "data": {
-    "assetGuid": "e9fb0a59-4a58-4c83-9f38-e40449103d99",
+    "assetGuid": "2612c2e7-2549-44ae-8d54-d22e82633bd8",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -4134,7 +4480,7 @@
         "lastName": "Grosenick"
       }
     },
-    "geoJsonUrl": "/api/v1/assets/download/geojson/e9fb0a59-4a58-4c83-9f38-e40449103d99",
+    "geoJsonUrl": "/api/v1/assets/download/geojson/2612c2e7-2549-44ae-8d54-d22e82633bd8",
     "supportedSimulatorVersions": [
       "2021.3",
       "2021.2",
@@ -4143,27 +4489,31 @@
     "id": "b7a731aa-0ff9-4b76-aec3-675f002c882e",
     "name": "Bearcar Course 1",
     "description": "Realworld Version of the Bearcar Course",
-    "copyright": "Philipp Grosenick",
-    "licenseName": "User Content",
-    "ownerId": "778d1fc7-9072-45ab-bf1b-375d0e73b121",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/2612c2e7-2549-44ae-8d54-d22e82633bd8",
+    "lastVersionDate": "2022-02-09T16:10:55.000Z",
+    "lastAssetGuid": "2612c2e7-2549-44ae-8d54-d22e82633bd8",
+    "ownerId": "778d1fc7-9072-45ab-bf1b-375d0e73b121",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Philipp Grosenick",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-01-25T13:41:17.000Z",
+    "updatedAt": "2022-02-09T16:10:55.000Z",
     "tags": [],
     "owner": {
       "id": "778d1fc7-9072-45ab-bf1b-375d0e73b121",
       "firstName": "Philipp",
       "lastName": "Grosenick"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75308d2327d5e3998ee"
+    "$oid": "6287d8c67334ff8da9e50a47"
   },
   "cid": "78f68b6f-f7e7-4886-a7e4-10d6aa766ce6",
   "name": "PiazzaCastello",
@@ -4188,27 +4538,31 @@
     "id": "78f68b6f-f7e7-4886-a7e4-10d6aa766ce6",
     "name": "PiazzaCastello",
     "description": "",
-    "copyright": "salvatore dorner",
-    "licenseName": "User Content",
-    "ownerId": "fd036841-d035-49c0-9703-7d716d0b9170",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/da80912c-e063-4914-a2d2-5a4fc3e4692c",
+    "lastVersionDate": "2022-02-03T08:57:49.000Z",
+    "lastAssetGuid": "da80912c-e063-4914-a2d2-5a4fc3e4692c",
+    "ownerId": "fd036841-d035-49c0-9703-7d716d0b9170",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "salvatore dorner",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-01T15:22:18.000Z",
+    "updatedAt": "2022-02-03T08:57:49.000Z",
     "tags": [],
     "owner": {
       "id": "fd036841-d035-49c0-9703-7d716d0b9170",
       "firstName": "salvatore",
       "lastName": "dorner"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75308d2327d5e3998ef"
+    "$oid": "6287d8c67334ff8da9e50a48"
   },
   "cid": "00601ecf-2dc1-44ac-a9f5-05e442d53d23",
   "name": "PJ_HILLS_3",
@@ -4233,27 +4587,31 @@
     "id": "00601ecf-2dc1-44ac-a9f5-05e442d53d23",
     "name": "PJ_HILLS_3",
     "description": "",
-    "copyright": "Vedant Bhandari",
-    "licenseName": "User Content",
-    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/9f75d1da-fedb-4699-a2ee-f2829dbdb5d8",
+    "lastVersionDate": "2022-02-02T01:39:28.000Z",
+    "lastAssetGuid": "9f75d1da-fedb-4699-a2ee-f2829dbdb5d8",
+    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Vedant Bhandari",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-02T01:39:28.000Z",
+    "updatedAt": "2022-02-02T01:39:36.000Z",
     "tags": [],
     "owner": {
       "id": "bd6c4645-3ce7-4d65-9b88-28178204e185",
       "firstName": "Vedant",
       "lastName": "Bhandari"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75308d2327d5e3998f0"
+    "$oid": "6287d8c77334ff8da9e50a49"
   },
   "cid": "93242453-a167-4e67-9a0c-cb2035d756c3",
   "name": "PJ_HILLS_4",
@@ -4278,27 +4636,31 @@
     "id": "93242453-a167-4e67-9a0c-cb2035d756c3",
     "name": "PJ_HILLS_4",
     "description": "",
-    "copyright": "Vedant Bhandari",
-    "licenseName": "User Content",
-    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/e7837fcf-8abd-4b75-a6e3-2138fea8e78d",
+    "lastVersionDate": "2022-02-02T03:29:40.000Z",
+    "lastAssetGuid": "e7837fcf-8abd-4b75-a6e3-2138fea8e78d",
+    "ownerId": "bd6c4645-3ce7-4d65-9b88-28178204e185",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Vedant Bhandari",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-02T01:50:56.000Z",
+    "updatedAt": "2022-02-02T03:29:40.000Z",
     "tags": [],
     "owner": {
       "id": "bd6c4645-3ce7-4d65-9b88-28178204e185",
       "firstName": "Vedant",
       "lastName": "Bhandari"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75408d2327d5e3998f1"
+    "$oid": "6287d8c77334ff8da9e50a4a"
   },
   "cid": "39eb9b24-1a64-4f3a-8d20-afaf3a922c47",
   "name": "test",
@@ -4323,27 +4685,31 @@
     "id": "39eb9b24-1a64-4f3a-8d20-afaf3a922c47",
     "name": "test",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/d0b84cc6-f4d9-4323-9d4b-9cce8239d9a8",
+    "lastVersionDate": "2022-02-17T18:43:54.000Z",
+    "lastAssetGuid": "d0b84cc6-f4d9-4323-9d4b-9cce8239d9a8",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-17T18:43:54.000Z",
+    "updatedAt": "2022-02-17T18:44:00.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75408d2327d5e3998f2"
+    "$oid": "6287d8c87334ff8da9e50a4b"
   },
   "cid": "303195d2-0269-44aa-a580-5723f7678d87",
   "name": "SanFrancisco_test",
@@ -4368,27 +4734,31 @@
     "id": "303195d2-0269-44aa-a580-5723f7678d87",
     "name": "SanFrancisco_test",
     "description": "San Francisco",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/20d202d9-f3a2-4cd9-8bac-b3cec90a2314",
+    "lastVersionDate": "2022-02-18T05:27:00.000Z",
+    "lastAssetGuid": "20d202d9-f3a2-4cd9-8bac-b3cec90a2314",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-18T05:27:00.000Z",
+    "updatedAt": "2022-02-18T05:27:31.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75408d2327d5e3998f3"
+    "$oid": "6287d8c87334ff8da9e50a4c"
   },
   "cid": "12f6b348-e268-4d04-b6cf-c7859473b7af",
   "name": "test",
@@ -4413,27 +4783,31 @@
     "id": "12f6b348-e268-4d04-b6cf-c7859473b7af",
     "name": "test",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/128c62e2-17e0-49d1-b275-01b230704d66",
+    "lastVersionDate": "2022-02-22T16:46:12.000Z",
+    "lastAssetGuid": "128c62e2-17e0-49d1-b275-01b230704d66",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-22T16:46:12.000Z",
+    "updatedAt": "2022-02-22T16:46:17.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75508d2327d5e3998f4"
+    "$oid": "6287d8c97334ff8da9e50a4d"
   },
   "cid": "fe82cea3-9ae8-47ce-8a7e-51728d2b4190",
   "name": "test1",
@@ -4458,27 +4832,31 @@
     "id": "fe82cea3-9ae8-47ce-8a7e-51728d2b4190",
     "name": "test1",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/84913f83-5ba5-40fb-bf0b-d8aa24b59de8",
+    "lastVersionDate": "2022-02-22T17:06:42.000Z",
+    "lastAssetGuid": "84913f83-5ba5-40fb-bf0b-d8aa24b59de8",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-22T17:06:42.000Z",
+    "updatedAt": "2022-02-22T17:06:48.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75508d2327d5e3998f5"
+    "$oid": "6287d8c97334ff8da9e50a4e"
   },
   "cid": "1f903cb2-477e-44aa-a8c0-a29af6d5e433",
   "name": "SanFrancisco",
@@ -4503,27 +4881,31 @@
     "id": "1f903cb2-477e-44aa-a8c0-a29af6d5e433",
     "name": "SanFrancisco",
     "description": "San Francisco map without TrafficLane marks (only one HD map annotation), this can be used to create accident/near miss scenarios in the Visual Scenario Editor without waypoints snapping to lanes.",
-    "copyright": "Laksh Jaisinghani",
-    "licenseName": "User Content",
-    "ownerId": "f7fee815-2737-45e4-9f20-6822cbf7dd77",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/dc39550a-a64f-4947-9ee5-99cbb7098c06",
+    "lastVersionDate": "2022-02-24T02:22:04.000Z",
+    "lastAssetGuid": "dc39550a-a64f-4947-9ee5-99cbb7098c06",
+    "ownerId": "f7fee815-2737-45e4-9f20-6822cbf7dd77",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Laksh Jaisinghani",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-02-24T02:22:04.000Z",
+    "updatedAt": "2022-02-24T03:59:31.000Z",
     "tags": [],
     "owner": {
       "id": "f7fee815-2737-45e4-9f20-6822cbf7dd77",
       "firstName": "Laksh",
       "lastName": "Jaisinghani"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75508d2327d5e3998f6"
+    "$oid": "6287d8c97334ff8da9e50a4f"
   },
   "cid": "a6201211-12dc-45ae-9501-4596c16a7656",
   "name": "TestMap_okz",
@@ -4548,27 +4930,31 @@
     "id": "a6201211-12dc-45ae-9501-4596c16a7656",
     "name": "TestMap_okz",
     "description": "testing",
-    "copyright": "Asfandyar Orakzai",
-    "licenseName": "User Content",
-    "ownerId": "cefab54b-1633-4780-89de-888eb9bd4b03",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/fbe4d7f5-e02d-46f7-8e26-2e16b9d2dd94",
+    "lastVersionDate": "2022-03-01T23:40:23.000Z",
+    "lastAssetGuid": "fbe4d7f5-e02d-46f7-8e26-2e16b9d2dd94",
+    "ownerId": "cefab54b-1633-4780-89de-888eb9bd4b03",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Asfandyar Orakzai",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-01T23:40:23.000Z",
+    "updatedAt": "2022-03-02T01:44:07.000Z",
     "tags": [],
     "owner": {
       "id": "cefab54b-1633-4780-89de-888eb9bd4b03",
       "firstName": "Asfandyar",
       "lastName": "Orakzai"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75608d2327d5e3998f7"
+    "$oid": "6287d8ca7334ff8da9e50a50"
   },
   "cid": "59ce40bb-f6fd-41dc-abcf-0bbb31f7caca",
   "name": "SPARK Teknofest Parkur",
@@ -4593,27 +4979,31 @@
     "id": "59ce40bb-f6fd-41dc-abcf-0bbb31f7caca",
     "name": "SPARK Teknofest Parkur",
     "description": "",
-    "copyright": "KU AIRS: SPARK",
-    "licenseName": "User Content",
-    "ownerId": "ccf1e4bd-9573-4945-9e63-9b40d55a3c8a",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/18462b01-a53c-45c3-84ab-953eac3e85ce",
+    "lastVersionDate": "2022-04-21T11:59:27.000Z",
+    "lastAssetGuid": "18462b01-a53c-45c3-84ab-953eac3e85ce",
+    "ownerId": "ccf1e4bd-9573-4945-9e63-9b40d55a3c8a",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "KU AIRS: SPARK",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-03T19:46:56.000Z",
+    "updatedAt": "2022-04-21T11:59:27.000Z",
     "tags": [],
     "owner": {
       "id": "ccf1e4bd-9573-4945-9e63-9b40d55a3c8a",
       "firstName": "Özgür",
       "lastName": "Kuzucu"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75608d2327d5e3998f8"
+    "$oid": "6287d8ca7334ff8da9e50a51"
   },
   "cid": "43adecf3-058e-446a-83cb-be261c8ab0e8",
   "name": "LaneAvenueMoreObjects",
@@ -4638,27 +5028,31 @@
     "id": "43adecf3-058e-446a-83cb-be261c8ab0e8",
     "name": "LaneAvenueMoreObjects",
     "description": "",
-    "copyright": "Griffin Leisenring",
-    "licenseName": "User Content",
-    "ownerId": "448f779c-964b-4b37-89e7-38f09c117c3a",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/60e08c09-e475-416f-be63-2257dd648652",
+    "lastVersionDate": "2022-03-07T19:47:13.000Z",
+    "lastAssetGuid": "60e08c09-e475-416f-be63-2257dd648652",
+    "ownerId": "448f779c-964b-4b37-89e7-38f09c117c3a",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Griffin Leisenring",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-07T19:37:54.000Z",
+    "updatedAt": "2022-04-19T20:45:24.000Z",
     "tags": [],
     "owner": {
       "id": "448f779c-964b-4b37-89e7-38f09c117c3a",
       "firstName": "Griffin",
       "lastName": "Leisenring"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75708d2327d5e3998f9"
+    "$oid": "6287d8ca7334ff8da9e50a52"
   },
   "cid": "caffca27-af22-4715-9b1e-b9f1311f3ea5",
   "name": "SPARK Teknofest Harita 2",
@@ -4683,27 +5077,31 @@
     "id": "caffca27-af22-4715-9b1e-b9f1311f3ea5",
     "name": "SPARK Teknofest Harita 2",
     "description": "Robotaksi ekiplerinin yararlanması için public yapılmıştır.",
-    "copyright": "Yiğithan Gediz",
-    "licenseName": "User Content",
-    "ownerId": "3854f8dc-b424-44c6-a1d0-1bcd3b11d0e7",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/37248373-0d31-4ed2-8157-bf278114985b",
+    "lastVersionDate": "2022-03-18T15:14:39.000Z",
+    "lastAssetGuid": "37248373-0d31-4ed2-8157-bf278114985b",
+    "ownerId": "3854f8dc-b424-44c6-a1d0-1bcd3b11d0e7",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Yiğithan Gediz",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-13T08:57:39.000Z",
+    "updatedAt": "2022-03-18T15:14:39.000Z",
     "tags": [],
     "owner": {
       "id": "3854f8dc-b424-44c6-a1d0-1bcd3b11d0e7",
       "firstName": "Yiğithan",
       "lastName": "Gediz"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75708d2327d5e3998fa"
+    "$oid": "6287d8cb7334ff8da9e50a53"
   },
   "cid": "9ecd3b16-a345-4c7a-ab0d-a806d38ebfac",
   "name": "11",
@@ -4728,27 +5126,31 @@
     "id": "9ecd3b16-a345-4c7a-ab0d-a806d38ebfac",
     "name": "11",
     "description": "San Francisco",
-    "copyright": "LIAO YIFAN",
-    "licenseName": "User Content",
-    "ownerId": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/33086dd4-d08e-461e-a36b-2051daf2a677",
+    "lastVersionDate": "2022-03-19T09:13:13.000Z",
+    "lastAssetGuid": "33086dd4-d08e-461e-a36b-2051daf2a677",
+    "ownerId": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LIAO YIFAN",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-19T09:13:13.000Z",
+    "updatedAt": "2022-03-19T09:13:33.000Z",
     "tags": [],
     "owner": {
       "id": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
       "firstName": "LIAO",
       "lastName": "YIFAN"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75708d2327d5e3998fb"
+    "$oid": "6287d8cb7334ff8da9e50a54"
   },
   "cid": "2a8bf51d-35f1-4e4f-b2e9-d7f8252753ad",
   "name": "test_function",
@@ -4773,27 +5175,31 @@
     "id": "2a8bf51d-35f1-4e4f-b2e9-d7f8252753ad",
     "name": "test_function",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/735159e4-5d8f-40eb-bec3-18e92a13aad2",
+    "lastVersionDate": "2022-03-19T14:07:31.000Z",
+    "lastAssetGuid": "735159e4-5d8f-40eb-bec3-18e92a13aad2",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-19T14:07:31.000Z",
+    "updatedAt": "2022-03-19T14:07:54.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75808d2327d5e3998fc"
+    "$oid": "6287d8cb7334ff8da9e50a55"
   },
   "cid": "1a9c84b0-c223-4040-a857-377fd6858ec8",
   "name": "test_function11",
@@ -4818,27 +5224,31 @@
     "id": "1a9c84b0-c223-4040-a857-377fd6858ec8",
     "name": "test_function11",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/3588a4fb-5ec8-4934-9e85-c160fa2c1b8c",
+    "lastVersionDate": "2022-03-20T16:29:03.000Z",
+    "lastAssetGuid": "3588a4fb-5ec8-4934-9e85-c160fa2c1b8c",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-20T16:29:03.000Z",
+    "updatedAt": "2022-03-20T16:29:16.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75808d2327d5e3998fd"
+    "$oid": "6287d8cc7334ff8da9e50a56"
   },
   "cid": "df3cefbb-6d85-44fb-a86d-45b4222d59a8",
   "name": "test_function2",
@@ -4863,27 +5273,31 @@
     "id": "df3cefbb-6d85-44fb-a86d-45b4222d59a8",
     "name": "test_function2",
     "description": "",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/1cb42bee-c67d-4ca6-86ea-e3913a8dd4cf",
+    "lastVersionDate": "2022-03-20T17:57:48.000Z",
+    "lastAssetGuid": "1cb42bee-c67d-4ca6-86ea-e3913a8dd4cf",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-20T17:57:48.000Z",
+    "updatedAt": "2022-03-20T17:57:58.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75808d2327d5e3998fe"
+    "$oid": "6287d8cc7334ff8da9e50a57"
   },
   "cid": "12da60a7-2fc9-474d-a62a-5cc08cb97fe8",
   "name": "SanFrancisco_correct",
@@ -4908,27 +5322,31 @@
     "id": "12da60a7-2fc9-474d-a62a-5cc08cb97fe8",
     "name": "SanFrancisco_correct",
     "description": "San Francisco",
-    "copyright": "LIAO YIFAN",
-    "licenseName": "User Content",
-    "ownerId": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/49714179-ca29-49f4-a994-e6fc3dc9913a",
+    "lastVersionDate": "2022-03-24T11:48:48.000Z",
+    "lastAssetGuid": "49714179-ca29-49f4-a994-e6fc3dc9913a",
+    "ownerId": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LIAO YIFAN",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-24T11:48:48.000Z",
+    "updatedAt": "2022-03-24T11:49:02.000Z",
     "tags": [],
     "owner": {
       "id": "c51d9ab3-b757-4f79-b4c0-84d93a0d640a",
       "firstName": "LIAO",
       "lastName": "YIFAN"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75908d2327d5e3998ff"
+    "$oid": "6287d8cd7334ff8da9e50a58"
   },
   "cid": "4a05f900-5509-43f6-9dc2-ac11ee17a624",
   "name": "CubeTown_alper_spark",
@@ -4953,27 +5371,31 @@
     "id": "4a05f900-5509-43f6-9dc2-ac11ee17a624",
     "name": "CubeTown_alper_spark",
     "description": "deneme_alper",
-    "copyright": "Alper Göktepe",
-    "licenseName": "User Content",
-    "ownerId": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/ebe4611c-4c41-406d-956b-755855352bac",
+    "lastVersionDate": "2022-03-25T12:09:26.000Z",
+    "lastAssetGuid": "ebe4611c-4c41-406d-956b-755855352bac",
+    "ownerId": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Alper Göktepe",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-25T12:09:26.000Z",
+    "updatedAt": "2022-04-19T16:34:44.000Z",
     "tags": [],
     "owner": {
       "id": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
       "firstName": "Alper",
       "lastName": "Göktepe"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75908d2327d5e399900"
+    "$oid": "6287d8cd7334ff8da9e50a59"
   },
   "cid": "29786232-3229-4ca6-83d9-cef28101e811",
   "name": "deneme1_TeknofestSign",
@@ -4998,27 +5420,31 @@
     "id": "29786232-3229-4ca6-83d9-cef28101e811",
     "name": "deneme1_TeknofestSign",
     "description": "sağ/sol dönülür/dönülmez, dönel kavşak, ileri ve sağa zorunlu, trafik ışıkları",
-    "copyright": "Alper Göktepe",
-    "licenseName": "User Content",
-    "ownerId": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/a67a300f-66e4-485b-b921-b0a238419c8e",
+    "lastVersionDate": "2022-03-27T09:16:15.000Z",
+    "lastAssetGuid": "a67a300f-66e4-485b-b921-b0a238419c8e",
+    "ownerId": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Alper Göktepe",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-03-27T07:56:36.000Z",
+    "updatedAt": "2022-03-27T09:19:25.000Z",
     "tags": [],
     "owner": {
       "id": "87b4dd72-a273-4c96-92e9-ab9de55fb959",
       "firstName": "Alper",
       "lastName": "Göktepe"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75a08d2327d5e399901"
+    "$oid": "6287d8cd7334ff8da9e50a5a"
   },
   "cid": "3a2b5432-98e7-4f97-a852-3e2c65080ba4",
   "name": "SanFrancisco_correct2",
@@ -5043,33 +5469,37 @@
     "id": "3a2b5432-98e7-4f97-a852-3e2c65080ba4",
     "name": "SanFrancisco_correct2",
     "description": "San Francisco",
-    "copyright": "Xiaochen Li",
-    "licenseName": "User Content",
-    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/37d02526-ae12-4acf-9073-ea9715cd745e",
+    "lastVersionDate": "2022-04-02T15:48:42.000Z",
+    "lastAssetGuid": "37d02526-ae12-4acf-9073-ea9715cd745e",
+    "ownerId": "d6050635-96cf-479e-b6d2-251cb8c9900d",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Xiaochen Li",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-04-02T15:48:42.000Z",
+    "updatedAt": "2022-04-02T15:48:57.000Z",
     "tags": [],
     "owner": {
       "id": "d6050635-96cf-479e-b6d2-251cb8c9900d",
       "firstName": "Xiaochen",
       "lastName": "Li"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 },{
   "_id": {
-    "$oid": "6284a75a08d2327d5e399902"
+    "$oid": "6287d8ce7334ff8da9e50a5b"
   },
   "cid": "1cfc1517-74c5-4195-83e8-144ae17e4003",
   "name": "CubeTown_map",
   "endpoint": "/api/v1/maps/1cfc1517-74c5-4195-83e8-144ae17e4003",
   "data": {
-    "assetGuid": "0d7cbc3a-723e-42df-a52b-68afc12c5e0f",
+    "assetGuid": "9540609b-7269-46ad-8177-47b8427237d1",
     "isShared": false,
     "isFavored": false,
     "isOwned": false,
@@ -5081,7 +5511,7 @@
         "lastName": "engin"
       }
     },
-    "geoJsonUrl": "/api/v1/assets/download/geojson/0d7cbc3a-723e-42df-a52b-68afc12c5e0f",
+    "geoJsonUrl": "/api/v1/assets/download/geojson/9540609b-7269-46ad-8177-47b8427237d1",
     "supportedSimulatorVersions": [
       "2021.3",
       "2021.2",
@@ -5090,67 +5520,26 @@
     "id": "1cfc1517-74c5-4195-83e8-144ae17e4003",
     "name": "CubeTown_map",
     "description": "my edit",
-    "copyright": "lien engin",
-    "licenseName": "User Content",
-    "ownerId": "128c8343-03cb-43b6-af2c-96ff8eb68e6f",
-    "accessType": "public",
     "imageUrl": "/api/v1/assets/download/preview/9540609b-7269-46ad-8177-47b8427237d1",
+    "lastVersionDate": "2022-04-20T10:19:04.000Z",
+    "lastAssetGuid": "9540609b-7269-46ad-8177-47b8427237d1",
+    "ownerId": "128c8343-03cb-43b6-af2c-96ff8eb68e6f",
+    "supportedPlatforms": null,
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "lien engin",
     "hdmaps": "apollo50,autoware,lanelet2,opendrive",
     "status": "active",
+    "accessType": "public",
+    "createdAt": "2022-04-06T06:05:44.000Z",
+    "updatedAt": "2022-04-21T02:42:33.000Z",
     "tags": [],
     "owner": {
       "id": "128c8343-03cb-43b6-af2c-96ff8eb68e6f",
       "firstName": "lien",
       "lastName": "engin"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
-  }
-},{
-  "_id": {
-    "$oid": "6284a75a08d2327d5e399903"
-  },
-  "cid": "a9fb4d0b-9b7d-451e-a3e3-924385834bf1",
-  "name": "simulator_cube",
-  "endpoint": "/api/v1/maps/a9fb4d0b-9b7d-451e-a3e3-924385834bf1",
-  "data": {
-    "assetGuid": "82946f68-4e4b-420b-8bcf-bb5ef10f8b41",
-    "isShared": false,
-    "isFavored": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "f86468ec-231d-4484-97e8-cafdb19665a1",
-        "firstName": "Yuhan",
-        "lastName": "Long"
-      }
-    },
-    "geoJsonUrl": "/api/v1/assets/download/geojson/82946f68-4e4b-420b-8bcf-bb5ef10f8b41",
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "a9fb4d0b-9b7d-451e-a3e3-924385834bf1",
-    "name": "simulator_cube",
-    "description": "",
-    "copyright": "Yuhan Long",
-    "licenseName": "User Content",
-    "ownerId": "f86468ec-231d-4484-97e8-cafdb19665a1",
-    "accessType": "public",
-    "imageUrl": "/api/v1/assets/download/preview/82946f68-4e4b-420b-8bcf-bb5ef10f8b41",
-    "hdmaps": "apollo50,autoware,lanelet2,opendrive",
-    "status": "active",
-    "tags": [],
-    "owner": {
-      "id": "f86468ec-231d-4484-97e8-cafdb19665a1",
-      "firstName": "Yuhan",
-      "lastName": "Long"
-    },
-    "favoredByCurrentUser": [],
-    "shareRequests": [],
-    "favoredBy": [],
-    "sharedWith": []
+    }
   }
 }]
