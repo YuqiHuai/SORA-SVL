@@ -39,9 +39,8 @@ services:
   # MongoDB
   mongo:
     container_name: sorasvl-mongo
-    image: mongo
-    volumes:
-      - ./mongo/data:/data/db
+    build:
+      context: ./mongo
     ports:
       - "27017:27017"
     networks:
