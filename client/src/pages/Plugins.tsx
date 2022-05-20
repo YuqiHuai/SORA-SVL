@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Grid from "../components/Grid";
 import Layout from "../components/Layout";
 
-type Map = {
+type Plugin = {
   id: string;
   name: string;
   imageUrl: string;
@@ -10,16 +11,17 @@ type Map = {
     firstName: string;
     lastName: string;
   };
+  category: string;
 };
 
 function Plugins() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<Map[]>([]);
+  const [data, setData] = useState<Plugin[]>([]);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("http://localhost:3000/api/v1/plugins");
       const data = await res.json();
-      setData(data.rows as Map[]);
+      setData(data.rows as Plugin[]);
     };
     fetchData();
   }, []);
@@ -33,11 +35,19 @@ function Plugins() {
             placeholder="Search"
           />
         </div>
-        <div className="grid gap-4 grid-cols-3">
+        <Grid>
           {data.map((value, index) => {
             return (
               <div key={index} className="relative p-2 bg-neutral-200 rounded">
-                <span className="absolute top-5 left-5 text-white text-lg font-medium">{`${value.owner.firstName} ${value.owner.lastName}`}</span>
+                <span className="absolute top-5 left-5 text-white text-lg font-medium py-1">{`${value.owner.firstName} ${value.owner.lastName}`}</span>
+                <span
+                  className={`absolute top-5 right-5 text-white text-lg font-medium px-2 py-1 rounded ${
+                    value.category === "sensor"
+                      ? "bg-blue-500"
+                      : "bg-yellow-600"
+                  }`}
+                >{`${value.category}`}</span>
+
                 <img
                   className="w-full rounded"
                   src={`http://localhost:3000${value.imageUrl}?type=small`}
@@ -51,7 +61,7 @@ function Plugins() {
               </div>
             );
           })}
-        </div>
+        </Grid>
       </div>
     </Layout>
   );

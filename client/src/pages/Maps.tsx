@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Grid from "../components/Grid";
 import Layout from "../components/Layout";
 
 type Map = {
@@ -33,7 +34,7 @@ function Maps() {
             placeholder="Search"
           />
         </div>
-        <div className="grid gap-4 grid-cols-3">
+        <Grid>
           {data.map((value, index) => {
             return (
               <div key={index} className="relative p-2 bg-neutral-200 rounded">
@@ -51,7 +52,7 @@ function Maps() {
               </div>
             );
           })}
-        </div>
+        </Grid>
       </div>
     </Layout>
   );

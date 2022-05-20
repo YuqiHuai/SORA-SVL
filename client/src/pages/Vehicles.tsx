@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Grid from "../components/Grid";
 import Layout from "../components/Layout";
 
-type Map = {
+type Vehicle = {
   id: string;
   name: string;
   imageUrl: string;
@@ -14,12 +15,12 @@ type Map = {
 
 function Vehicles() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<Map[]>([]);
+  const [data, setData] = useState<Vehicle[]>([]);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("http://localhost:3000/api/v1/vehicles");
       const data = await res.json();
-      setData(data.rows as Map[]);
+      setData(data.rows as Vehicle[]);
     };
     fetchData();
   }, []);
@@ -33,7 +34,7 @@ function Vehicles() {
             placeholder="Search"
           />
         </div>
-        <div className="grid gap-4 grid-cols-3">
+        <Grid>
           {data.map((value, index) => {
             return (
               <div key={index} className="relative p-2 bg-neutral-200 rounded">
@@ -51,7 +52,7 @@ function Vehicles() {
               </div>
             );
           })}
-        </div>
+        </Grid>
       </div>
     </Layout>
   );
