@@ -6,7 +6,7 @@
   "name": "ROS2",
   "endpoint": "/api/v1/plugins/05a095cc-bab5-4e7b-981c-314d54351550",
   "data": {
-    "assetGuid": "95f50cac-0e48-485a-a080-71f0d84eb08e",
+    "assetGuid": "cf21f8c6-2586-4746-bf52-21faffa175e8",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -2437,7 +2437,7 @@
   "name": "ROS",
   "endpoint": "/api/v1/plugins/a4af0edd-85ed-4edf-8064-f3c054c26798",
   "data": {
-    "assetGuid": "8b93093e-3705-4855-8d45-efd41a799c14",
+    "assetGuid": "102a21ab-d5b4-4067-88b7-7ea72c4d7339",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
