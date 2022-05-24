@@ -34,6 +34,13 @@ connectToDatabase()
         error: {code: 'notExist'}
       })
     })
+    app.put("*", (req, res) => {
+      console.log(`Caught PUT at ${req.path}`);
+      console.log(req.body);
+      res.status(404).send({
+        error: {code: 'notExist'}
+      })
+    })
 
     app.listen(port, () => {
       console.log(`Server began listening on port ${port}`);
