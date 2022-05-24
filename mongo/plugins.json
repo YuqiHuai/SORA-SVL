@@ -1,120 +1,5 @@
 [{
   "_id": {
-    "$oid": "6287d8967334ff8da9e509c6"
-  },
-  "cid": "03ea1a65-03ae-4f2e-b670-d7244e48deb4",
-  "name": "Apollo Control Sensor",
-  "endpoint": "/api/v1/plugins/03ea1a65-03ae-4f2e-b670-d7244e48deb4",
-  "data": {
-    "assetGuid": "090891ee-7bb0-4505-bc09-0c49002af43a",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "03ea1a65-03ae-4f2e-b670-d7244e48deb4",
-    "name": "Apollo Control Sensor",
-    "description": "This sensor is required for a vehicle to subscribe to the control topic of Apollo. This sensor also demonstrates how a user can check when SVL Simulator receives the first control message from the AD stack like Apollo. Based on this time, you can start the rest of the simulation or do some other interesting things.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#apollo-control for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/090891ee-7bb0-4505-bc09-0c49002af43a",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "5bbf03d5-dd78-4505-85b0-7db70db41870",
-    "category": "sensor",
-    "type": "ApolloControlSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Control",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "apollo",
-        "meta": {
-          "sortKey": 2
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 3
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "StuckTravelThreshold",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0.1
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "StuckTimeThreshold",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
     "$oid": "6287d8977334ff8da9e509c7"
   },
   "cid": "05a095cc-bab5-4e7b-981c-314d54351550",
@@ -169,64 +54,6 @@
         "name": "bridge",
         "meta": {
           "sortKey": 1
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": null
-  }
-},{
-  "_id": {
-    "$oid": "6287d8977334ff8da9e509c8"
-  },
-  "cid": "05b1a17e-a00b-4846-8e7b-2926fe412039",
-  "name": "Logging",
-  "endpoint": "/api/v1/plugins/05b1a17e-a00b-4846-8e7b-2926fe412039",
-  "data": {
-    "assetGuid": "fb88c841-8320-45db-8617-91e73accde60",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2"
-    ],
-    "id": "05b1a17e-a00b-4846-8e7b-2926fe412039",
-    "name": "Logging",
-    "description": "This bridge takes all published data and writes it into text file. This is only for debugging purposes.",
-    "imageUrl": "/api/v1/assets/download/preview/fb88c841-8320-45db-8617-91e73accde60",
-    "lastVersionDate": "2021-10-01T20:56:31.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "Logging",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-01T20:56:31.000Z",
-    "tags": [
-      {
-        "name": "bridge",
-        "meta": {
-          "sortKey": 0
         }
       }
     ],
@@ -308,834 +135,6 @@
       "lastName": "Content"
     },
     "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8987334ff8da9e509ca"
-  },
-  "cid": "483f7b90-2f76-42ee-82c1-22f02f25f924",
-  "name": "GPS Odometry Sensor",
-  "endpoint": "/api/v1/plugins/483f7b90-2f76-42ee-82c1-22f02f25f924",
-  "data": {
-    "assetGuid": "d672c52e-0e1a-494e-a95c-fc52593a119d",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "483f7b90-2f76-42ee-82c1-22f02f25f924",
-    "name": "GPS Odometry Sensor",
-    "description": "This sensor outputs the GPS location of the vehicle in Longitude/Latitude and Northing/Easting coordintates and the vehicle velocity.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#gps-odometry for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/d672c52e-0e1a-494e-a95c-fc52593a119d",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "f30ddcc6-7853-4282-8b0a-305d18827f03",
-    "category": "sensor",
-    "type": "GpsOdometrySensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "gps",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "analytics",
-        "meta": {
-          "sortKey": 2
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 3
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 12.5
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "ChildFrame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "IgnoreMapOrigin",
-        "Type": "bool",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": false
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8987334ff8da9e509cb"
-  },
-  "cid": "77250db2-82c9-47dd-9785-c38cc4cb566d",
-  "name": "GPS-INS Status Sensor",
-  "endpoint": "/api/v1/plugins/77250db2-82c9-47dd-9785-c38cc4cb566d",
-  "data": {
-    "assetGuid": "b78a10b6-effd-4bda-832b-27552043e9e8",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "77250db2-82c9-47dd-9785-c38cc4cb566d",
-    "name": "GPS-INS Status Sensor",
-    "description": "This sensor outputs the status of the GPS correction due to INS. The Simulator is an ideal environment in which GPS is always corrected.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#gps-ins-status for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/b78a10b6-effd-4bda-832b-27552043e9e8",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "e946ff05-6c77-4800-9e7e-3d246d48c74c",
-    "category": "sensor",
-    "type": "GpsInsSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-01T20:56:32.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "gps",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 12.5
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8997334ff8da9e509cc"
-  },
-  "cid": "968f386f-dc0b-485d-ba33-5bb71bff93ef",
-  "name": "Clock Sensor",
-  "endpoint": "/api/v1/plugins/968f386f-dc0b-485d-ba33-5bb71bff93ef",
-  "data": {
-    "assetGuid": "fb75d445-2e83-440f-8268-c9d4e65024ae",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "968f386f-dc0b-485d-ba33-5bb71bff93ef",
-    "name": "Clock Sensor",
-    "description": "This sensor outputs simulated time to ROS as rosgraph_msgs/Clock message, or to CyberRT as clock message. The only parameter to use is topic/channel name.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#clock for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/fb75d445-2e83-440f-8268-c9d4e65024ae",
-    "lastVersionDate": "2021-10-01T20:56:31.000Z",
-    "lastAssetGuid": "3a08ef80-03d6-4082-9dde-a001f8ba601b",
-    "category": "sensor",
-    "type": "ClockSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-01T20:56:31.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "analytics",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8997334ff8da9e509cd"
-  },
-  "cid": "a4af0edd-85ed-4edf-8064-f3c054c26798",
-  "name": "ROS",
-  "endpoint": "/api/v1/plugins/a4af0edd-85ed-4edf-8064-f3c054c26798",
-  "data": {
-    "assetGuid": "8b93093e-3705-4855-8d45-efd41a799c14",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "a4af0edd-85ed-4edf-8064-f3c054c26798",
-    "name": "ROS",
-    "description": "This bridge allows connecting to ROS based AV stacks. (like Autoware). ROS Bridge requires IP address and port number while setting up Simulation Configuration.",
-    "imageUrl": "/api/v1/assets/download/preview/8b93093e-3705-4855-8d45-efd41a799c14",
-    "lastVersionDate": "2021-10-06T01:42:36.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "ROS",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-06T01:42:36.000Z",
-    "tags": [
-      {
-        "name": "ros",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "bridge",
-        "meta": {
-          "sortKey": 1
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": null
-  }
-},{
-  "_id": {
-    "$oid": "6287d8997334ff8da9e509ce"
-  },
-  "cid": "ff4ba32f-8885-4847-9a8b-fd21e6603202",
-  "name": "CyberRT",
-  "endpoint": "/api/v1/plugins/ff4ba32f-8885-4847-9a8b-fd21e6603202",
-  "data": {
-    "assetGuid": "6aca1444-9ee5-4b77-a1f6-6bbc3bfb18c0",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "ff4ba32f-8885-4847-9a8b-fd21e6603202",
-    "name": "CyberRT",
-    "description": "This bridge allows connections to Apollo 5.0. CyberRT Bridge requires IP address, port number while setting up Simulation Configuration.",
-    "imageUrl": "/api/v1/assets/download/preview/6aca1444-9ee5-4b77-a1f6-6bbc3bfb18c0",
-    "lastVersionDate": "2021-10-06T01:43:12.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "CyberRT",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:24.000Z",
-    "updatedAt": "2021-10-06T01:43:12.000Z",
-    "tags": [
-      {
-        "name": "CyberRT",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "apollo",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "bridge",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": null
-  }
-},{
-  "_id": {
-    "$oid": "6287d89a7334ff8da9e509cf"
-  },
-  "cid": "06aef741-23e6-444b-b6d9-18f84f9ace06",
-  "name": "Video Recording Sensor",
-  "endpoint": "/api/v1/plugins/06aef741-23e6-444b-b6d9-18f84f9ace06",
-  "data": {
-    "assetGuid": "5578e7e7-acc6-447e-b15d-4c8a958b2239",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "06aef741-23e6-444b-b6d9-18f84f9ace06",
-    "name": "Video Recording Sensor",
-    "description": "This sensor records a video for test cases.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#video-recording-sensor for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/5578e7e7-acc6-447e-b15d-4c8a958b2239",
-    "lastVersionDate": "2021-10-01T20:56:31.000Z",
-    "lastAssetGuid": "c2afb8e7-77cd-42c9-b3c3-6e7f1631d372",
-    "category": "sensor",
-    "type": "VideoRecordingSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:31.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "analytics",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 1920,
-        "Min": 1,
-        "Name": "Width",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1920
-      },
-      {
-        "Max": 1080,
-        "Min": 1,
-        "Name": "Height",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1080
-      },
-      {
-        "Max": 30,
-        "Min": 1,
-        "Name": "Framerate",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 15
-      },
-      {
-        "Max": 6000,
-        "Min": 1000,
-        "Name": "Bitrate",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 3000
-      },
-      {
-        "Max": 6000,
-        "Min": 1000,
-        "Name": "MaxBitrate",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 6000
-      },
-      {
-        "Max": 51,
-        "Min": 0,
-        "Name": "Quality",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 22
-      },
-      {
-        "Max": 90,
-        "Min": 1,
-        "Name": "FieldOfView",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 60
-      },
-      {
-        "Max": 1000,
-        "Min": 0.01,
-        "Name": "MinDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0.1
-      },
-      {
-        "Max": 2000,
-        "Min": 0.01,
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 2000
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d89a7334ff8da9e509d0"
-  },
-  "cid": "111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
-  "name": "Lane Following Sensor",
-  "endpoint": "/api/v1/plugins/111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
-  "data": {
-    "assetGuid": "7e7c37df-6709-428e-949c-74707be41199",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
-    "name": "Lane Following Sensor",
-    "description": "LaneFollowing Sensor will subscribe to predicted steering commands from the model inference.",
-    "imageUrl": "/api/v1/assets/download/preview/7e7c37df-6709-428e-949c-74707be41199",
-    "lastVersionDate": "2021-10-01T20:56:31.000Z",
-    "lastAssetGuid": "b9b8b835-5427-4da4-b843-0828d28f4808",
-    "category": "sensor",
-    "type": "LaneFollowingSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:31.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Extra",
-        "meta": {
-          "sortKey": 1
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 30,
-        "Min": 0,
-        "Name": "CruiseSpeed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0
-      },
-      {
-        "Max": 2,
-        "Min": 0,
-        "Name": "SteeringSensitivity",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d89a7334ff8da9e509d1"
-  },
-  "cid": "1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
-  "name": "Cruise Control Sensor",
-  "endpoint": "/api/v1/plugins/1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
-  "data": {
-    "assetGuid": "83344a45-04b3-4651-9753-c590259f65d2",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
-    "name": "Cruise Control Sensor",
-    "description": "This sensor causes the vehicle to accelerate to the desired speed and then maintain the desired speed.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#cruise-control for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/83344a45-04b3-4651-9753-c590259f65d2",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "69b4254e-7766-48a1-8032-87ac88722f7d",
-    "category": "sensor",
-    "type": "CruiseControlSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Control",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 200,
-        "Min": 0,
-        "Name": "CruiseSpeed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 25
-      },
       {
         "Max": null,
         "Min": null,
@@ -1336,6 +335,461 @@
         "Values": null,
         "DefaultValue": 13.4
       },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8967334ff8da9e509c6"
+  },
+  "cid": "03ea1a65-03ae-4f2e-b670-d7244e48deb4",
+  "name": "Apollo Control Sensor",
+  "endpoint": "/api/v1/plugins/03ea1a65-03ae-4f2e-b670-d7244e48deb4",
+  "data": {
+    "assetGuid": "090891ee-7bb0-4505-bc09-0c49002af43a",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "03ea1a65-03ae-4f2e-b670-d7244e48deb4",
+    "name": "Apollo Control Sensor",
+    "description": "This sensor is required for a vehicle to subscribe to the control topic of Apollo. This sensor also demonstrates how a user can check when SVL Simulator receives the first control message from the AD stack like Apollo. Based on this time, you can start the rest of the simulation or do some other interesting things.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#apollo-control for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/090891ee-7bb0-4505-bc09-0c49002af43a",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "5bbf03d5-dd78-4505-85b0-7db70db41870",
+    "category": "sensor",
+    "type": "ApolloControlSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "apollo",
+        "meta": {
+          "sortKey": 2
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 3
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "StuckTravelThreshold",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0.1
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "StuckTimeThreshold",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8977334ff8da9e509c8"
+  },
+  "cid": "05b1a17e-a00b-4846-8e7b-2926fe412039",
+  "name": "Logging",
+  "endpoint": "/api/v1/plugins/05b1a17e-a00b-4846-8e7b-2926fe412039",
+  "data": {
+    "assetGuid": "fb88c841-8320-45db-8617-91e73accde60",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2"
+    ],
+    "id": "05b1a17e-a00b-4846-8e7b-2926fe412039",
+    "name": "Logging",
+    "description": "This bridge takes all published data and writes it into text file. This is only for debugging purposes.",
+    "imageUrl": "/api/v1/assets/download/preview/fb88c841-8320-45db-8617-91e73accde60",
+    "lastVersionDate": "2021-10-01T20:56:31.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "Logging",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-01T20:56:31.000Z",
+    "tags": [
+      {
+        "name": "bridge",
+        "meta": {
+          "sortKey": 0
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
+    "$oid": "6287d89a7334ff8da9e509d1"
+  },
+  "cid": "1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
+  "name": "Cruise Control Sensor",
+  "endpoint": "/api/v1/plugins/1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
+  "data": {
+    "assetGuid": "83344a45-04b3-4651-9753-c590259f65d2",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "1726cbc8-85f2-4e29-8c61-0ca93948b8e3",
+    "name": "Cruise Control Sensor",
+    "description": "This sensor causes the vehicle to accelerate to the desired speed and then maintain the desired speed.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#cruise-control for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/83344a45-04b3-4651-9753-c590259f65d2",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "69b4254e-7766-48a1-8032-87ac88722f7d",
+    "category": "sensor",
+    "type": "CruiseControlSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": 200,
+        "Min": 0,
+        "Name": "CruiseSpeed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 25
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d89d7334ff8da9e509d7"
+  },
+  "cid": "3d5dea8d-232a-46ea-9a16-57ef4c99df03",
+  "name": "Wheel Control Sensor",
+  "endpoint": "/api/v1/plugins/3d5dea8d-232a-46ea-9a16-57ef4c99df03",
+  "data": {
+    "assetGuid": "f7a442e9-8bf3-47e0-b77f-046636cca451",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "3d5dea8d-232a-46ea-9a16-57ef4c99df03",
+    "name": "Wheel Control Sensor",
+    "description": "This sensor is required for a vehicle to accept Logitech G920 wheel control commands. Parameters are not required.",
+    "imageUrl": "/api/v1/assets/download/preview/f7a442e9-8bf3-47e0-b77f-046636cca451",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": "7affd0d4-e9a5-4100-8a0f-e914c1176551",
+    "category": "sensor",
+    "type": "WheelControlSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d89d7334ff8da9e509d8"
+  },
+  "cid": "41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
+  "name": "HUD Keyboard Control Sensor",
+  "endpoint": "/api/v1/plugins/41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
+  "data": {
+    "assetGuid": "bfbff467-f39a-454e-9f6e-f76ab397e1fc",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
+    "name": "HUD Keyboard Control Sensor",
+    "description": "This sensor is required for a vehicle to accept keyboard control commands and includes vehicle HUD for visualization",
+    "imageUrl": "/api/v1/assets/download/preview/bfbff467-f39a-454e-9f6e-f76ab397e1fc",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "ba18cc2c-3def-4db2-bcb8-01047ad1e89a",
+    "category": "sensor",
+    "type": "HUDKeyboardControlSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
       {
         "Max": null,
         "Min": null,
@@ -1819,6 +1273,106 @@
   }
 },{
   "_id": {
+    "$oid": "6287d89e7334ff8da9e509da"
+  },
+  "cid": "662072f8-8123-4e18-9b45-ee801e0bc020",
+  "name": "Vehicle Odometry Sensor",
+  "endpoint": "/api/v1/plugins/662072f8-8123-4e18-9b45-ee801e0bc020",
+  "data": {
+    "assetGuid": "48d73849-b580-4d95-b09b-a888b8034a4a",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "662072f8-8123-4e18-9b45-ee801e0bc020",
+    "name": "Vehicle Odometry Sensor",
+    "description": "Example sensor for vehicle odometry information.",
+    "imageUrl": "/api/v1/assets/download/preview/48d73849-b580-4d95-b09b-a888b8034a4a",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": "3a9b1c3a-3e5a-4b15-9b6c-3acbc3c937a0",
+    "category": "sensor",
+    "type": "VehicleOdometrySensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "analytics",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
     "$oid": "6287d89c7334ff8da9e509d6"
   },
   "cid": "3d4f1e08-4c62-4e9f-b859-b26d4910b85e",
@@ -2087,188 +1641,6 @@
   }
 },{
   "_id": {
-    "$oid": "6287d89d7334ff8da9e509d7"
-  },
-  "cid": "3d5dea8d-232a-46ea-9a16-57ef4c99df03",
-  "name": "Wheel Control Sensor",
-  "endpoint": "/api/v1/plugins/3d5dea8d-232a-46ea-9a16-57ef4c99df03",
-  "data": {
-    "assetGuid": "f7a442e9-8bf3-47e0-b77f-046636cca451",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "3d5dea8d-232a-46ea-9a16-57ef4c99df03",
-    "name": "Wheel Control Sensor",
-    "description": "This sensor is required for a vehicle to accept Logitech G920 wheel control commands. Parameters are not required.",
-    "imageUrl": "/api/v1/assets/download/preview/f7a442e9-8bf3-47e0-b77f-046636cca451",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "7affd0d4-e9a5-4100-8a0f-e914c1176551",
-    "category": "sensor",
-    "type": "WheelControlSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:32.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Control",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d89d7334ff8da9e509d8"
-  },
-  "cid": "41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
-  "name": "HUD Keyboard Control Sensor",
-  "endpoint": "/api/v1/plugins/41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
-  "data": {
-    "assetGuid": "bfbff467-f39a-454e-9f6e-f76ab397e1fc",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "41fdc7b2-5e2b-4f78-ba1f-e195a5604ad4",
-    "name": "HUD Keyboard Control Sensor",
-    "description": "This sensor is required for a vehicle to accept keyboard control commands and includes vehicle HUD for visualization",
-    "imageUrl": "/api/v1/assets/download/preview/bfbff467-f39a-454e-9f6e-f76ab397e1fc",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "ba18cc2c-3def-4db2-bcb8-01047ad1e89a",
-    "category": "sensor",
-    "type": "HUDKeyboardControlSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Control",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
     "$oid": "6287d89d7334ff8da9e509d9"
   },
   "cid": "5ae0c053-92e5-46e0-b22b-142a3d433dde",
@@ -2432,13 +1804,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d89e7334ff8da9e509da"
+    "$oid": "6287d8987334ff8da9e509cb"
   },
-  "cid": "662072f8-8123-4e18-9b45-ee801e0bc020",
-  "name": "Vehicle Odometry Sensor",
-  "endpoint": "/api/v1/plugins/662072f8-8123-4e18-9b45-ee801e0bc020",
+  "cid": "77250db2-82c9-47dd-9785-c38cc4cb566d",
+  "name": "GPS-INS Status Sensor",
+  "endpoint": "/api/v1/plugins/77250db2-82c9-47dd-9785-c38cc4cb566d",
   "data": {
-    "assetGuid": "48d73849-b580-4d95-b09b-a888b8034a4a",
+    "assetGuid": "b78a10b6-effd-4bda-832b-27552043e9e8",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -2457,14 +1829,14 @@
       "2021.1",
       "2021.1.1"
     ],
-    "id": "662072f8-8123-4e18-9b45-ee801e0bc020",
-    "name": "Vehicle Odometry Sensor",
-    "description": "Example sensor for vehicle odometry information.",
-    "imageUrl": "/api/v1/assets/download/preview/48d73849-b580-4d95-b09b-a888b8034a4a",
+    "id": "77250db2-82c9-47dd-9785-c38cc4cb566d",
+    "name": "GPS-INS Status Sensor",
+    "description": "This sensor outputs the status of the GPS correction due to INS. The Simulator is an ideal environment in which GPS is always corrected.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#gps-ins-status for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/b78a10b6-effd-4bda-832b-27552043e9e8",
     "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "3a9b1c3a-3e5a-4b15-9b6c-3acbc3c937a0",
+    "lastAssetGuid": "e946ff05-6c77-4800-9e7e-3d246d48c74c",
     "category": "sensor",
-    "type": "VehicleOdometrySensor",
+    "type": "GpsInsSensor",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -2473,7 +1845,7 @@
     "accessType": "public",
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
+    "createdAt": "2021-03-17T20:28:24.000Z",
     "updatedAt": "2021-10-01T20:56:32.000Z",
     "tags": [
       {
@@ -2483,7 +1855,7 @@
         }
       },
       {
-        "name": "analytics",
+        "name": "gps",
         "meta": {
           "sortKey": 1
         }
@@ -2508,93 +1880,8 @@
         "Type": "float",
         "Unit": null,
         "Values": null,
-        "DefaultValue": 10
+        "DefaultValue": 12.5
       },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d89e7334ff8da9e509db"
-  },
-  "cid": "71b0976e-cb87-4c11-ace2-14434aeec8a0",
-  "name": "Transform Sensor",
-  "endpoint": "/api/v1/plugins/71b0976e-cb87-4c11-ace2-14434aeec8a0",
-  "data": {
-    "assetGuid": "fc585c8d-679e-48a4-8ca9-ba3f1683fa5a",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "71b0976e-cb87-4c11-ace2-14434aeec8a0",
-    "name": "Transform Sensor",
-    "description": "This sensor is specifically used to parent other sensors. For example, if there is a cluster of sensors, a Transform sensor can be added at the location of the cluster and then the individual sensors can have a transform that is relative to the location of the Transform sensor.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#transform-sensor for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/fc585c8d-679e-48a4-8ca9-ba3f1683fa5a",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "df34f7b7-a308-459e-b35b-fb1409a66baa",
-    "category": "sensor",
-    "type": "TransformSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 1
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
       {
         "Max": null,
         "Min": null,
@@ -2726,6 +2013,91 @@
   }
 },{
   "_id": {
+    "$oid": "6287d89e7334ff8da9e509db"
+  },
+  "cid": "71b0976e-cb87-4c11-ace2-14434aeec8a0",
+  "name": "Transform Sensor",
+  "endpoint": "/api/v1/plugins/71b0976e-cb87-4c11-ace2-14434aeec8a0",
+  "data": {
+    "assetGuid": "fc585c8d-679e-48a4-8ca9-ba3f1683fa5a",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "71b0976e-cb87-4c11-ace2-14434aeec8a0",
+    "name": "Transform Sensor",
+    "description": "This sensor is specifically used to parent other sensors. For example, if there is a cluster of sensors, a Transform sensor can be added at the location of the cluster and then the individual sensors can have a transform that is relative to the location of the Transform sensor.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#transform-sensor for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/fc585c8d-679e-48a4-8ca9-ba3f1683fa5a",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "df34f7b7-a308-459e-b35b-fb1409a66baa",
+    "category": "sensor",
+    "type": "TransformSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 1
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
     "$oid": "6287d89f7334ff8da9e509dd"
   },
   "cid": "76ff7bd1-81bf-4284-b9bf-e8173dc6053e",
@@ -2835,13 +2207,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d89f7334ff8da9e509de"
+    "$oid": "6287d8a07334ff8da9e509e1"
   },
-  "cid": "8aff00f2-a5e4-4bd3-a778-517f9307fa99",
-  "name": "Vehicle State Sensor",
-  "endpoint": "/api/v1/plugins/8aff00f2-a5e4-4bd3-a778-517f9307fa99",
+  "cid": "a5696615-d3e2-45e9-afa3-9b5ae7359e02",
+  "name": "LGSVL Control Sensor",
+  "endpoint": "/api/v1/plugins/a5696615-d3e2-45e9-afa3-9b5ae7359e02",
   "data": {
-    "assetGuid": "4e098c4c-8294-4714-88f2-7b790951381a",
+    "assetGuid": "02e462ce-c1ad-448d-9c24-df8a05a7c09a",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -2860,14 +2232,14 @@
       "2021.1",
       "2021.1.1"
     ],
-    "id": "8aff00f2-a5e4-4bd3-a778-517f9307fa99",
-    "name": "Vehicle State Sensor",
-    "description": "Example of a sensor to get state of different parts of vehicle.",
-    "imageUrl": "/api/v1/assets/download/preview/4e098c4c-8294-4714-88f2-7b790951381a",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "a1022620-f2a3-4cef-9146-d10eaa445386",
+    "id": "a5696615-d3e2-45e9-afa3-9b5ae7359e02",
+    "name": "LGSVL Control Sensor",
+    "description": "Example template of a sensor for vehicle Control information.",
+    "imageUrl": "/api/v1/assets/download/preview/02e462ce-c1ad-448d-9c24-df8a05a7c09a",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "ad643739-d4e3-415a-bdf3-0ebcf4bc2f64",
     "category": "sensor",
-    "type": "VehicleStateSensor",
+    "type": "LGSVLControlSensor",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -2877,7 +2249,421 @@
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
     "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "analytics",
+        "meta": {
+          "sortKey": 2
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 3
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "StuckTravelThreshold",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0.1
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "StuckTimeThreshold",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a07334ff8da9e509e0"
+  },
+  "cid": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
+  "name": "Keyboard Control Sensor",
+  "endpoint": "/api/v1/plugins/a2ff904a-ff06-4f06-9e45-cb58217a7142",
+  "data": {
+    "assetGuid": "990aa76e-ecc4-4404-a4fe-7e6736b39082",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
+    "name": "Keyboard Control Sensor",
+    "description": "This sensor is required for a vehicle to accept keyboard control commands. Parameters are not required.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#keyboard-control for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/990aa76e-ecc4-4404-a4fe-7e6736b39082",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "ec968dc8-2e34-4307-8d3a-9bbffdf9e6cc",
+    "category": "sensor",
+    "type": "KeyboardControlSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "InvertAccel",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "InvertSteer",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8997334ff8da9e509cd"
+  },
+  "cid": "a4af0edd-85ed-4edf-8064-f3c054c26798",
+  "name": "ROS",
+  "endpoint": "/api/v1/plugins/a4af0edd-85ed-4edf-8064-f3c054c26798",
+  "data": {
+    "assetGuid": "8b93093e-3705-4855-8d45-efd41a799c14",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "a4af0edd-85ed-4edf-8064-f3c054c26798",
+    "name": "ROS",
+    "description": "This bridge allows connecting to ROS based AV stacks. (like Autoware). ROS Bridge requires IP address and port number while setting up Simulation Configuration.",
+    "imageUrl": "/api/v1/assets/download/preview/8b93093e-3705-4855-8d45-efd41a799c14",
+    "lastVersionDate": "2021-10-06T01:42:36.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "ROS",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-06T01:42:36.000Z",
+    "tags": [
+      {
+        "name": "ros",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "bridge",
+        "meta": {
+          "sortKey": 1
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
+    "$oid": "6287d8987334ff8da9e509ca"
+  },
+  "cid": "483f7b90-2f76-42ee-82c1-22f02f25f924",
+  "name": "GPS Odometry Sensor",
+  "endpoint": "/api/v1/plugins/483f7b90-2f76-42ee-82c1-22f02f25f924",
+  "data": {
+    "assetGuid": "d672c52e-0e1a-494e-a95c-fc52593a119d",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "483f7b90-2f76-42ee-82c1-22f02f25f924",
+    "name": "GPS Odometry Sensor",
+    "description": "This sensor outputs the GPS location of the vehicle in Longitude/Latitude and Northing/Easting coordintates and the vehicle velocity.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#gps-odometry for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/d672c52e-0e1a-494e-a95c-fc52593a119d",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "f30ddcc6-7853-4282-8b0a-305d18827f03",
+    "category": "sensor",
+    "type": "GpsOdometrySensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "gps",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "analytics",
+        "meta": {
+          "sortKey": 2
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 3
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 12.5
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "ChildFrame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "IgnoreMapOrigin",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8997334ff8da9e509cc"
+  },
+  "cid": "968f386f-dc0b-485d-ba33-5bb71bff93ef",
+  "name": "Clock Sensor",
+  "endpoint": "/api/v1/plugins/968f386f-dc0b-485d-ba33-5bb71bff93ef",
+  "data": {
+    "assetGuid": "fb75d445-2e83-440f-8268-c9d4e65024ae",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "968f386f-dc0b-485d-ba33-5bb71bff93ef",
+    "name": "Clock Sensor",
+    "description": "This sensor outputs simulated time to ROS as rosgraph_msgs/Clock message, or to CyberRT as clock message. The only parameter to use is topic/channel name.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#clock for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/fb75d445-2e83-440f-8268-c9d4e65024ae",
+    "lastVersionDate": "2021-10-01T20:56:31.000Z",
+    "lastAssetGuid": "3a08ef80-03d6-4082-9dde-a001f8ba601b",
+    "category": "sensor",
+    "type": "ClockSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-01T20:56:31.000Z",
     "tags": [
       {
         "name": "lg",
@@ -3041,13 +2827,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a07334ff8da9e509e0"
+    "$oid": "6287d89a7334ff8da9e509d0"
   },
-  "cid": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
-  "name": "Keyboard Control Sensor",
-  "endpoint": "/api/v1/plugins/a2ff904a-ff06-4f06-9e45-cb58217a7142",
+  "cid": "111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
+  "name": "Lane Following Sensor",
+  "endpoint": "/api/v1/plugins/111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
   "data": {
-    "assetGuid": "990aa76e-ecc4-4404-a4fe-7e6736b39082",
+    "assetGuid": "7e7c37df-6709-428e-949c-74707be41199",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -3066,14 +2852,14 @@
       "2021.1",
       "2021.1.1"
     ],
-    "id": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
-    "name": "Keyboard Control Sensor",
-    "description": "This sensor is required for a vehicle to accept keyboard control commands. Parameters are not required.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#keyboard-control for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/990aa76e-ecc4-4404-a4fe-7e6736b39082",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "ec968dc8-2e34-4307-8d3a-9bbffdf9e6cc",
+    "id": "111c4f5f-12a3-48b6-b3df-7d87e158e7d9",
+    "name": "Lane Following Sensor",
+    "description": "LaneFollowing Sensor will subscribe to predicted steering commands from the model inference.",
+    "imageUrl": "/api/v1/assets/download/preview/7e7c37df-6709-428e-949c-74707be41199",
+    "lastVersionDate": "2021-10-01T20:56:31.000Z",
+    "lastAssetGuid": "b9b8b835-5427-4da4-b843-0828d28f4808",
     "category": "sensor",
-    "type": "KeyboardControlSensor",
+    "type": "LaneFollowingSensor",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -3083,7 +2869,7 @@
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
     "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "updatedAt": "2021-10-01T20:56:31.000Z",
     "tags": [
       {
         "name": "lg",
@@ -3092,15 +2878,9 @@
         }
       },
       {
-        "name": "Control",
+        "name": "Extra",
         "meta": {
           "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
         }
       }
     ],
@@ -3111,22 +2891,22 @@
     },
     "sensorParameters": [
       {
-        "Max": null,
-        "Min": null,
-        "Name": "InvertAccel",
-        "Type": "bool",
+        "Max": 30,
+        "Min": 0,
+        "Name": "CruiseSpeed",
+        "Type": "float",
         "Unit": null,
         "Values": null,
-        "DefaultValue": false
+        "DefaultValue": 0
       },
       {
-        "Max": null,
-        "Min": null,
-        "Name": "InvertSteer",
-        "Type": "bool",
+        "Max": 2,
+        "Min": 0,
+        "Name": "SteeringSensitivity",
+        "Type": "float",
         "Unit": null,
         "Values": null,
-        "DefaultValue": false
+        "DefaultValue": 1
       },
       {
         "Max": null,
@@ -3150,13 +2930,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a07334ff8da9e509e1"
+    "$oid": "6287d8997334ff8da9e509ce"
   },
-  "cid": "a5696615-d3e2-45e9-afa3-9b5ae7359e02",
-  "name": "LGSVL Control Sensor",
-  "endpoint": "/api/v1/plugins/a5696615-d3e2-45e9-afa3-9b5ae7359e02",
+  "cid": "ff4ba32f-8885-4847-9a8b-fd21e6603202",
+  "name": "CyberRT",
+  "endpoint": "/api/v1/plugins/ff4ba32f-8885-4847-9a8b-fd21e6603202",
   "data": {
-    "assetGuid": "02e462ce-c1ad-448d-9c24-df8a05a7c09a",
+    "assetGuid": "fffac85a-b291-4614-9e82-68a51954306d",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -3175,14 +2955,14 @@
       "2021.1",
       "2021.1.1"
     ],
-    "id": "a5696615-d3e2-45e9-afa3-9b5ae7359e02",
-    "name": "LGSVL Control Sensor",
-    "description": "Example template of a sensor for vehicle Control information.",
-    "imageUrl": "/api/v1/assets/download/preview/02e462ce-c1ad-448d-9c24-df8a05a7c09a",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "ad643739-d4e3-415a-bdf3-0ebcf4bc2f64",
-    "category": "sensor",
-    "type": "LGSVLControlSensor",
+    "id": "ff4ba32f-8885-4847-9a8b-fd21e6603202",
+    "name": "CyberRT",
+    "description": "This bridge allows connections to Apollo 5.0. CyberRT Bridge requires IP address, port number while setting up Simulation Configuration.",
+    "imageUrl": "/api/v1/assets/download/preview/6aca1444-9ee5-4b77-a1f6-6bbc3bfb18c0",
+    "lastVersionDate": "2021-10-06T01:43:12.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "CyberRT",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -3191,31 +2971,25 @@
     "accessType": "public",
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "createdAt": "2021-03-17T20:28:24.000Z",
+    "updatedAt": "2021-10-06T01:43:12.000Z",
     "tags": [
       {
-        "name": "lg",
+        "name": "CyberRT",
         "meta": {
           "sortKey": 0
         }
       },
       {
-        "name": "Control",
+        "name": "apollo",
         "meta": {
           "sortKey": 1
         }
       },
       {
-        "name": "analytics",
+        "name": "bridge",
         "meta": {
           "sortKey": 2
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 3
         }
       }
     ],
@@ -3224,44 +2998,7 @@
       "firstName": "SVL",
       "lastName": "Content"
     },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "StuckTravelThreshold",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0.1
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "StuckTimeThreshold",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
+    "sensorParameters": null
   }
 },{
   "_id": {
@@ -3433,6 +3170,106 @@
         "Unit": null,
         "Values": null,
         "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a37334ff8da9e509e9"
+  },
+  "cid": "ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
+  "name": "Control Calibration Sensor",
+  "endpoint": "/api/v1/plugins/ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
+  "data": {
+    "assetGuid": "089e2531-4c26-41f9-85e1-0b8dc4af4fe2",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
+    "name": "Control Calibration Sensor",
+    "description": "This sensor outputs control calibration criteria collected by AD Stacks (Apollo, Autoware). It generates steering, throttle or brakes with gear commands between minimum and maximum of velocity during duration.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#control-calibration for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/089e2531-4c26-41f9-85e1-0b8dc4af4fe2",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": "fc62697d-09b6-40bd-a975-cd1992e91599",
+    "category": "sensor",
+    "type": "ControlCalibrationSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "Control",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "States",
+        "Type": "List`1",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": []
       },
       {
         "Max": null,
@@ -3703,504 +3540,6 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a27334ff8da9e509e5"
-  },
-  "cid": "c4ba9b81-b274-4c05-b78e-636e61b4590e",
-  "name": "Signal Sensor",
-  "endpoint": "/api/v1/plugins/c4ba9b81-b274-4c05-b78e-636e61b4590e",
-  "data": {
-    "assetGuid": "b96c848a-056f-4961-9bcd-4c885e2b083d",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "c4ba9b81-b274-4c05-b78e-636e61b4590e",
-    "name": "Signal Sensor",
-    "description": "This sensor returns ground truth data for traffic light signals connected to the current lane of ego vehicle and creates bounding boxes around the detected signals. The color of the bounding box corresponds to the signal's type:\n\t[\n\t\t\"Green\": \"Green\"\n\t\t\"Yellow\": \"Yellow\"\n\t\t\"Red\": \"Red\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#signal-sensor for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/b96c848a-056f-4961-9bcd-4c885e2b083d",
-    "lastVersionDate": "2021-10-01T20:56:31.000Z",
-    "lastAssetGuid": "d7cc5876-aa06-45b6-9873-513959d3375f",
-    "category": "sensor",
-    "type": "SignalSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:31.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "Signal",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": 1000,
-        "Min": 1,
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 100
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a27334ff8da9e509e6"
-  },
-  "cid": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
-  "name": "Segmentation Camera Sensor",
-  "endpoint": "/api/v1/plugins/dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
-  "data": {
-    "assetGuid": "37402ea8-7073-40dd-983f-3aaf855421c1",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
-    "name": "Segmentation Camera Sensor",
-    "description": "This sensor returns an image where objects are colored corresponding to their tag. Example of Instance Segmentation Tags. Be aware that this effects performance greatly.\n\t\"InstanceSegmentationTags\": [\n\t\t\"Car\",\n\t\t\"Pedestrian\",\n\t\t\"Obstacle\",\n\t\t\"Building\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#segmentation-camera for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/37402ea8-7073-40dd-983f-3aaf855421c1",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "7e1c4cb4-b2d7-40c4-bb75-cebcb94cba5b",
-    "category": "sensor",
-    "type": "SegmentationCameraSensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:32.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "camera",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 1920,
-        "Min": 1,
-        "Name": "Width",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1920
-      },
-      {
-        "Max": 1080,
-        "Min": 1,
-        "Name": "Height",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1080
-      },
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 15
-      },
-      {
-        "Max": 100,
-        "Min": 0,
-        "Name": "JpegQuality",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 75
-      },
-      {
-        "Max": 90,
-        "Min": 1,
-        "Name": "FieldOfView",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 60
-      },
-      {
-        "Max": 1000,
-        "Min": 0.01,
-        "Name": "MinDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0.1
-      },
-      {
-        "Max": 2000,
-        "Min": 0.01,
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 2000
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Distorted",
-        "Type": "bool",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": false
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "DistortionParameters",
-        "Type": "List`1",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": []
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Fisheye",
-        "Type": "bool",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": false
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Xi",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "CameraInfoTopic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "CubemapSize",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1024
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "TargetFPS",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "TargetFPSTime",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 5
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Postprocessing",
-        "Type": "List`1",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": []
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a37334ff8da9e509e7"
-  },
-  "cid": "e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
-  "name": "2D Ground Truth Sensor",
-  "endpoint": "/api/v1/plugins/e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
-  "data": {
-    "assetGuid": "67d4aed4-5c4a-4eae-8fb7-c3e561aa4c71",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2",
-      "2021.1",
-      "2021.1.1"
-    ],
-    "id": "e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
-    "name": "2D Ground Truth Sensor",
-    "description": "This sensor outputs an image where objects are encased in a box. The color of the box depends on the type of object.\n\t[\n\t\t\"Car\": \"Green\"\n\t\t\"Pedestrian\": \"Yellow\"\n\t\t\"Bicycle\": \"Cyan\"\n\t\t\"Unknown\":  \"Magenta\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#2d-ground-truth for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/67d4aed4-5c4a-4eae-8fb7-c3e561aa4c71",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": "9ca9e8f4-2271-472f-b0f5-c2c2453500fc",
-    "category": "sensor",
-    "type": "PerceptionSensor2D",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:33.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      },
-      {
-        "name": "perception",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "Default",
-        "meta": {
-          "sortKey": 2
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 1920,
-        "Min": 1,
-        "Name": "Width",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1920
-      },
-      {
-        "Max": 1080,
-        "Min": 1,
-        "Name": "Height",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1080
-      },
-      {
-        "Max": 90,
-        "Min": 1,
-        "Name": "FieldOfView",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 60
-      },
-      {
-        "Max": 1000,
-        "Min": 0.01,
-        "Name": "MinDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 0.1
-      },
-      {
-        "Max": 2000,
-        "Min": 0.01,
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 2000
-      },
-      {
-        "Max": 2000,
-        "Min": 0.01,
-        "Name": "DetectionRange",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 100
-      },
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 30
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
     "$oid": "6287d8a37334ff8da9e509e8"
   },
   "cid": "e3fef197-9724-48ec-b98e-c5a0892d09c4",
@@ -4310,13 +3649,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a37334ff8da9e509e9"
+    "$oid": "6287d8a27334ff8da9e509e5"
   },
-  "cid": "ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
-  "name": "Control Calibration Sensor",
-  "endpoint": "/api/v1/plugins/ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
+  "cid": "c4ba9b81-b274-4c05-b78e-636e61b4590e",
+  "name": "Signal Sensor",
+  "endpoint": "/api/v1/plugins/c4ba9b81-b274-4c05-b78e-636e61b4590e",
   "data": {
-    "assetGuid": "089e2531-4c26-41f9-85e1-0b8dc4af4fe2",
+    "assetGuid": "b96c848a-056f-4961-9bcd-4c885e2b083d",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -4335,14 +3674,14 @@
       "2021.1",
       "2021.1.1"
     ],
-    "id": "ef77d2d3-32ff-4627-9f0c-8eca68c18f71",
-    "name": "Control Calibration Sensor",
-    "description": "This sensor outputs control calibration criteria collected by AD Stacks (Apollo, Autoware). It generates steering, throttle or brakes with gear commands between minimum and maximum of velocity during duration.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#control-calibration for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/089e2531-4c26-41f9-85e1-0b8dc4af4fe2",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
-    "lastAssetGuid": "fc62697d-09b6-40bd-a975-cd1992e91599",
+    "id": "c4ba9b81-b274-4c05-b78e-636e61b4590e",
+    "name": "Signal Sensor",
+    "description": "This sensor returns ground truth data for traffic light signals connected to the current lane of ego vehicle and creates bounding boxes around the detected signals. The color of the bounding box corresponds to the signal's type:\n\t[\n\t\t\"Green\": \"Green\"\n\t\t\"Yellow\": \"Yellow\"\n\t\t\"Red\": \"Red\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#signal-sensor for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/b96c848a-056f-4961-9bcd-4c885e2b083d",
+    "lastVersionDate": "2021-10-01T20:56:31.000Z",
+    "lastAssetGuid": "d7cc5876-aa06-45b6-9873-513959d3375f",
     "category": "sensor",
-    "type": "ControlCalibrationSensor",
+    "type": "SignalSensor",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -4352,7 +3691,7 @@
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
     "createdAt": "2021-03-17T20:28:25.000Z",
-    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "updatedAt": "2021-10-01T20:56:31.000Z",
     "tags": [
       {
         "name": "lg",
@@ -4361,7 +3700,7 @@
         }
       },
       {
-        "name": "Control",
+        "name": "Signal",
         "meta": {
           "sortKey": 1
         }
@@ -4380,13 +3719,22 @@
     },
     "sensorParameters": [
       {
-        "Max": null,
-        "Min": null,
-        "Name": "States",
-        "Type": "List`1",
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "float",
         "Unit": null,
         "Values": null,
-        "DefaultValue": []
+        "DefaultValue": 10
+      },
+      {
+        "Max": 1000,
+        "Min": 1,
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 100
       },
       {
         "Max": null,
@@ -4396,6 +3744,124 @@
         "Unit": null,
         "Values": null,
         "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a67334ff8da9e509f1"
+  },
+  "cid": "fade6df0-08b7-4124-8784-bfe712649c0f",
+  "name": "Custom_Ros",
+  "endpoint": "/api/v1/plugins/fade6df0-08b7-4124-8784-bfe712649c0f",
+  "data": {
+    "assetGuid": "568f6162-c4e4-4f39-b6a3-d4be06c52bd7",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+        "firstName": "Gizem",
+        "lastName": "Yeşildal"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.2"
+    ],
+    "id": "fade6df0-08b7-4124-8784-bfe712649c0f",
+    "name": "Custom_Ros",
+    "description": "Custom_Ros",
+    "imageUrl": "/api/v1/assets/download/preview/568f6162-c4e4-4f39-b6a3-d4be06c52bd7",
+    "lastVersionDate": "2021-09-29T08:18:36.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "ROS",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Gizem Yeşildal",
+    "accessType": "public",
+    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
+    "status": "active",
+    "createdAt": "2021-09-29T08:18:36.000Z",
+    "updatedAt": "2021-09-29T08:18:56.000Z",
+    "tags": [],
+    "owner": {
+      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+      "firstName": "Gizem",
+      "lastName": "Yeşildal"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a67334ff8da9e509f0"
+  },
+  "cid": "f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
+  "name": "Timer Sensor",
+  "endpoint": "/api/v1/plugins/f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
+  "data": {
+    "assetGuid": "d178d557-5066-4d87-8723-3880566b7c41",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0bf676b5-4d27-421b-98d1-d28831e36ced",
+        "firstName": "Kazumasa",
+        "lastName": "Sakiyama"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.2",
+      "2021.2.2"
+    ],
+    "id": "f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
+    "name": "Timer Sensor",
+    "description": "Timer Sensor for AIChallenge 2021",
+    "imageUrl": "/api/v1/assets/download/preview/d178d557-5066-4d87-8723-3880566b7c41",
+    "lastVersionDate": "2021-10-08T11:03:58.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "AIChallenge_TimerSensor",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Kazumasa Sakiyama",
+    "accessType": "public",
+    "ownerId": "0bf676b5-4d27-421b-98d1-d28831e36ced",
+    "status": "active",
+    "createdAt": "2021-09-28T09:34:59.000Z",
+    "updatedAt": "2021-10-08T11:03:58.000Z",
+    "tags": [],
+    "owner": {
+      "id": "0bf676b5-4d27-421b-98d1-d28831e36ced",
+      "firstName": "Kazumasa",
+      "lastName": "Sakiyama"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": "/aichallenge/time"
       },
       {
         "Max": null,
@@ -4835,6 +4301,178 @@
   }
 },{
   "_id": {
+    "$oid": "6287d8a77334ff8da9e509f2"
+  },
+  "cid": "3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
+  "name": "Destination Sensor",
+  "endpoint": "/api/v1/plugins/3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
+  "data": {
+    "assetGuid": "8bb43ad1-cc31-4da3-8bb6-53060343d59e",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3"
+    ],
+    "id": "3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
+    "name": "Destination Sensor",
+    "description": "The Destination Sensor is used to set an initial pose or a destination pose of an attached agent for Navigation2 stack via python API scripts. The sensor publishes to ROS and ROS2 using the `geometry_msgs/PoseStamped` message type.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#destination-sensor for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/8bb43ad1-cc31-4da3-8bb6-53060343d59e",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "DestinationSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-10-01T20:56:32.000Z",
+    "updatedAt": "2021-10-01T20:56:34.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "ros",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "robotics",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "InitPoseTopic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "InitPoseFrame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": 10,
+        "Min": 1,
+        "Name": "DestinationCheckRadius",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1
+      },
+      {
+        "Max": 360,
+        "Min": 1,
+        "Name": "DestinationCheckAngle",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a87334ff8da9e509f5"
+  },
+  "cid": "674a527f-150d-4f16-aef6-7323ff9d01db",
+  "name": "ROS_gzm",
+  "endpoint": "/api/v1/plugins/674a527f-150d-4f16-aef6-7323ff9d01db",
+  "data": {
+    "assetGuid": "386670e5-c6e3-4c04-b0fa-83b91136b16e",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+        "firstName": "Gizem",
+        "lastName": "Yeşildal"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3"
+    ],
+    "id": "674a527f-150d-4f16-aef6-7323ff9d01db",
+    "name": "ROS_gzm",
+    "description": "ROS_gzm",
+    "imageUrl": "/api/v1/assets/download/preview/386670e5-c6e3-4c04-b0fa-83b91136b16e",
+    "lastVersionDate": "2021-10-05T13:05:33.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "ROS",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Gizem Yeşildal",
+    "accessType": "public",
+    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
+    "status": "active",
+    "createdAt": "2021-10-05T13:05:33.000Z",
+    "updatedAt": "2021-11-11T13:00:36.000Z",
+    "tags": [],
+    "owner": {
+      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+      "firstName": "Gizem",
+      "lastName": "Yeşildal"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
     "$oid": "6287d8a57334ff8da9e509ed"
   },
   "cid": "6bee1cb8-1be9-417a-9cbb-7fcf2eed9600",
@@ -5014,298 +4652,13 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a57334ff8da9e509ee"
+    "$oid": "6287d8a87334ff8da9e509f6"
   },
-  "cid": "d490cb21-2a44-447f-a289-7d869f23aabf",
-  "name": "ROS2ForUnitySVLBridge",
-  "endpoint": "/api/v1/plugins/d490cb21-2a44-447f-a289-7d869f23aabf",
+  "cid": "3e72a6be-288c-4635-8b6f-fd9f64abefbe",
+  "name": "AutoDriveCarStateSensor (1)",
+  "endpoint": "/api/v1/plugins/3e72a6be-288c-4635-8b6f-fd9f64abefbe",
   "data": {
-    "assetGuid": "50cb9eb3-4f54-4007-b700-f4064a4df5f9",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
-        "firstName": "Robotec.ai",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2.2"
-    ],
-    "id": "d490cb21-2a44-447f-a289-7d869f23aabf",
-    "name": "ROS2ForUnitySVLBridge",
-    "description": "ROS2 For Unity svl bridge by Robotec.ai\n\nIf you are using this plugin with ADE image in Autoware.Auto (https://www.autoware.org/) project then you are good to go and don't need to do anything. Otherwise, you have to prepare your SVL simulator:\n\nIMPORTANT #1: This bridge requires additional binaries based on your ROS2 and OS versions. Go to https://github.com/RobotecAI/ROS2ForUnity/releases to download required archive, then extract its contents to SVL simulator:\n1. libraries from `Plugins/<OS_NAME>/x86_64/*` put into `simulator_Data/Plugins` of svl simulator directory,\n2. libraries from `Plugins/*.dll` put into `simulator_Data/Managed` of svl simulator directory.\n\nIMPORTANT #2: In order for plugin to work, you have to also set \"LD_LIBRARY_PATH\" points to \" <APP>/simulator_Data/Plugins\" folder.\n\nIMPORTANT #3: You must have your ROS2 environment sourced before running application.\n\nThis is native ROS2 bridge implementation based on ros2-for-unity project: https://github.com/RobotecAI/ros2-for-unity\n\nSource code: https://github.com/RobotecAI/ROS2ForUnity",
-    "imageUrl": "/api/v1/assets/download/preview/50cb9eb3-4f54-4007-b700-f4064a4df5f9",
-    "lastVersionDate": "2022-02-02T14:00:45.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "ROS2",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Robotec.ai Content",
-    "accessType": "public",
-    "ownerId": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
-    "status": "active",
-    "createdAt": "2021-08-31T08:31:52.000Z",
-    "updatedAt": "2022-02-02T14:00:45.000Z",
-    "tags": [],
-    "owner": {
-      "id": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
-      "firstName": "Robotec.ai",
-      "lastName": "Content"
-    },
-    "sensorParameters": null
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a57334ff8da9e509ef"
-  },
-  "cid": "8dac5db9-53c7-4e5f-be9c-88624508598a",
-  "name": "ComfortSensor",
-  "endpoint": "/api/v1/plugins/8dac5db9-53c7-4e5f-be9c-88624508598a",
-  "data": {
-    "assetGuid": "711f4e1d-27bb-4628-8642-319db29e6d45",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "990b5222-c296-4093-a218-a9a5020735ec",
-        "firstName": "Vincent",
-        "lastName": "Fu"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.2",
-      "2021.2.2"
-    ],
-    "id": "8dac5db9-53c7-4e5f-be9c-88624508598a",
-    "name": "ComfortSensor",
-    "description": "ComfortSensor from lgsvl github",
-    "imageUrl": "/api/v1/assets/download/preview/711f4e1d-27bb-4628-8642-319db29e6d45",
-    "lastVersionDate": "2021-09-01T11:44:35.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "ComfortSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Vincent Fu",
-    "accessType": "public",
-    "ownerId": "990b5222-c296-4093-a218-a9a5020735ec",
-    "status": "active",
-    "createdAt": "2021-09-01T11:44:35.000Z",
-    "updatedAt": "2021-09-01T11:45:48.000Z",
-    "tags": [
-      {
-        "name": "customer comforsensor",
-        "meta": {
-          "sortKey": 0
-        }
-      }
-    ],
-    "owner": {
-      "id": "990b5222-c296-4093-a218-a9a5020735ec",
-      "firstName": "Vincent",
-      "lastName": "Fu"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxAccelAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxJerkAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxBrakeAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxSuddenSteerAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxAngularVelocityAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MaxAngularAccelerationAllowed",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "RollTolerance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "MinSlipVelocity",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "SlipTolerance",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "EventRate",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 3
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a67334ff8da9e509f0"
-  },
-  "cid": "f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
-  "name": "Timer Sensor",
-  "endpoint": "/api/v1/plugins/f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
-  "data": {
-    "assetGuid": "d178d557-5066-4d87-8723-3880566b7c41",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0bf676b5-4d27-421b-98d1-d28831e36ced",
-        "firstName": "Kazumasa",
-        "lastName": "Sakiyama"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.2",
-      "2021.2.2"
-    ],
-    "id": "f3d4a0ea-dcfc-44c9-b315-9b44ac6b8910",
-    "name": "Timer Sensor",
-    "description": "Timer Sensor for AIChallenge 2021",
-    "imageUrl": "/api/v1/assets/download/preview/d178d557-5066-4d87-8723-3880566b7c41",
-    "lastVersionDate": "2021-10-08T11:03:58.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "AIChallenge_TimerSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Kazumasa Sakiyama",
-    "accessType": "public",
-    "ownerId": "0bf676b5-4d27-421b-98d1-d28831e36ced",
-    "status": "active",
-    "createdAt": "2021-09-28T09:34:59.000Z",
-    "updatedAt": "2021-10-08T11:03:58.000Z",
-    "tags": [],
-    "owner": {
-      "id": "0bf676b5-4d27-421b-98d1-d28831e36ced",
-      "firstName": "Kazumasa",
-      "lastName": "Sakiyama"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": "/aichallenge/time"
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a67334ff8da9e509f1"
-  },
-  "cid": "fade6df0-08b7-4124-8784-bfe712649c0f",
-  "name": "Custom_Ros",
-  "endpoint": "/api/v1/plugins/fade6df0-08b7-4124-8784-bfe712649c0f",
-  "data": {
-    "assetGuid": "568f6162-c4e4-4f39-b6a3-d4be06c52bd7",
+    "assetGuid": "c8d5c6c4-8661-44b7-87b6-865561fb5819",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -5318,16 +4671,16 @@
       }
     },
     "supportedSimulatorVersions": [
-      "2021.2"
+      "2021.3"
     ],
-    "id": "fade6df0-08b7-4124-8784-bfe712649c0f",
-    "name": "Custom_Ros",
-    "description": "Custom_Ros",
-    "imageUrl": "/api/v1/assets/download/preview/568f6162-c4e4-4f39-b6a3-d4be06c52bd7",
-    "lastVersionDate": "2021-09-29T08:18:36.000Z",
+    "id": "3e72a6be-288c-4635-8b6f-fd9f64abefbe",
+    "name": "AutoDriveCarStateSensor (1)",
+    "description": "AutoDriveCarStateSensor (1)",
+    "imageUrl": "/api/v1/assets/download/preview/c8d5c6c4-8661-44b7-87b6-865561fb5819",
+    "lastVersionDate": "2021-10-05T13:06:52.000Z",
     "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "ROS",
+    "category": "sensor",
+    "type": "AutoDriveCarStateSensor",
     "version": null,
     "licenseName": "User Content",
     "authorName": null,
@@ -5336,25 +4689,191 @@
     "accessType": "public",
     "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
     "status": "active",
-    "createdAt": "2021-09-29T08:18:36.000Z",
-    "updatedAt": "2021-09-29T08:18:56.000Z",
+    "createdAt": "2021-10-05T13:06:52.000Z",
+    "updatedAt": "2021-11-11T11:12:59.000Z",
     "tags": [],
     "owner": {
       "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
       "firstName": "Gizem",
       "lastName": "Yeşildal"
     },
-    "sensorParameters": null
+    "sensorParameters": [
+      {
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
   }
 },{
   "_id": {
-    "$oid": "6287d8a77334ff8da9e509f2"
+    "$oid": "6287d8a87334ff8da9e509f7"
   },
-  "cid": "3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
-  "name": "Destination Sensor",
-  "endpoint": "/api/v1/plugins/3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
+  "cid": "4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
+  "name": "AutoDriveVehicleControlSensor (1)",
+  "endpoint": "/api/v1/plugins/4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
   "data": {
-    "assetGuid": "8bb43ad1-cc31-4da3-8bb6-53060343d59e",
+    "assetGuid": "8319b90c-9af8-4c09-9dd3-5264a7c99b06",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+        "firstName": "Gizem",
+        "lastName": "Yeşildal"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3"
+    ],
+    "id": "4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
+    "name": "AutoDriveVehicleControlSensor (1)",
+    "description": "AutoDriveVehicleControlSensor (1)",
+    "imageUrl": "/api/v1/assets/download/preview/8319b90c-9af8-4c09-9dd3-5264a7c99b06",
+    "lastVersionDate": "2021-10-12T11:04:34.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "AutoDriveVehicleControlSensor",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Gizem Yeşildal",
+    "accessType": "public",
+    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
+    "status": "active",
+    "createdAt": "2021-10-05T13:07:05.000Z",
+    "updatedAt": "2021-11-11T11:12:51.000Z",
+    "tags": [],
+    "owner": {
+      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
+      "firstName": "Gizem",
+      "lastName": "Yeşildal"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a97334ff8da9e509f8"
+  },
+  "cid": "978723f6-ce94-4c22-a530-f5451277c2e8",
+  "name": "Line Distance Sensor",
+  "endpoint": "/api/v1/plugins/978723f6-ce94-4c22-a530-f5451277c2e8",
+  "data": {
+    "assetGuid": "7475aa0d-a6ab-4927-baaf-f781e835fb99",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
+        "firstName": "ertauren",
+        "lastName": "akkan"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2"
+    ],
+    "id": "978723f6-ce94-4c22-a530-f5451277c2e8",
+    "name": "Line Distance Sensor",
+    "description": "It will show distance(in 3D) from where it placed to line. Border lines and lanes need to be annotated for it to work. \nDidn't optimize it, or calculate its performance, so there might or might not be some performance backlash for cpu. \nIt loops all lanes and then loops closest lane's lines inside single update call in order to find its distance to closest line segment.\nContact: ertauren@gmail.com",
+    "imageUrl": "/api/v1/assets/download/preview/7475aa0d-a6ab-4927-baaf-f781e835fb99",
+    "lastVersionDate": "2021-11-17T08:01:35.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "LaneViolationSensor",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "ertauren akkan",
+    "accessType": "public",
+    "ownerId": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
+    "status": "active",
+    "createdAt": "2021-11-08T15:57:16.000Z",
+    "updatedAt": "2021-11-24T13:36:33.000Z",
+    "tags": [],
+    "owner": {
+      "id": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
+      "firstName": "ertauren",
+      "lastName": "akkan"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a77334ff8da9e509f4"
+  },
+  "cid": "af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
+  "name": "Intel RealSenseD435 Sensor",
+  "endpoint": "/api/v1/plugins/af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
+  "data": {
+    "assetGuid": "084a42cd-238b-40d8-b8d9-671d936351d7",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
@@ -5369,14 +4888,14 @@
     "supportedSimulatorVersions": [
       "2021.3"
     ],
-    "id": "3f1db91f-4eed-43b2-99ed-c78c129d6aa1",
-    "name": "Destination Sensor",
-    "description": "The Destination Sensor is used to set an initial pose or a destination pose of an attached agent for Navigation2 stack via python API scripts. The sensor publishes to ROS and ROS2 using the `geometry_msgs/PoseStamped` message type.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#destination-sensor for more details.",
-    "imageUrl": "/api/v1/assets/download/preview/8bb43ad1-cc31-4da3-8bb6-53060343d59e",
-    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "id": "af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
+    "name": "Intel RealSenseD435 Sensor",
+    "description": "This is sensor based off the Intel RealSenseD435",
+    "imageUrl": "/api/v1/assets/download/preview/084a42cd-238b-40d8-b8d9-671d936351d7",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
     "lastAssetGuid": null,
     "category": "sensor",
-    "type": "DestinationSensor",
+    "type": "IntelRealSenseD435Sensor",
     "version": null,
     "licenseName": "LG Content",
     "authorName": null,
@@ -5385,25 +4904,13 @@
     "accessType": "public",
     "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
-    "createdAt": "2021-10-01T20:56:32.000Z",
-    "updatedAt": "2021-10-01T20:56:34.000Z",
+    "createdAt": "2021-10-01T20:56:33.000Z",
+    "updatedAt": "2021-10-02T00:19:41.000Z",
     "tags": [
       {
         "name": "lg",
         "meta": {
           "sortKey": 0
-        }
-      },
-      {
-        "name": "ros",
-        "meta": {
-          "sortKey": 1
-        }
-      },
-      {
-        "name": "robotics",
-        "meta": {
-          "sortKey": 2
         }
       }
     ],
@@ -5414,9 +4921,90 @@
     },
     "sensorParameters": [
       {
+        "Max": 1920,
+        "Min": 1,
+        "Name": "ColorWidth",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 640
+      },
+      {
+        "Max": 1080,
+        "Min": 1,
+        "Name": "ColorHeight",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 480
+      },
+      {
+        "Max": 1920,
+        "Min": 1,
+        "Name": "DepthWidth",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 640
+      },
+      {
+        "Max": 1080,
+        "Min": 1,
+        "Name": "DepthHeight",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 480
+      },
+      {
         "Max": null,
         "Min": null,
-        "Name": "InitPoseTopic",
+        "Name": "ColorTopic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": "/camera/color/image_raw"
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "DepthTopic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": "/camera/depth/image_rect_raw"
+      },
+      {
+        "Max": 60,
+        "Min": 1,
+        "Name": "ColorFrequency",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 15
+      },
+      {
+        "Max": 60,
+        "Min": 1,
+        "Name": "DepthFrequency",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 15
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "InvalidDepthBand",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
         "Type": "string",
         "Unit": null,
         "Values": null,
@@ -5425,30 +5013,69 @@
       {
         "Max": null,
         "Min": null,
-        "Name": "InitPoseFrame",
+        "Name": "Frame",
         "Type": "string",
         "Unit": null,
         "Values": null,
         "DefaultValue": ""
-      },
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a97334ff8da9e509f9"
+  },
+  "cid": "72466a9a-f830-4a22-a071-82cd35327d92",
+  "name": "my_door",
+  "endpoint": "/api/v1/plugins/72466a9a-f830-4a22-a071-82cd35327d92",
+  "data": {
+    "assetGuid": "64316c91-d605-4017-815b-0b21af32efa5",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "37adbffa-0127-475d-805c-de8301bba0ee",
+        "firstName": "bao",
+        "lastName": "lixin"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3"
+    ],
+    "id": "72466a9a-f830-4a22-a071-82cd35327d92",
+    "name": "my_door",
+    "description": "1",
+    "imageUrl": "/api/v1/assets/download/preview/64316c91-d605-4017-815b-0b21af32efa5",
+    "lastVersionDate": "2022-01-25T02:42:20.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "VehicleStateSensor",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "bao lixin",
+    "accessType": "public",
+    "ownerId": "37adbffa-0127-475d-805c-de8301bba0ee",
+    "status": "active",
+    "createdAt": "2022-01-19T02:46:00.000Z",
+    "updatedAt": "2022-01-25T02:42:20.000Z",
+    "tags": [
       {
-        "Max": 10,
-        "Min": 1,
-        "Name": "DestinationCheckRadius",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 1
-      },
-      {
-        "Max": 360,
-        "Min": 1,
-        "Name": "DestinationCheckAngle",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
+        "name": "1",
+        "meta": {
+          "sortKey": 0
+        }
+      }
+    ],
+    "owner": {
+      "id": "37adbffa-0127-475d-805c-de8301bba0ee",
+      "firstName": "bao",
+      "lastName": "lixin"
+    },
+    "sensorParameters": [
       {
         "Max": null,
         "Min": null,
@@ -5672,501 +5299,6 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8a77334ff8da9e509f4"
-  },
-  "cid": "af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
-  "name": "Intel RealSenseD435 Sensor",
-  "endpoint": "/api/v1/plugins/af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
-  "data": {
-    "assetGuid": "084a42cd-238b-40d8-b8d9-671d936351d7",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-        "firstName": "SVL",
-        "lastName": "Content"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "af45d8d4-f5e3-11eb-a493-93b6d1b3c480",
-    "name": "Intel RealSenseD435 Sensor",
-    "description": "This is sensor based off the Intel RealSenseD435",
-    "imageUrl": "/api/v1/assets/download/preview/084a42cd-238b-40d8-b8d9-671d936351d7",
-    "lastVersionDate": "2021-10-01T20:56:33.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "IntelRealSenseD435Sensor",
-    "version": null,
-    "licenseName": "LG Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "LG Electronics Inc.",
-    "accessType": "public",
-    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
-    "status": "active",
-    "createdAt": "2021-10-01T20:56:33.000Z",
-    "updatedAt": "2021-10-02T00:19:41.000Z",
-    "tags": [
-      {
-        "name": "lg",
-        "meta": {
-          "sortKey": 0
-        }
-      }
-    ],
-    "owner": {
-      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
-      "firstName": "SVL",
-      "lastName": "Content"
-    },
-    "sensorParameters": [
-      {
-        "Max": 1920,
-        "Min": 1,
-        "Name": "ColorWidth",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 640
-      },
-      {
-        "Max": 1080,
-        "Min": 1,
-        "Name": "ColorHeight",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 480
-      },
-      {
-        "Max": 1920,
-        "Min": 1,
-        "Name": "DepthWidth",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 640
-      },
-      {
-        "Max": 1080,
-        "Min": 1,
-        "Name": "DepthHeight",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 480
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "ColorTopic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": "/camera/color/image_raw"
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "DepthTopic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": "/camera/depth/image_rect_raw"
-      },
-      {
-        "Max": 60,
-        "Min": 1,
-        "Name": "ColorFrequency",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 15
-      },
-      {
-        "Max": 60,
-        "Min": 1,
-        "Name": "DepthFrequency",
-        "Type": "int",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 15
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "InvalidDepthBand",
-        "Type": "bool",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": false
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a87334ff8da9e509f5"
-  },
-  "cid": "674a527f-150d-4f16-aef6-7323ff9d01db",
-  "name": "ROS_gzm",
-  "endpoint": "/api/v1/plugins/674a527f-150d-4f16-aef6-7323ff9d01db",
-  "data": {
-    "assetGuid": "386670e5-c6e3-4c04-b0fa-83b91136b16e",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-        "firstName": "Gizem",
-        "lastName": "Yeşildal"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "674a527f-150d-4f16-aef6-7323ff9d01db",
-    "name": "ROS_gzm",
-    "description": "ROS_gzm",
-    "imageUrl": "/api/v1/assets/download/preview/386670e5-c6e3-4c04-b0fa-83b91136b16e",
-    "lastVersionDate": "2021-10-05T13:05:33.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "ROS",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Gizem Yeşildal",
-    "accessType": "public",
-    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
-    "status": "active",
-    "createdAt": "2021-10-05T13:05:33.000Z",
-    "updatedAt": "2021-11-11T13:00:36.000Z",
-    "tags": [],
-    "owner": {
-      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-      "firstName": "Gizem",
-      "lastName": "Yeşildal"
-    },
-    "sensorParameters": null
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a87334ff8da9e509f6"
-  },
-  "cid": "3e72a6be-288c-4635-8b6f-fd9f64abefbe",
-  "name": "AutoDriveCarStateSensor (1)",
-  "endpoint": "/api/v1/plugins/3e72a6be-288c-4635-8b6f-fd9f64abefbe",
-  "data": {
-    "assetGuid": "c8d5c6c4-8661-44b7-87b6-865561fb5819",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-        "firstName": "Gizem",
-        "lastName": "Yeşildal"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "3e72a6be-288c-4635-8b6f-fd9f64abefbe",
-    "name": "AutoDriveCarStateSensor (1)",
-    "description": "AutoDriveCarStateSensor (1)",
-    "imageUrl": "/api/v1/assets/download/preview/c8d5c6c4-8661-44b7-87b6-865561fb5819",
-    "lastVersionDate": "2021-10-05T13:06:52.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "AutoDriveCarStateSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Gizem Yeşildal",
-    "accessType": "public",
-    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
-    "status": "active",
-    "createdAt": "2021-10-05T13:06:52.000Z",
-    "updatedAt": "2021-11-11T11:12:59.000Z",
-    "tags": [],
-    "owner": {
-      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-      "firstName": "Gizem",
-      "lastName": "Yeşildal"
-    },
-    "sensorParameters": [
-      {
-        "Max": 100,
-        "Min": 1,
-        "Name": "Frequency",
-        "Type": "float",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": 10
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a87334ff8da9e509f7"
-  },
-  "cid": "4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
-  "name": "AutoDriveVehicleControlSensor (1)",
-  "endpoint": "/api/v1/plugins/4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
-  "data": {
-    "assetGuid": "8319b90c-9af8-4c09-9dd3-5264a7c99b06",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-        "firstName": "Gizem",
-        "lastName": "Yeşildal"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "4a9112af-f8e8-4083-8c23-a1b62c9c36d1",
-    "name": "AutoDriveVehicleControlSensor (1)",
-    "description": "AutoDriveVehicleControlSensor (1)",
-    "imageUrl": "/api/v1/assets/download/preview/8319b90c-9af8-4c09-9dd3-5264a7c99b06",
-    "lastVersionDate": "2021-10-12T11:04:34.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "AutoDriveVehicleControlSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "Gizem Yeşildal",
-    "accessType": "public",
-    "ownerId": "7168cca0-5969-48c9-9615-2e88e0f00402",
-    "status": "active",
-    "createdAt": "2021-10-05T13:07:05.000Z",
-    "updatedAt": "2021-11-11T11:12:51.000Z",
-    "tags": [],
-    "owner": {
-      "id": "7168cca0-5969-48c9-9615-2e88e0f00402",
-      "firstName": "Gizem",
-      "lastName": "Yeşildal"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a97334ff8da9e509f8"
-  },
-  "cid": "978723f6-ce94-4c22-a530-f5451277c2e8",
-  "name": "Line Distance Sensor",
-  "endpoint": "/api/v1/plugins/978723f6-ce94-4c22-a530-f5451277c2e8",
-  "data": {
-    "assetGuid": "7475aa0d-a6ab-4927-baaf-f781e835fb99",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
-        "firstName": "ertauren",
-        "lastName": "akkan"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3",
-      "2021.2",
-      "2021.2.2"
-    ],
-    "id": "978723f6-ce94-4c22-a530-f5451277c2e8",
-    "name": "Line Distance Sensor",
-    "description": "It will show distance(in 3D) from where it placed to line. Border lines and lanes need to be annotated for it to work. \nDidn't optimize it, or calculate its performance, so there might or might not be some performance backlash for cpu. \nIt loops all lanes and then loops closest lane's lines inside single update call in order to find its distance to closest line segment.\nContact: ertauren@gmail.com",
-    "imageUrl": "/api/v1/assets/download/preview/7475aa0d-a6ab-4927-baaf-f781e835fb99",
-    "lastVersionDate": "2021-11-17T08:01:35.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "LaneViolationSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "ertauren akkan",
-    "accessType": "public",
-    "ownerId": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
-    "status": "active",
-    "createdAt": "2021-11-08T15:57:16.000Z",
-    "updatedAt": "2021-11-24T13:36:33.000Z",
-    "tags": [],
-    "owner": {
-      "id": "74ab669a-e169-47f9-be5c-7463aac2b2ea",
-      "firstName": "ertauren",
-      "lastName": "akkan"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
-    "$oid": "6287d8a97334ff8da9e509f9"
-  },
-  "cid": "72466a9a-f830-4a22-a071-82cd35327d92",
-  "name": "my_door",
-  "endpoint": "/api/v1/plugins/72466a9a-f830-4a22-a071-82cd35327d92",
-  "data": {
-    "assetGuid": "64316c91-d605-4017-815b-0b21af32efa5",
-    "isFavored": false,
-    "isShared": false,
-    "isOwned": false,
-    "accessInfo": {
-      "userAccessType": "public",
-      "owner": {
-        "id": "37adbffa-0127-475d-805c-de8301bba0ee",
-        "firstName": "bao",
-        "lastName": "lixin"
-      }
-    },
-    "supportedSimulatorVersions": [
-      "2021.3"
-    ],
-    "id": "72466a9a-f830-4a22-a071-82cd35327d92",
-    "name": "my_door",
-    "description": "1",
-    "imageUrl": "/api/v1/assets/download/preview/64316c91-d605-4017-815b-0b21af32efa5",
-    "lastVersionDate": "2022-01-25T02:42:20.000Z",
-    "lastAssetGuid": null,
-    "category": "sensor",
-    "type": "VehicleStateSensor",
-    "version": null,
-    "licenseName": "User Content",
-    "authorName": null,
-    "authorUrl": null,
-    "copyright": "bao lixin",
-    "accessType": "public",
-    "ownerId": "37adbffa-0127-475d-805c-de8301bba0ee",
-    "status": "active",
-    "createdAt": "2022-01-19T02:46:00.000Z",
-    "updatedAt": "2022-01-25T02:42:20.000Z",
-    "tags": [
-      {
-        "name": "1",
-        "meta": {
-          "sortKey": 0
-        }
-      }
-    ],
-    "owner": {
-      "id": "37adbffa-0127-475d-805c-de8301bba0ee",
-      "firstName": "bao",
-      "lastName": "lixin"
-    },
-    "sensorParameters": [
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Topic",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      },
-      {
-        "Max": null,
-        "Min": null,
-        "Name": "Frame",
-        "Type": "string",
-        "Unit": null,
-        "Values": null,
-        "DefaultValue": ""
-      }
-    ]
-  }
-},{
-  "_id": {
     "$oid": "6287d8aa7334ff8da9e509fa"
   },
   "cid": "e035c0f1-2890-4722-8dba-6a5b8fbe09ff",
@@ -6220,6 +5352,271 @@
       "lastName": "lixin"
     },
     "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8aa7334ff8da9e509fc"
+  },
+  "cid": "41148590-ea65-468b-a5d0-c5e7e15474c7",
+  "name": "ApolloCyberRT",
+  "endpoint": "/api/v1/plugins/41148590-ea65-468b-a5d0-c5e7e15474c7",
+  "data": {
+    "assetGuid": "2b853ede-1076-4903-baa6-bf86d04d0ffd",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "c5901416-4625-4da2-b4fa-e989a62c8f09",
+        "firstName": "Wen",
+        "lastName": "Wang"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3"
+    ],
+    "id": "41148590-ea65-468b-a5d0-c5e7e15474c7",
+    "name": "ApolloCyberRT",
+    "description": "Apollo CyberRT通信模块",
+    "imageUrl": "/api/v1/assets/download/preview/2b853ede-1076-4903-baa6-bf86d04d0ffd",
+    "lastVersionDate": "2022-04-21T01:38:57.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "CyberRT",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Wen Wang",
+    "accessType": "public",
+    "ownerId": "c5901416-4625-4da2-b4fa-e989a62c8f09",
+    "status": "active",
+    "createdAt": "2022-04-10T03:57:51.000Z",
+    "updatedAt": "2022-04-21T01:38:57.000Z",
+    "tags": [],
+    "owner": {
+      "id": "c5901416-4625-4da2-b4fa-e989a62c8f09",
+      "firstName": "Wen",
+      "lastName": "Wang"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a57334ff8da9e509ee"
+  },
+  "cid": "d490cb21-2a44-447f-a289-7d869f23aabf",
+  "name": "ROS2ForUnitySVLBridge",
+  "endpoint": "/api/v1/plugins/d490cb21-2a44-447f-a289-7d869f23aabf",
+  "data": {
+    "assetGuid": "50cb9eb3-4f54-4007-b700-f4064a4df5f9",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
+        "firstName": "Robotec.ai",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2.2"
+    ],
+    "id": "d490cb21-2a44-447f-a289-7d869f23aabf",
+    "name": "ROS2ForUnitySVLBridge",
+    "description": "ROS2 For Unity svl bridge by Robotec.ai\n\nIf you are using this plugin with ADE image in Autoware.Auto (https://www.autoware.org/) project then you are good to go and don't need to do anything. Otherwise, you have to prepare your SVL simulator:\n\nIMPORTANT #1: This bridge requires additional binaries based on your ROS2 and OS versions. Go to https://github.com/RobotecAI/ROS2ForUnity/releases to download required archive, then extract its contents to SVL simulator:\n1. libraries from `Plugins/<OS_NAME>/x86_64/*` put into `simulator_Data/Plugins` of svl simulator directory,\n2. libraries from `Plugins/*.dll` put into `simulator_Data/Managed` of svl simulator directory.\n\nIMPORTANT #2: In order for plugin to work, you have to also set \"LD_LIBRARY_PATH\" points to \" <APP>/simulator_Data/Plugins\" folder.\n\nIMPORTANT #3: You must have your ROS2 environment sourced before running application.\n\nThis is native ROS2 bridge implementation based on ros2-for-unity project: https://github.com/RobotecAI/ros2-for-unity\n\nSource code: https://github.com/RobotecAI/ROS2ForUnity",
+    "imageUrl": "/api/v1/assets/download/preview/50cb9eb3-4f54-4007-b700-f4064a4df5f9",
+    "lastVersionDate": "2022-02-02T14:00:45.000Z",
+    "lastAssetGuid": null,
+    "category": "bridge",
+    "type": "ROS2",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Robotec.ai Content",
+    "accessType": "public",
+    "ownerId": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
+    "status": "active",
+    "createdAt": "2021-08-31T08:31:52.000Z",
+    "updatedAt": "2022-02-02T14:00:45.000Z",
+    "tags": [],
+    "owner": {
+      "id": "0618dbd6-2c4d-4f60-ae5c-7ecd9ee16cc8",
+      "firstName": "Robotec.ai",
+      "lastName": "Content"
+    },
+    "sensorParameters": null
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a57334ff8da9e509ef"
+  },
+  "cid": "8dac5db9-53c7-4e5f-be9c-88624508598a",
+  "name": "ComfortSensor",
+  "endpoint": "/api/v1/plugins/8dac5db9-53c7-4e5f-be9c-88624508598a",
+  "data": {
+    "assetGuid": "711f4e1d-27bb-4628-8642-319db29e6d45",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "990b5222-c296-4093-a218-a9a5020735ec",
+        "firstName": "Vincent",
+        "lastName": "Fu"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.2",
+      "2021.2.2"
+    ],
+    "id": "8dac5db9-53c7-4e5f-be9c-88624508598a",
+    "name": "ComfortSensor",
+    "description": "ComfortSensor from lgsvl github",
+    "imageUrl": "/api/v1/assets/download/preview/711f4e1d-27bb-4628-8642-319db29e6d45",
+    "lastVersionDate": "2021-09-01T11:44:35.000Z",
+    "lastAssetGuid": null,
+    "category": "sensor",
+    "type": "ComfortSensor",
+    "version": null,
+    "licenseName": "User Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "Vincent Fu",
+    "accessType": "public",
+    "ownerId": "990b5222-c296-4093-a218-a9a5020735ec",
+    "status": "active",
+    "createdAt": "2021-09-01T11:44:35.000Z",
+    "updatedAt": "2021-09-01T11:45:48.000Z",
+    "tags": [
+      {
+        "name": "customer comforsensor",
+        "meta": {
+          "sortKey": 0
+        }
+      }
+    ],
+    "owner": {
+      "id": "990b5222-c296-4093-a218-a9a5020735ec",
+      "firstName": "Vincent",
+      "lastName": "Fu"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxAccelAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxJerkAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxBrakeAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxSuddenSteerAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxAngularVelocityAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MaxAngularAccelerationAllowed",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "RollTolerance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "MinSlipVelocity",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "SlipTolerance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 10
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "EventRate",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 3
+      },
       {
         "Max": null,
         "Min": null,
@@ -6328,52 +5725,266 @@
   }
 },{
   "_id": {
-    "$oid": "6287d8aa7334ff8da9e509fc"
+    "$oid": "6287d89a7334ff8da9e509cf"
   },
-  "cid": "41148590-ea65-468b-a5d0-c5e7e15474c7",
-  "name": "ApolloCyberRT",
-  "endpoint": "/api/v1/plugins/41148590-ea65-468b-a5d0-c5e7e15474c7",
+  "cid": "06aef741-23e6-444b-b6d9-18f84f9ace06",
+  "name": "Video Recording Sensor",
+  "endpoint": "/api/v1/plugins/06aef741-23e6-444b-b6d9-18f84f9ace06",
   "data": {
-    "assetGuid": "2b853ede-1076-4903-baa6-bf86d04d0ffd",
+    "assetGuid": "5578e7e7-acc6-447e-b15d-4c8a958b2239",
     "isFavored": false,
     "isShared": false,
     "isOwned": false,
     "accessInfo": {
       "userAccessType": "public",
       "owner": {
-        "id": "c5901416-4625-4da2-b4fa-e989a62c8f09",
-        "firstName": "Wen",
-        "lastName": "Wang"
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
       }
     },
     "supportedSimulatorVersions": [
-      "2021.3"
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
     ],
-    "id": "41148590-ea65-468b-a5d0-c5e7e15474c7",
-    "name": "ApolloCyberRT",
-    "description": "Apollo CyberRT通信模块",
-    "imageUrl": "/api/v1/assets/download/preview/2b853ede-1076-4903-baa6-bf86d04d0ffd",
-    "lastVersionDate": "2022-04-21T01:38:57.000Z",
-    "lastAssetGuid": null,
-    "category": "bridge",
-    "type": "CyberRT",
+    "id": "06aef741-23e6-444b-b6d9-18f84f9ace06",
+    "name": "Video Recording Sensor",
+    "description": "This sensor records a video for test cases.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#video-recording-sensor for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/5578e7e7-acc6-447e-b15d-4c8a958b2239",
+    "lastVersionDate": "2021-10-01T20:56:31.000Z",
+    "lastAssetGuid": "c2afb8e7-77cd-42c9-b3c3-6e7f1631d372",
+    "category": "sensor",
+    "type": "VideoRecordingSensor",
     "version": null,
-    "licenseName": "User Content",
+    "licenseName": "LG Content",
     "authorName": null,
     "authorUrl": null,
-    "copyright": "Wen Wang",
+    "copyright": "LG Electronics Inc.",
     "accessType": "public",
-    "ownerId": "c5901416-4625-4da2-b4fa-e989a62c8f09",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
     "status": "active",
-    "createdAt": "2022-04-10T03:57:51.000Z",
-    "updatedAt": "2022-04-21T01:38:57.000Z",
-    "tags": [],
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:31.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "analytics",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
     "owner": {
-      "id": "c5901416-4625-4da2-b4fa-e989a62c8f09",
-      "firstName": "Wen",
-      "lastName": "Wang"
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
     },
-    "sensorParameters": null
+    "sensorParameters": [
+      {
+        "Max": 1920,
+        "Min": 1,
+        "Name": "Width",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1920
+      },
+      {
+        "Max": 1080,
+        "Min": 1,
+        "Name": "Height",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1080
+      },
+      {
+        "Max": 30,
+        "Min": 1,
+        "Name": "Framerate",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 15
+      },
+      {
+        "Max": 6000,
+        "Min": 1000,
+        "Name": "Bitrate",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 3000
+      },
+      {
+        "Max": 6000,
+        "Min": 1000,
+        "Name": "MaxBitrate",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 6000
+      },
+      {
+        "Max": 51,
+        "Min": 0,
+        "Name": "Quality",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 22
+      },
+      {
+        "Max": 90,
+        "Min": 1,
+        "Name": "FieldOfView",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 60
+      },
+      {
+        "Max": 1000,
+        "Min": 0.01,
+        "Name": "MinDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0.1
+      },
+      {
+        "Max": 2000,
+        "Min": 0.01,
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 2000
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d89f7334ff8da9e509de"
+  },
+  "cid": "8aff00f2-a5e4-4bd3-a778-517f9307fa99",
+  "name": "Vehicle State Sensor",
+  "endpoint": "/api/v1/plugins/8aff00f2-a5e4-4bd3-a778-517f9307fa99",
+  "data": {
+    "assetGuid": "4e098c4c-8294-4714-88f2-7b790951381a",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "8aff00f2-a5e4-4bd3-a778-517f9307fa99",
+    "name": "Vehicle State Sensor",
+    "description": "Example of a sensor to get state of different parts of vehicle.",
+    "imageUrl": "/api/v1/assets/download/preview/4e098c4c-8294-4714-88f2-7b790951381a",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": "a1022620-f2a3-4cef-9146-d10eaa445386",
+    "category": "sensor",
+    "type": "VehicleStateSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "analytics",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
   }
 },{
   "_id": {
@@ -6519,6 +6130,395 @@
         "Unit": null,
         "Values": null,
         "DefaultValue": 3
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a27334ff8da9e509e6"
+  },
+  "cid": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
+  "name": "Segmentation Camera Sensor",
+  "endpoint": "/api/v1/plugins/dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
+  "data": {
+    "assetGuid": "37402ea8-7073-40dd-983f-3aaf855421c1",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
+    "name": "Segmentation Camera Sensor",
+    "description": "This sensor returns an image where objects are colored corresponding to their tag. Example of Instance Segmentation Tags. Be aware that this effects performance greatly.\n\t\"InstanceSegmentationTags\": [\n\t\t\"Car\",\n\t\t\"Pedestrian\",\n\t\t\"Obstacle\",\n\t\t\"Building\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#segmentation-camera for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/37402ea8-7073-40dd-983f-3aaf855421c1",
+    "lastVersionDate": "2021-10-01T20:56:32.000Z",
+    "lastAssetGuid": "7e1c4cb4-b2d7-40c4-bb75-cebcb94cba5b",
+    "category": "sensor",
+    "type": "SegmentationCameraSensor",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:32.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "camera",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": 1920,
+        "Min": 1,
+        "Name": "Width",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1920
+      },
+      {
+        "Max": 1080,
+        "Min": 1,
+        "Name": "Height",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1080
+      },
+      {
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 15
+      },
+      {
+        "Max": 100,
+        "Min": 0,
+        "Name": "JpegQuality",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 75
+      },
+      {
+        "Max": 90,
+        "Min": 1,
+        "Name": "FieldOfView",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 60
+      },
+      {
+        "Max": 1000,
+        "Min": 0.01,
+        "Name": "MinDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0.1
+      },
+      {
+        "Max": 2000,
+        "Min": 0.01,
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 2000
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Distorted",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "DistortionParameters",
+        "Type": "List`1",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": []
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Fisheye",
+        "Type": "bool",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": false
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Xi",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "CameraInfoTopic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "CubemapSize",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1024
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "TargetFPS",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "TargetFPSTime",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 5
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Topic",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Frame",
+        "Type": "string",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": ""
+      },
+      {
+        "Max": null,
+        "Min": null,
+        "Name": "Postprocessing",
+        "Type": "List`1",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": []
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6287d8a37334ff8da9e509e7"
+  },
+  "cid": "e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
+  "name": "2D Ground Truth Sensor",
+  "endpoint": "/api/v1/plugins/e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
+  "data": {
+    "assetGuid": "67d4aed4-5c4a-4eae-8fb7-c3e561aa4c71",
+    "isFavored": false,
+    "isShared": false,
+    "isOwned": false,
+    "accessInfo": {
+      "userAccessType": "public",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      }
+    },
+    "supportedSimulatorVersions": [
+      "2021.3",
+      "2021.2",
+      "2021.2.2",
+      "2021.1",
+      "2021.1.1"
+    ],
+    "id": "e0bfb6cc-a8f0-425e-9b6c-a643ca1e255a",
+    "name": "2D Ground Truth Sensor",
+    "description": "This sensor outputs an image where objects are encased in a box. The color of the box depends on the type of object.\n\t[\n\t\t\"Car\": \"Green\"\n\t\t\"Pedestrian\": \"Yellow\"\n\t\t\"Bicycle\": \"Cyan\"\n\t\t\"Unknown\":  \"Magenta\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#2d-ground-truth for more details.",
+    "imageUrl": "/api/v1/assets/download/preview/67d4aed4-5c4a-4eae-8fb7-c3e561aa4c71",
+    "lastVersionDate": "2021-10-01T20:56:33.000Z",
+    "lastAssetGuid": "9ca9e8f4-2271-472f-b0f5-c2c2453500fc",
+    "category": "sensor",
+    "type": "PerceptionSensor2D",
+    "version": null,
+    "licenseName": "LG Content",
+    "authorName": null,
+    "authorUrl": null,
+    "copyright": "LG Electronics Inc.",
+    "accessType": "public",
+    "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+    "status": "active",
+    "createdAt": "2021-03-17T20:28:25.000Z",
+    "updatedAt": "2021-10-01T20:56:33.000Z",
+    "tags": [
+      {
+        "name": "lg",
+        "meta": {
+          "sortKey": 0
+        }
+      },
+      {
+        "name": "perception",
+        "meta": {
+          "sortKey": 1
+        }
+      },
+      {
+        "name": "Default",
+        "meta": {
+          "sortKey": 2
+        }
+      }
+    ],
+    "owner": {
+      "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "firstName": "SVL",
+      "lastName": "Content"
+    },
+    "sensorParameters": [
+      {
+        "Max": 1920,
+        "Min": 1,
+        "Name": "Width",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1920
+      },
+      {
+        "Max": 1080,
+        "Min": 1,
+        "Name": "Height",
+        "Type": "int",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 1080
+      },
+      {
+        "Max": 90,
+        "Min": 1,
+        "Name": "FieldOfView",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 60
+      },
+      {
+        "Max": 1000,
+        "Min": 0.01,
+        "Name": "MinDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 0.1
+      },
+      {
+        "Max": 2000,
+        "Min": 0.01,
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 2000
+      },
+      {
+        "Max": 2000,
+        "Min": 0.01,
+        "Name": "DetectionRange",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 100
+      },
+      {
+        "Max": 100,
+        "Min": 1,
+        "Name": "Frequency",
+        "Type": "float",
+        "Unit": null,
+        "Values": null,
+        "DefaultValue": 30
       },
       {
         "Max": null,
