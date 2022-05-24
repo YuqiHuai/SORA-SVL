@@ -8,7 +8,7 @@ import fs from "fs";
 //   https://wise.svlsimulator.com/api/v1/assets/download/bundle/cca8a560-0c11-491e-8604-c69b3eb45d91
 //   https://wise.svlsimulator.com/api/v1/assets/download/preview/cca8a560-0c11-491e-8604-c69b3eb45d91?type=small
 
-const dir = path.join(__dirname, "../../assets/preview");
+const dir = path.join(__dirname, "../../assets");
 const allowedPreviewTypes = [
   "small",
   "small2x",
@@ -46,7 +46,7 @@ assetsRouter.get("/preview/:id", async (req, res) => {
   const map = await collections.maps.findOne({ "data.assetGuid": id });
   if (map) {
     // this is map
-    const file = path.join(dir, `/maps/${id}/${type}.webp`);
+    const file = path.join(dir, `/preview/maps/${id}/${type}.webp`);
     const file_type = "image/webp";
     sendFile(file, file_type, res);
     return;
@@ -55,7 +55,7 @@ assetsRouter.get("/preview/:id", async (req, res) => {
   const plugin = await collections.plugins.findOne({ "data.assetGuid": id });
   if (plugin) {
     // this is plugin
-    const file = path.join(dir, `/plugins/${plugin.data.category}.svg`);
+    const file = path.join(dir, `/preview/plugins/${plugin.data.category}.svg`);
     const file_type = "image/svg+xml";
     sendFile(file, file_type, res);
     return;
@@ -64,7 +64,7 @@ assetsRouter.get("/preview/:id", async (req, res) => {
   const vehicle = await collections.vehicles.findOne({ "data.assetGuid": id });
   if (vehicle) {
     // this is a vehicle
-    const file = path.join(dir, `/vehicles/${id}/${type}.webp`);
+    const file = path.join(dir, `preview/vehicles/${id}/${type}.webp`);
     const file_type = "image/webp";
     sendFile(file, file_type, res);
     return;
@@ -75,6 +75,46 @@ assetsRouter.get("/preview/:id", async (req, res) => {
     error: {
       code: "notExist",
       message: `No preview found for ${id}. Make sure you are providing valid assetGuid.`,
+    },
+  });
+});
+
+assetsRouter.get("/bundle/:id", async (req, res) => {
+  const id = req!.params!.id;
+
+  const map = await collections.maps.findOne({ "data.assetGuid": id });
+  if (map) {
+    // this is map
+    const file = path.join(dir, `/maps/${id}`);
+    const file_type = "application/octet-stream";
+    sendFile(file, file_type, res);
+    return;
+  }
+
+  const plugin = await collections.plugins.findOne({ "data.assetGuid": id });
+  if (plugin) {
+    // this is plugin
+    const file = path.join(dir, `/plugins/${id}`);
+    const file_type = "application/octet-stream";
+    sendFile(file, file_type, res);
+    return;
+  }
+
+  const vehicle = await collections.vehicles.findOne({ "data.assetGuid": id });
+  if (vehicle) {
+    // this is a vehicle
+    const file = path.join(dir, `/vehicles/${id}`);
+    const file_type = "application/octet-stream";
+    sendFile(file, file_type, res);
+    return;
+  }
+
+  // invalid id
+  console.log(`Error downloading bundle ${id}`)
+  res.status(404).send({
+    error: {
+      code: "notExist",
+      message: `No bundle found for ${id}. Make sure you are providing valid assetGuid.`,
     },
   });
 });
