@@ -25,9 +25,10 @@ As an effort to keep the tool available for future researches, a draft for a loc
 1. Install Docker
 2. Clone the project
 3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/1bv02d29z4lSB9SWzCBTUt0GjAb876oSR?usp=sharing) and unzip them in `server/assets`
-4. Run `docker-compose up --build -d`
-5. Local SVL Cloud will be available at "http://localhost"
-6. Add `config.yml` to the root directory of SVL client with the following content:
+4. Update `.env` file for server and client following the template (should be same as template, change if you know what you are doing)
+5. Run `docker-compose up --build -d`
+6. Local SVL Cloud will be available at "http://localhost"
+7. Add `config.yml` to the root directory of SVL client with the following content:
    ```
    headless: false
    read_only: false
