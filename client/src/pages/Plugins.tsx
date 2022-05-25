@@ -10,7 +10,9 @@ function Plugins() {
   const [search, setSearch] = useState("");
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/api/v1/plugins");
+      const res = await fetch(
+        `${process.env.REACT_APP_SERVER_URL}/api/v1/plugins`
+      );
       const data = await res.json();
       setData(data.rows as Plugin[]);
     };
@@ -49,7 +51,7 @@ function Plugins() {
 
                   <img
                     className="w-full rounded"
-                    src={`http://localhost:3000${value.imageUrl}?type=small`}
+                    src={`${process.env.REACT_APP_SERVER_URL}${value.imageUrl}?type=small`}
                   />
                   <p className="text-lg font-semibold mt-2 truncate">
                     {value.name}

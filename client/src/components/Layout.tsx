@@ -8,7 +8,8 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
   const getClassNames = (path: string) => {
-    return path === location.pathname
+    const pathName = location.pathname === "/" ? "/maps" : location.pathname;
+    return path === pathName
       ? "w-full bg-neutral-800 p-4 text-white"
       : "w-full bg-neutral-300 p-4 text-black hover:bg-neutral-400";
   };
