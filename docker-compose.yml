@@ -5,6 +5,8 @@ services:
     container_name: sorasvl-server
     build:
       context: ./server
+    depends_on:
+      - mongo
     ports:
       - "3000:3000"
     networks:
@@ -15,6 +17,8 @@ services:
     container_name: sorasvl-client
     build:
       context: ./client
+    depends_on:
+      - server
     ports:
       - "8080:3000"
     networks:
@@ -33,6 +37,8 @@ services:
   # MongoDB
   mongo:
     container_name: sorasvl-mongo
+    depends_on:
+      - nginx
     build:
       context: ./mongo
     ports:
