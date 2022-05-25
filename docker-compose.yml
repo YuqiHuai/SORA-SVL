@@ -7,8 +7,6 @@ services:
       context: ./server
     depends_on:
       - mongo
-    ports:
-      - "3000:3000"
     networks:
       - sorasvl
 
@@ -19,8 +17,6 @@ services:
       context: ./client
     depends_on:
       - server
-    ports:
-      - "8080:3000"
     networks:
       - sorasvl
 
