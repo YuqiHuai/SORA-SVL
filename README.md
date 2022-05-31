@@ -24,7 +24,7 @@ As an effort to keep the tool available for future researches, a draft for a loc
 ### To Run the Project
 1. Install Docker
 2. Clone the project
-3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/1bv02d29z4lSB9SWzCBTUt0GjAb876oSR?usp=sharing) and unzip them in `server/assets`
+3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/1bv02d29z4lSB9SWzCBTUt0GjAb876oSR?usp=sharing) and unzip them in `server/assets`. (preview, maps, plugins, vehicles, hdmaps)
 4. Create `.env` file for server and client following the template (should be same as template, change if you know what you are doing)
 5. Run `docker-compose up --build -d`
 6. Local SVL Cloud will be available at "http://localhost"
@@ -39,6 +39,7 @@ As an effort to keep the tool available for future researches, a draft for a loc
 7. Now, SVL Client can be used without WISE.
 
 ## Future Plans
+- [ ] Allow uploading sensor configuration
 - [ ] Allow creating new simulation templates
 - [ ] Allow creating new vehicle sensor configurations
 - [ ] Allow website to reflect client connection status
