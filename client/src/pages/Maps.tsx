@@ -12,7 +12,7 @@ function Maps() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        `${process.env.REACT_APP_SERVER_URL}/api/v1/maps`
+        `/api/v1/maps`
       );
       const data = await res.json();
       setData(data.rows as Map[]);
@@ -42,7 +42,7 @@ function Maps() {
                   <span className="absolute top-5 left-5 text-white text-lg font-medium">{`${value.owner.firstName} ${value.owner.lastName}`}</span>
                   <img
                     className="w-full rounded"
-                    src={`${process.env.REACT_APP_SERVER_URL}${value.imageUrl}?type=small`}
+                    src={`${value.imageUrl}?type=small`}
                   />
                   <p className="text-lg font-semibold mt-2 truncate">
                     {value.name}

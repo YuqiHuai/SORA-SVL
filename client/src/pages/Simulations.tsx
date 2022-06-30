@@ -3,13 +3,13 @@ import Layout from "../components/Layout";
 
 function Simulations() {
   const onStopSimulation = () => {
-    fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/clusters/stop`);
+    fetch(`/api/v1/clusters/stop`);
   };
   const onDisconnectSimulator = () => {
-    fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/clusters/disconnect`);
+    fetch(`/api/v1/clusters/disconnect`);
   };
   const onStartSimulation = () => {
-    fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/clusters/start/apiOnly`);
+    fetch(`/api/v1/clusters/start/apiOnly`);
   };
 
   return (
