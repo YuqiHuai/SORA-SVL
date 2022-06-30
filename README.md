@@ -28,7 +28,7 @@ As an effort to keep the tool available for future researches, a draft for a loc
 > Since the compressed file for entire maps directory is too large, you will have to manually download map asset individually from the Google Drive folder.
 > Also, when downloading individual asset file, make sure there is no file extension. Google sometimes automatically adds ".zip" to the end, make sure to remove this from the filename.
 > 
-> UPDATE 2022-06-30: WISE provides geojson for some of the maps. To access those geojson, download `geojson.json` from Google Drive.
+> UPDATE 2022-06-30: WISE provides geojson for some of the maps. To access those geojson, download `geojson.json` from Google Drive, and then import them into MongoDB.
 
 4. Create `.env` file for server and client following the template (should be same as template, change if you know what you are doing) (The template refers to `server/.env.template` and `client/.env.template`)
 5. Run `docker-compose up --build -d`
