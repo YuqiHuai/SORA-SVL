@@ -13,7 +13,7 @@ function VehiclePage() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        `${process.env.REACT_APP_SERVER_URL}/api/v1${location.pathname}`
+        `/api/v1${location.pathname}`
       );
       const data = await res.json();
       setVehicle(data as Vehicle);
@@ -64,7 +64,7 @@ function VehiclePage() {
           </div>
           <div>
             <img
-              src={`${process.env.REACT_APP_SERVER_URL}${vehicle.imageUrl}`}
+              src={`${vehicle.imageUrl}`}
             />
           </div>
           <div>
