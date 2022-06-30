@@ -1,2 +1,2 @@
 FROM mongo
-COPY ./* /docker-entrypoint-initdb.d/
+COPY ./setup/* /docker-entrypoint-initdb.d/
