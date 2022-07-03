@@ -52,7 +52,7 @@ As an effort to keep the tool available for future researches, a draft for a loc
 
 ## Known Issues
 
-- It is possible that permission settings related to Docker can cause project to fail. See https://github.com/YuqiHuai/SORA-SVL/issues/11
+- It is possible that permission settings related to Docker can cause project to fail. See https://github.com/YuqiHuai/SORA-SVL/issues/11#issuecomment-1173008100
 
 ## Contributing
 
