@@ -50,6 +50,10 @@ As an effort to keep the tool available for future researches, a draft for a loc
 - [ ] Allow website to reflect client connection status
 - [ ] Add cluster feature to the cloud
 
+### Known Issues
+
+- It is possible that permission settings related to Docker can cause project to fail. See https://github.com/YuqiHuai/SORA-SVL/issues/11
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
