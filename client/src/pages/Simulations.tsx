@@ -24,6 +24,7 @@ function Simulations() {
       setSimulatorStatus(simulatorStatus as SimulatorStatusMap);
     };
 
+    fetchSimulatorStatus();
     const updateSimulatorStatus = setInterval(() => {
       fetchSimulatorStatus();
     }, 500);
