@@ -1,5 +1,5 @@
 import express from "express";
-import { clustersRouter } from "./routers/clusters.router";
+import { clustersRouter, simulationsRouter } from "./routers/clusters.router";
 import { apiRouter } from "./routers/api.router";
 import { connectToDatabase } from "./services/database.service";
 import dotenv from "dotenv";
@@ -17,6 +17,7 @@ connectToDatabase()
     app.use(cors());
     app.use(express.json());
     app.use("/api/v1/clusters", clustersRouter);
+    app.use("/api/v1/simulations", simulationsRouter);
     app.use("/api/v1/assets/download", assetsRouter);
     app.use("/api/v1", apiRouter);
     app.get("*", (req, res) => {
