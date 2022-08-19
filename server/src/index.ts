@@ -15,6 +15,7 @@ connectToDatabase()
   .then(() => {
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(cors());
+    app.use(express.json());
     app.use("/api/v1/clusters", clustersRouter);
     app.use("/api/v1/assets/download", assetsRouter);
     app.use("/api/v1", apiRouter);

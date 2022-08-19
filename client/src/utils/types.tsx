@@ -46,3 +46,12 @@ export type Plugin = {
   };
   category: string;
 };
+
+export type SimulatorStatusMap = {
+  [simulatorId: string]: SimulatorStatus;
+}
+
+export type SimulatorStatus = {
+  alive: boolean;
+  running: boolean;
+};
