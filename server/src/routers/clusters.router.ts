@@ -3,12 +3,15 @@ import events from "events";
 import apiOnly from "../templates/apiOnly";
 
 export const clustersRouter = express.Router();
+export const simulationsRouter = express.Router();
+
 interface SimulatorStatus {
   alive: boolean;
   running: boolean;
 }
 
 clustersRouter.use(express.json());
+simulationsRouter.use(express.json());
 
 const clusterEmitter = new events.EventEmitter();
 const simulatorStatus: {[SimulatorId: string]: SimulatorStatus} = {};
@@ -18,20 +21,21 @@ function registerClientEventHandlers(
   res: express.Response
 ) {
   const simId = req.headers['simid'] as string;
-  simulatorStatus[simId] = { alive: true, running: false };
+  simulatorStatus[simId] = {
+    alive: true,
+    running: false,
+  };
 
   // connection established
   res.write(`data:{status:'OK'}\n\n`);
 
   clusterEmitter.on(`CONFIG-${simId}`, (template) => {
     res.write(`data:{"status":"Config", "data":${template}}\n\n`);
-    simulatorStatus[simId].running = true;
   });
 
   // stop simulation
   clusterEmitter.on(`STOP-${simId}`, () => {
     res.write("data:{'status':'Stop'}\n\n");
-    simulatorStatus[simId].running = false;
   });
 
   // disconnect client
@@ -40,10 +44,31 @@ function registerClientEventHandlers(
     simulatorStatus[simId].alive = false;
   });
 
+  // update simulation status
+  clusterEmitter.on(`UPDATE-${simId}`, (status: string) => {
+    switch (status) {
+    case "Loading":
+    case "Starting":
+    case "Running":
+      simulatorStatus[simId].running = true;
+      break;
+    case "Stopping":
+    case "Error":
+    case "Idle":
+      simulatorStatus[simId].running = false;
+      break;
+    default:
+      break;
+    }
+  });
+
   // server notified when client closes connection
   res.on('close', () => {
     console.log(`<- client ${simId} disconnected`)
-    simulatorStatus[simId] = { alive: false, running: false };
+    simulatorStatus[simId] = {
+      alive: false,
+      running: false,
+    };
   });
 }
 
@@ -90,5 +115,14 @@ clustersRouter.get("/disconnect/:simId", (req, res) => {
   const simId = req.params.simId;
   // disconnect the cluster
   clusterEmitter.emit(`DISCONNECT-${simId}`);
+  res.status(200).send("OK");
+});
+
+simulationsRouter.post("/:simulationId/status", (req, res) => {
+  console.log(req.path);
+  const simId = req.headers['simid'] as string;
+  const { status } = req.body;
+  // update simulation status
+  clusterEmitter.emit(`UPDATE-${simId}`, status);
   res.status(200).send("OK");
 });
