@@ -8,6 +8,7 @@ import Vehicles from "./pages/Vehicle/Vehicles";
 import Plugins from "./pages/Plugins";
 import Simulations from "./pages/Simulations";
 import VehiclePage from "./pages/Vehicle/VehiclePage";
+import SensorConfigurationPage from "./pages/Vehicle/SensorConfiguration";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -18,7 +19,8 @@ root.render(
       <Route path="/" element={<Maps />} />
       <Route path="maps" element={<Maps />} />
       <Route path="vehicles" element={<Vehicles />} />
-      <Route path="vehicles/*" element={<VehiclePage />} />
+      <Route path="vehicles/:cid" element={<VehiclePage />} />
+      <Route path="vehicles/:cid/sensor-configuration/:sid" element={<SensorConfigurationPage />} />
       <Route path="plugins" element={<Plugins />} />
       <Route path="simulations" element={<Simulations />} />
     </Routes>

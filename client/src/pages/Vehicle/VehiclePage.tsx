@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { Vehicle } from "../../utils/types";
 
@@ -96,7 +96,14 @@ function VehiclePage() {
                         key={index}
                         className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                       >
-                        <td className="py-4">{value.name}</td>
+                        <td className="py-4">
+                          <Link
+                            to={`${location.pathname}/sensor-configuration/${value.id}`}
+                            key={index}
+                          >
+                            {value.name}
+                          </Link>
+                        </td>
                         <td>
                           {value.owner.firstName + " " + value.owner.lastName}
                         </td>
