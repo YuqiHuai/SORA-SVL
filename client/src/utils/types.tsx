@@ -2,11 +2,7 @@ export type Map = {
   id: string;
   name: string;
   imageUrl: string;
-  owner: {
-    id: string;
-    firstName: string;
-    lastName: string;
-  };
+  owner: Owner;
 };
 
 export type Owner = {
@@ -15,10 +11,20 @@ export type Owner = {
   lastName: string;
 };
 
+export type Sensor = {
+  name: string;
+  parent?: any;
+  pluginId: string;
+  sortKey: number;
+  plugin: Plugin;
+  type: string;
+};
+
 export type SensorConfiguration = {
   id: string;
   name: string;
   owner: Owner;
+  sensors: Sensor[];
 };
 
 export type Vehicle = {
@@ -27,11 +33,7 @@ export type Vehicle = {
   assetGuid: string;
   imageUrl: string;
   description: string;
-  owner: {
-    id: string;
-    firstName: string;
-    lastName: string;
-  };
+  owner: Owner;
   sensorsConfigurations: SensorConfiguration[];
 };
 
@@ -39,11 +41,7 @@ export type Plugin = {
   id: string;
   name: string;
   imageUrl: string;
-  owner: {
-    id: string;
-    firstName: string;
-    lastName: string;
-  };
+  owner: Owner;
   category: string;
 };
 
