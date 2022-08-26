@@ -79,7 +79,7 @@ function VehiclePage() {
                   <th className="py-3">ID</th>
                 </tr>
               </thead>
-              <tbody className="text-lg text-gray-800">
+              <tbody className="text-lg text-gray-400">
                 {vehicle.sensorsConfigurations
                   .sort((a, b) =>
                     a.owner.firstName > b.owner.firstName
