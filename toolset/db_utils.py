@@ -4,7 +4,7 @@ from uuid import uuid4
 
 class WiseDB:
     def __init__(self) -> None:
-        self.client = pymongo.MongoClient('mongodb://localhost:27017')
+        self.client = pymongo.MongoClient('mongodb://localhost:28018')
         self.db = self.client['WISE']
 
     def get_collection(self, collection_name: str):
