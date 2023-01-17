@@ -1,4 +1,4 @@
-FROM node
+FROM node:18
 RUN mkdir /workdir
 ADD package.json /workdir
 
