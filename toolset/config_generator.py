@@ -91,7 +91,7 @@ class config_generator(object):
         self.insert_to_vehicle_sensor_index(config_template)
 
     def insert_to_vehicle_sensor_index(self, sensor_config):
-        now = datetime.now().strftime("%Y-%m-%dT%H:%M:%S:%fZ")
+        now = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000Z")
         config_template = dict()
         config_template["isShared"] = sensor_config['data']["isShared"]
         config_template["isOwned"] = sensor_config['data']["isOwned"]
