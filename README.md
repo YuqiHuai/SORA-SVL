@@ -47,8 +47,8 @@ As an effort to keep the tool available for future researches, a draft for a loc
 - [ ] Allow uploading sensor configuration
 - [ ] Allow creating new simulation templates
 - [ ] Allow creating new vehicle sensor configurations
-- [ ] Allow website to reflect client connection status
 - [ ] Add cluster feature to the cloud
+- [x] Allow website to reflect client connection status.
 
 ## Known Issues
 
