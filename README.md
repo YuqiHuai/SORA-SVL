@@ -6,6 +6,8 @@
 The current version of SVL Simulator cannot be used without a cloud which provides necessary information (e.g. assetGuid) and download endpoints for SVL client.
 As an effort to keep the tool available for future researches, a draft for a local cloud has been started here.
 
+If you want to contribute to the project, please consider joining our [Slack workspace](https://join.slack.com/t/sorasvl/shared_invite/zt-1ovwoq5f9-qO~Tv07irNmug7KkoYu46A).
+
 ## Built With
 1. [Docker](https://www.docker.com/)
 2. [NGINX](https://www.nginx.com/) (Router)
