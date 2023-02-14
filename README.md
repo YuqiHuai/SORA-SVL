@@ -47,6 +47,7 @@ If you want to contribute to the project, please consider joining our [Slack wor
 8. Now, SVL Client can be used without WISE.
 
 ## Future Plans
+- [ ] Gradually incorporate original LGSVL documentation
 - [ ] Allow uploading sensor configuration
 - [ ] Allow creating new simulation templates
 - [ ] Allow creating new vehicle sensor configurations
