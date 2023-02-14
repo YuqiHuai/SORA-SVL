@@ -14,6 +14,7 @@ If you want to contribute to the project, please consider joining our [Slack wor
 3. [MongoDB](https://www.mongodb.com/) (Database)
 4. [NodeJS](https://nodejs.org/en/) + [ExpressJS](https://expressjs.com/) (Server)
 5. [React](https://reactjs.org/) (Client)
+6. [Sphinx](https://www.sphinx-doc.org/en/master/) (docs)
 
 
 ## Getting Started
