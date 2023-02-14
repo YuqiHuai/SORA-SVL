@@ -33,7 +33,7 @@ If you want to contribute to the project, please consider joining our [Slack wor
 > UPDATE 2022-06-30: WISE provides geojson for some of the maps. To access those geojson, download `geojson.json` from Google Drive, and then import them into MongoDB.
 
 4. Create `.env` file for server and client following the template (should be same as template, change if you know what you are doing) (The template refers to `server/.env.template` and `client/.env.template`)
-5. Run `docker-compose up --build -d`
+5. Run `docker compose up --build -d`
 6. Local SVL Cloud will be available at "http://localhost"
 7. Add `config.yml` to the root directory of SVL client with the following content:
    ```
