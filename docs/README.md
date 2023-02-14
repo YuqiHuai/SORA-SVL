@@ -1,0 +1,1 @@
+To build documentation, run `make html` in this directory.

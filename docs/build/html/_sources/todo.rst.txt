@@ -1,0 +1,6 @@
+404 Not Found
+=============
+
+Thank you for clicking on the link!
+
+Documentation for this has not been completed yet. Please check back later or contribute!

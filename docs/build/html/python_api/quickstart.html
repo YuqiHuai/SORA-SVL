@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python API Quickstart Guide &mdash; SORA SVL  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dreamview API" href="dreamview.html" />
+    <link rel="prev" title="Python API Guide" href="guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> SORA SVL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Python API Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python API Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dreamview.html">Dreamview API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Simulation User interface</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation_ui/configuration.html">Configuration File and Command Line Parameters</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SORA SVL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Python API Quickstart Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/python_api/quickstart.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-api-quickstart-guide">
+<h1>Python API Quickstart Guide<a class="headerlink" href="#python-api-quickstart-guide" title="Permalink to this heading"></a></h1>
+<p>This document describes the example Python scripts that use the SVL Simulator Python API.
+These scripts are located <a class="reference external" href="https://github.com/lgsvl/PythonAPI/tree/master/quickstart">here</a>.
+You can find the documentation on the API <a class="reference internal" href="guide.html#python-api-guide"><span class="std std-ref">here</span></a>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/01-connecting-to-simulator.py">01-connecting-to-simulator.py</a>:
+How to connect to an already running instance of the simulator and some information you can get about the instance</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/02-loading-scene-show-spawns.py">02-loading-scene-show-spawns.py</a>:
+How to load a scene and get the scene’s predefined spawn transforms</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/03-raycast.py">03-raycast.py</a>:
+How to create an EGO vehicle and do raycasting from a point</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/04-ego-drive-straight.py">04-ego-drive-straight.py</a>:
+How to create an agent with a velocity and then run the simulator for a set amount of time</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/05-ego-drive-in-circle.py">05-ego-drive-in-circle.py</a>:
+How to apply control to an EGO vehicle and then run the simulator indefinitely</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/06-save-camera-image.py">06-save-camera-image.py</a>:
+How to save a camera image in different formats and with various settings</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/07-save-lidar-point-cloud.py">07-save-lidar-point-cloud.py</a>:
+How to save a LiDAR point cloud</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/08-create-npc.py">08-create-npc.py</a>:
+How to create several types of NPC vehicles and spawn them in different positions</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/09-reset-scene.py">09-reset-scene.py</a>:
+How to empty the scene of all EGOs, NPCs, and Pedestrians, but keep the scene loaded</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/10-npc-follow-the-lane.py">10-npc-follow-the-lane.py</a>:
+How to create NPCs and then let them drive in the nearest annotated lane</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/11-collision-callbacks.py">11-collision-callbacks.py</a>:
+How to setup the simulator so that whenever the 3 created agents collide with anything, the name of the agent and the collision point is printed</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/12-create-npc-on-lane.py">12-create-npc-on-lane.py</a>:
+How to create NPC vehicles in random position in a radius around the EGO vehicle, but the NPCs are placed on the nearest lane to the initial random position</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/13-npc-follow-waypoints.py">13-npc-follow-waypoints.py</a>:
+How to create a list of waypoints with fixed wait times and direct an NPC to follow them</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/14-create-pedestrians.py">14-create-pedestrians.py</a>:
+How to create pedestrians in rows in front of the spawn position</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/15-pedestrian-walk-randomly.py">15-pedestrian-walk-randomly.py</a>:
+How to start and stop a pedestrian walking randomly on the sidewalk</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/16-pedestrian-follow-waypoints.py">16-pedestrian-follow-waypoints.py</a>:
+How to create a list of waypoints and direct a pedestrian to follow them</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/17-many-pedestrians-walking.py">17-many-pedestrians-walking.py</a>:
+How to generate an army of pedestrians and have them walk back and forth</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/18-weather-effects.py">18-weather-effects.py</a>:
+How to get the current weather state of the simulator and how to adjust the various settings</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/19-time-of-day.py">19-time-of-day.py</a>:
+How to get the time of date in the simulator and how to set it to a fixed time and a moving time</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/20-enable-sensors.py">20-enable-sensors.py</a>:
+How to enable a specific sensor so that it can send data over a bridge</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/21-map-coordinates.py">21-map-coordinates.py</a>:
+How to convert from simulator coordinates to GPS coordinates and back. Latitude/Longitude and Northing/Easting are supported along with altitude and orientation</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/22-connecting-bridge.py">22-connecting-bridge.py</a>:
+How to command an EGO vehicle to connect to a bridge at a specific IP address and port and then wait for the connection to be established</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/23-npc-callbacks.py">23-npc-callbacks.py</a>:
+How to setup the simulator so that whenever an NPC reaches a stopline or changes lane, the name of the NPC is printed</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/24-ego-drive-straight-non-realtime.py">24-ego-drive-straight-non-realtime.py</a>:
+How to run the simulator at non-realtime.</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/25-waypoint-flying-npc.py">25-waypoint-flying-npc.py</a>:
+How to use waypoints to define customized motion for NPC.</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/26-npc-trigger-waypoints.py">26-npc-trigger-waypoints.py</a>:
+How to use trigger waypoints that pause npc motion until an ego vehicle approaches.</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/27-control-traffic-lights.py">27-control-traffic-lights.py</a>:
+How to get and set the control policy of a controllable object (e.g., changing a traffic light signal)</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/28-control-traffic-cone.py">28-control-traffic-cone.py</a>:
+How to add and move a controllable object (e.g. a traffic cone)</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/29-add-random-agents.py">29-add-random-agents.py</a>:
+How to use random NPCs and pedestrians in a simulation</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/30-time-to-collision-trigger.py">30-time-to-collision-trigger.py</a>:
+How to use time-to-collision triggers</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/31-wait-for-distance-trigger.py">31-wait-for-distance-trigger.py</a>:
+How to use wait-for-distance triggers</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/32-pedestrian-time-to-collision.py">32-pedestrian-time-to-collision.py</a>:
+How to use time-to-collision on pedestrians</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/33-ego-drive-stepped.py">33-ego-drive-stepped.py</a>:
+How to run a stepped simulation using the Python Api</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/34-simulator-cam-set.py">34-simulator-cam-set.py</a>:
+How to set up fixed camera positions in a simulation</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/35-spawn-multi-robots.py">35-spawn-multi-robots.py</a>:
+How to spawn multiple robots and connect to a bridge</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/36-send-destination-to-nav2.py">36-send-destination-to-nav2.py</a>:
+How to send destinations of a robot to Navigation2 stack over a bridge</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/98-npc-behaviour.py">98-npc-behaviour.py</a>:
+How to get and set available NPC behaviors</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/PythonAPI/blob/master/quickstart/99-utils-examples.py">99-utils-examples.py</a>:
+How to use several of the utility scripts to transform an arbitrary point to the coordinate system of a local transform (relative to sensor)</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="guide.html" class="btn btn-neutral float-left" title="Python API Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dreamview.html" class="btn btn-neutral float-right" title="Dreamview API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, SORA SVL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

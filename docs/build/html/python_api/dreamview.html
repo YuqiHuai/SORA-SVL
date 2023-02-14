@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamview API &mdash; SORA SVL  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Configuration File and Command Line Parameters" href="../simulation_ui/configuration.html" />
+    <link rel="prev" title="Python API Quickstart Guide" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> SORA SVL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Python API Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Python API Quickstart Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dreamview API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-guide">User Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connection">Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#check-module-status">check_module_status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disable-apollo">disable_apollo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disable-module">disable_module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-apollo">enable_apollo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-module">enable_module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-current-map">get_current_map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-current-vehicle">get_current_vehicle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-module-status">get_module_status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reconnect">reconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-destination">set_destination</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-hd-map">set_hd_map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-setup-mode">set_setup_mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-vehicle">set_vehicle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setup-apollo">setup_apollo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Simulation User interface</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation_ui/configuration.html">Configuration File and Command Line Parameters</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SORA SVL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Dreamview API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/python_api/dreamview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dreamview-api">
+<h1>Dreamview API<a class="headerlink" href="#dreamview-api" title="Permalink to this heading"></a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id1">Overview</a></p></li>
+<li><p><a class="reference internal" href="#requirements" id="id2">Requirements</a></p></li>
+<li><p><a class="reference internal" href="#user-guide" id="id3">User Guide</a></p>
+<ul>
+<li><p><a class="reference internal" href="#connection" id="id4">Connection</a></p></li>
+<li><p><a class="reference internal" href="#methods" id="id5">Methods</a></p>
+<ul>
+<li><p><a class="reference internal" href="#check-module-status" id="id6">check_module_status</a></p></li>
+<li><p><a class="reference internal" href="#disable-apollo" id="id7">disable_apollo</a></p></li>
+<li><p><a class="reference internal" href="#disable-module" id="id8">disable_module</a></p></li>
+<li><p><a class="reference internal" href="#enable-apollo" id="id9">enable_apollo</a></p></li>
+<li><p><a class="reference internal" href="#enable-module" id="id10">enable_module</a></p></li>
+<li><p><a class="reference internal" href="#get-current-map" id="id11">get_current_map</a></p></li>
+<li><p><a class="reference internal" href="#get-current-vehicle" id="id12">get_current_vehicle</a></p></li>
+<li><p><a class="reference internal" href="#get-module-status" id="id13">get_module_status</a></p></li>
+<li><p><a class="reference internal" href="#reconnect" id="id14">reconnect</a></p></li>
+<li><p><a class="reference internal" href="#set-destination" id="id15">set_destination</a></p></li>
+<li><p><a class="reference internal" href="#set-hd-map" id="id16">set_hd_map</a></p></li>
+<li><p><a class="reference internal" href="#set-setup-mode" id="id17">set_setup_mode</a></p></li>
+<li><p><a class="reference internal" href="#set-vehicle" id="id18">set_vehicle</a></p></li>
+<li><p><a class="reference internal" href="#setup-apollo" id="id19">setup_apollo</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#example" id="id20">Example</a></p></li>
+</ul>
+</div>
+<section id="overview">
+<h2><a class="toc-backref" href="#contents">Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>The Dreamview API is a subpackage of the the SVL Simulator <a class="reference internal" href="guide.html#python-api-guide"><span class="std std-ref">Python API</span></a> which communicates with Apollo’s Dreamview module. Apollo’s Dreamview provides a web ui that allows users to enable/disable different modules within Apollo and to set destinations to navigate to. The Dreamview API enables users to automate this procedure with Python scripts. This document provides an overview of the API.</p>
+</section>
+<section id="requirements">
+<h2><a class="toc-backref" href="#contents">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Installation of the <a class="reference internal" href="guide.html#python-api-guide"><span class="std std-ref">Python API</span></a> - requires Python 3.5 or later.</p></li>
+<li><p>Apollo 5.0 or later</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ApolloControl</span></code> sensor plugin (optional) - This plugin is already included inside the SVL Simulator release build available on GitHub. For custom builds, the sensor plugin should be placed inside the <code class="docutils literal notranslate"><span class="pre">AssetBundles/Sensors</span></code> folder of the simulator. The sensor checks to see if Apollo is ready (sending control commands) before starting the simulation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CheckControl</span></code> sensor plugin (optional) - This plugin is already included inside the SVL Simulator release build available on GitHub. For custom builds, the sensor plugin should be placed inside the <code class="docutils literal notranslate"><span class="pre">AssetBundles/Sensors</span></code> folder of the simulator. The sensor checks to see if Apollo is ready (sending control commands) before starting the simulation.</p></li>
+</ul>
+</section>
+<section id="user-guide">
+<h2><a class="toc-backref" href="#contents">User Guide</a><a class="headerlink" href="#user-guide" title="Permalink to this heading"></a></h2>
+<section id="connection">
+<h3><a class="toc-backref" href="#contents">Connection</a><a class="headerlink" href="#connection" title="Permalink to this heading"></a></h3>
+<p>The main class in the Dreamview API is the <code class="docutils literal notranslate"><span class="pre">Connection</span></code> class that allows establishing a connection with Dreamview. To instantiate, the constructor may be called as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dreamview</span><span class="o">.</span><span class="n">Connection</span><span class="p">(</span><span class="n">simulator</span><span class="p">,</span> <span class="n">ego_agent</span><span class="p">,</span> <span class="n">ip</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="s1">&#39;8888&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">simulator</span></code> is an <code class="docutils literal notranslate"><span class="pre">lgsvl.Simulator</span></code> object</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ego_agentis</span></code> an <code class="docutils literal notranslate"><span class="pre">lgsvl.EgoVehicle</span></code> object - this is intended to be used with a vehicle equipped with Apollo 5.0</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ip</span></code>: address of the machine where the Apollo stack is running (defaults to ‘localhost’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">port</span></code>: the port number for Dreamview (defaults to ‘8888’)</p></li>
+</ul>
+</section>
+<section id="methods">
+<h3><a class="toc-backref" href="#contents">Methods</a><a class="headerlink" href="#methods" title="Permalink to this heading"></a></h3>
+<section id="check-module-status">
+<h4><a class="toc-backref" href="#contents">check_module_status</a><a class="headerlink" href="#check-module-status" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">check_module_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">modules</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Checks if all modules in a provided list are enabled.</p>
+</section>
+<section id="disable-apollo">
+<h4><a class="toc-backref" href="#contents">disable_apollo</a><a class="headerlink" href="#disable-apollo" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">disable_apollo</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Disables all Apollo modules.</p>
+</section>
+<section id="disable-module">
+<h4><a class="toc-backref" href="#contents">disable_module</a><a class="headerlink" href="#disable-module" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">disable_module</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">module</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Disables a specific Apollo module. module is the name of the Apollo 5.0 module as seen in the “Module Controller” tab of Dreamview.</p>
+</section>
+<section id="enable-apollo">
+<h4><a class="toc-backref" href="#contents">enable_apollo</a><a class="headerlink" href="#enable-apollo" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">enable_apollo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dest_x</span><span class="p">,</span> <span class="n">dest_z</span><span class="p">,</span> <span class="n">modules</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Enables a list of modules and then sets the destination.</p>
+</section>
+<section id="enable-module">
+<h4><a class="toc-backref" href="#contents">enable_module</a><a class="headerlink" href="#enable-module" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">enable_module</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">module</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Enables a specific Apollo module. module is the name of the Apollo 5.0 module as seen in the “Module Controller” tab of Dreamview.</p>
+</section>
+<section id="get-current-map">
+<h4><a class="toc-backref" href="#contents">get_current_map</a><a class="headerlink" href="#get-current-map" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_current_map</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the current HD map loaded in Dreamview.</p>
+</section>
+<section id="get-current-vehicle">
+<h4><a class="toc-backref" href="#contents">get_current_vehicle</a><a class="headerlink" href="#get-current-vehicle" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_current_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the current Vehicle configuration loaded in Dreamview.</p>
+</section>
+<section id="get-module-status">
+<h4><a class="toc-backref" href="#contents">get_module_status</a><a class="headerlink" href="#get-module-status" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_module_status</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a dict where the key is the name of the module and value is a bool based on the module’s current status.</p>
+</section>
+<section id="reconnect">
+<h4><a class="toc-backref" href="#contents">reconnect</a><a class="headerlink" href="#reconnect" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reconnect</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Closes the websocket connection and re-creates it so that data can be received again.</p>
+</section>
+<section id="set-destination">
+<h4><a class="toc-backref" href="#contents">set_destination</a><a class="headerlink" href="#set-destination" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_destination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_long_east</span><span class="p">,</span> <span class="n">z_lat_north</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">coord_type</span><span class="o">=</span><span class="n">CoordType</span><span class="o">.</span><span class="n">Unity</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sends a RoutingRequest to Apollo for the provided coordinates. This function can accept a variety of Coordinate systems.</p>
+<p>If using Unity World Coordinate System:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x_long_east</span> <span class="o">=</span> <span class="n">x</span>
+<span class="n">z_lat_north</span> <span class="o">=</span> <span class="n">z</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+</pre></div>
+</div>
+<p>If using Latitude/Longitude:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x_long_east</span> <span class="o">=</span> <span class="n">Longitude</span>
+<span class="n">z_lat_north</span> <span class="o">=</span> <span class="n">Latitude</span>
+</pre></div>
+</div>
+<p>If using Easting/Northing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x_long_east</span> <span class="o">=</span> <span class="n">Easting</span>
+<span class="n">z_lat_north</span> <span class="o">=</span> <span class="n">Northing</span>
+</pre></div>
+</div>
+</section>
+<section id="set-hd-map">
+<h4><a class="toc-backref" href="#contents">set_hd_map</a><a class="headerlink" href="#set-hd-map" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_hd_map</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">map</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the provided HD map. Folders in <code class="docutils literal notranslate"><span class="pre">/apollo/modules/map/data/</span></code> are the available HD maps. Map options in Dreamview are the folder names with the following changes:</p>
+<ul class="simple">
+<li><p>underscores (_) are replaced with spaces</p></li>
+<li><p>the first letter of each word is capitalized</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">map</span></code> parameter is the modified folder name. <code class="docutils literal notranslate"><span class="pre">map</span></code> should match one of the options in the right-most drop down in the-right corner of Dreamview.</p>
+</section>
+<section id="set-setup-mode">
+<h4><a class="toc-backref" href="#contents">set_setup_mode</a><a class="headerlink" href="#set-setup-mode" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_setup_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">mode</span></code> is the name of the Apollo 5.0 mode as seen in the left-most drop down in the-right corner of Dreamview.</p>
+</section>
+<section id="set-vehicle">
+<h4><a class="toc-backref" href="#contents">set_vehicle</a><a class="headerlink" href="#set-vehicle" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vehicle</span><span class="p">,</span> <span class="n">gps_offset_x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">gps_offset_y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">gps_offset_z</span><span class="o">=-</span><span class="mf">1.348</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the provided vehicle configuration. Folders in /apollo/modules/calibration/data/ are the available vehicle calibrations. Vehicle options in Dreamview are the folder names with the following changes:</p>
+<ul class="simple">
+<li><p>underscores (_) are replaced with spaces</p></li>
+<li><p>the first letter of each word is capitalized</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">vehicle</span></code> parameter is the modified folder name. <code class="docutils literal notranslate"><span class="pre">vehicle</span></code> should match one of the options in the middle drop down in the-right corner of Dreamview.</p>
+</section>
+<section id="setup-apollo">
+<h4><a class="toc-backref" href="#contents">setup_apollo</a><a class="headerlink" href="#setup-apollo" title="Permalink to this heading"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup_apollo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dest_x</span><span class="p">,</span> <span class="n">dest_z</span><span class="p">,</span> <span class="n">modules</span><span class="p">,</span> <span class="n">default_timeout</span><span class="o">=</span><span class="mf">60.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Starts a list of Apollo modules and sets the destination. Will wait for Control module to send a message before returning. Control sending a message indicates that all modules are working and Apollo is ready to continue.</p>
+</section>
+</section>
+</section>
+<section id="example">
+<h2><a class="toc-backref" href="#contents">Example</a><a class="headerlink" href="#example" title="Permalink to this heading"></a></h2>
+<p>This example will start a simulation that will drive an ego vehicle to a destination using Apollo. The simulation will start once Apollo is ready.</p>
+<p>To run this example you will need to have an Apollo vehicle with the ApolloControl sensor added. To add the sensor to the vehicle, add the following to the vehicle configuration JSON file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span> <span class="p">:</span> <span class="s2">&quot;ApolloControlSensor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;Apollo Control Sensor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;Topic&quot;</span> <span class="p">:</span><span class="s2">&quot;/apollo/control&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Before running the Python script, start the Apollo docker container and start dreamview and the cyber bridge using the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bootstrap</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">bridge</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>You should not start any modules or interact with dreamview manually. You can view dreamview by navigating to <a class="reference external" href="http://localhost:8888">localhost:8888</a> in a web browser.</p>
+<p>Now you can start an API only simulation and run the Python script below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">lgsvl</span>
+<span class="kn">from</span> <span class="nn">environs</span> <span class="kn">import</span> <span class="n">env</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">Env</span><span class="p">()</span>
+
+<span class="n">sim</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Simulator</span><span class="p">(</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">str</span><span class="p">(</span><span class="s2">&quot;LGSVL__SIMULATOR_HOST&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">SimulatorSettings</span><span class="o">.</span><span class="n">simulator_host</span><span class="p">),</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">int</span><span class="p">(</span><span class="s2">&quot;LGSVL__SIMULATOR_PORT&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">SimulatorSettings</span><span class="o">.</span><span class="n">simulator_port</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="k">if</span> <span class="n">sim</span><span class="o">.</span><span class="n">current_scene</span> <span class="o">==</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">DefaultAssets</span><span class="o">.</span><span class="n">map_borregasave</span><span class="p">:</span>
+    <span class="n">sim</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">sim</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">DefaultAssets</span><span class="o">.</span><span class="n">map_borregasave</span><span class="p">)</span>
+
+<span class="n">spawns</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">get_spawn</span><span class="p">()</span>
+
+<span class="n">state</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentState</span><span class="p">()</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">spawns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">DefaultAssets</span><span class="o">.</span><span class="n">ego_lincoln2017mkz_apollo5</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+<span class="n">ego</span><span class="o">.</span><span class="n">connect_bridge</span><span class="p">(</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">str</span><span class="p">(</span><span class="s2">&quot;LGSVL__AUTOPILOT_0_HOST&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">SimulatorSettings</span><span class="o">.</span><span class="n">bridge_host</span><span class="p">),</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">int</span><span class="p">(</span><span class="s2">&quot;LGSVL__AUTOPILOT_0_PORT&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">wise</span><span class="o">.</span><span class="n">SimulatorSettings</span><span class="o">.</span><span class="n">bridge_port</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Dreamview setup</span>
+<span class="n">dv</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">dreamview</span><span class="o">.</span><span class="n">Connection</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="n">ego</span><span class="p">,</span> <span class="n">env</span><span class="o">.</span><span class="n">str</span><span class="p">(</span><span class="s2">&quot;LGSVL__AUTOPILOT_0_HOST&quot;</span><span class="p">,</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">))</span>
+<span class="n">dv</span><span class="o">.</span><span class="n">set_hd_map</span><span class="p">(</span><span class="s1">&#39;Borregas Ave&#39;</span><span class="p">)</span>
+<span class="n">dv</span><span class="o">.</span><span class="n">set_vehicle</span><span class="p">(</span><span class="s1">&#39;Lincoln2017MKZ&#39;</span><span class="p">)</span>
+<span class="n">modules</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Localization&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Perception&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Transform&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Routing&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Prediction&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Planning&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Camera&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Traffic Light&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Control&#39;</span>
+<span class="p">]</span>
+<span class="n">destination</span> <span class="o">=</span> <span class="n">spawns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">destinations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">dv</span><span class="o">.</span><span class="n">setup_apollo</span><span class="p">(</span><span class="n">destination</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">destination</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">z</span><span class="p">,</span> <span class="n">modules</span><span class="p">)</span>
+
+<span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Upon successful execution, the Ego vehicle should navigate to a destination on the far side of the map. Note that Apollo setup can take quite a while (often up to 30 seconds) before it is ready for the simulation to be run.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Python API Quickstart Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../simulation_ui/configuration.html" class="btn btn-neutral float-right" title="Configuration File and Command Line Parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, SORA SVL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

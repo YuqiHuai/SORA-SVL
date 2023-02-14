@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python API Guide &mdash; SORA SVL  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python API Quickstart Guide" href="quickstart.html" />
+    <link rel="prev" title="Home" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> SORA SVL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Python API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python API Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#core-concepts">Core concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation">Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#non-real-time-simulation">Non-real-time Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#agents">Agents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ego-vehicle">EGO Vehicle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npc-vehicles">NPC Vehicles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pedestrians">Pedestrians</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#callbacks">Callbacks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#agent-callbacks"><span class="xref std std-ref">Agent</span> Callbacks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ego-vehicle-callbacks"><span class="xref std std-ref">Ego Vehicle</span> Callbacks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npc-vehicle-callbacks"><span class="xref std std-ref">NPC Vehicle</span> Callbacks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pedestrian-callbacks"><span class="xref std std-ref">Pedestrian</span> Callbacks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sensors">Sensors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#camera-sensor">Camera Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lidar-sensor">LiDAR Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#imu-sensor">IMU Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gps-sensor">GPS Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#radar-sensor">Radar Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-bus">CAN bus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-recording-sensor">Video Recording Sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#weather-and-time-of-day-control">Weather and Time of Day Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#controllable-objects">Controllable Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helper-functions">Helper Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Python API Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dreamview.html">Dreamview API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Simulation User interface</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation_ui/configuration.html">Configuration File and Command Line Parameters</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SORA SVL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Python API Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/python_api/guide.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-api-guide">
+<h1>Python API Guide<a class="headerlink" href="#python-api-guide" title="Permalink to this heading"></a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id2">Overview</a></p></li>
+<li><p><a class="reference internal" href="#requirements" id="id3">Requirements</a></p></li>
+<li><p><a class="reference internal" href="#quickstart" id="id4">Quickstart</a></p></li>
+<li><p><a class="reference internal" href="#core-concepts" id="id5">Core concepts</a></p></li>
+<li><p><a class="reference internal" href="#simulation" id="id6">Simulation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#non-real-time-simulation" id="id7">Non-real-time Simulation</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#agents" id="id8">Agents</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ego-vehicle" id="id9">EGO Vehicle</a></p></li>
+<li><p><a class="reference internal" href="#npc-vehicles" id="id10">NPC Vehicles</a></p></li>
+<li><p><a class="reference internal" href="#pedestrians" id="id11">Pedestrians</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#callbacks" id="id12">Callbacks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#agent-callbacks" id="id13"><a class="reference internal" href="#agents"><span class="std std-ref">Agent</span></a> Callbacks</a></p></li>
+<li><p><a class="reference internal" href="#ego-vehicle-callbacks" id="id14"><a class="reference internal" href="#ego-vehicle"><span class="std std-ref">Ego Vehicle</span></a> Callbacks</a></p></li>
+<li><p><a class="reference internal" href="#npc-vehicle-callbacks" id="id15"><a class="reference internal" href="#npc-vehicles"><span class="std std-ref">NPC Vehicle</span></a> Callbacks</a></p></li>
+<li><p><a class="reference internal" href="#pedestrian-callbacks" id="id16"><a class="reference internal" href="#pedestrians"><span class="std std-ref">Pedestrian</span></a> Callbacks</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#sensors" id="id17">Sensors</a></p>
+<ul>
+<li><p><a class="reference internal" href="#camera-sensor" id="id18">Camera Sensor</a></p></li>
+<li><p><a class="reference internal" href="#lidar-sensor" id="id19">LiDAR Sensor</a></p></li>
+<li><p><a class="reference internal" href="#imu-sensor" id="id20">IMU Sensor</a></p></li>
+<li><p><a class="reference internal" href="#gps-sensor" id="id21">GPS Sensor</a></p></li>
+<li><p><a class="reference internal" href="#radar-sensor" id="id22">Radar Sensor</a></p></li>
+<li><p><a class="reference internal" href="#can-bus" id="id23">CAN bus</a></p></li>
+<li><p><a class="reference internal" href="#video-recording-sensor" id="id24">Video Recording Sensor</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#weather-and-time-of-day-control" id="id25">Weather and Time of Day Control</a></p></li>
+<li><p><a class="reference internal" href="#controllable-objects" id="id26">Controllable Objects</a></p></li>
+<li><p><a class="reference internal" href="#helper-functions" id="id27">Helper Functions</a></p></li>
+</ul>
+</div>
+<section id="overview">
+<h2><a class="toc-backref" href="#contents">Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>SVL Simulator exposes runtime functionality to a Python API which you can use to manipulate object placement and vehicle movement in a loaded scene, retrieve sensor configuration and data, control weather, time state, and more.</p>
+<p>The interface to listen for incoming API calls is defined in <code class="docutils literal notranslate"><span class="pre">config.yml</span></code>. See <a class="reference internal" href="../simulation_ui/configuration.html#configuration-file-and-command-line-parameters"><span class="std std-ref">Configuration File and Command Line Parameters</span></a> for more information.</p>
+</section>
+<section id="requirements">
+<h2><a class="toc-backref" href="#contents">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<p>Using Python API requires Python version 3.6 or later.</p>
+</section>
+<section id="quickstart">
+<h2><a class="toc-backref" href="#contents">Quickstart</a><a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
+<p>Python API is available in separate repository: <a class="reference external" href="https://github.com/lgsvl/PythonAPI">https://github.com/lgsvl/PythonAPI</a></p>
+<p>After cloning or downloading it from the git repository follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Run the following command to install Python files and necessary dependencies:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Now launch the simulator, either using the binary file or from Unity Editor. The simulator by default listens for connections on port <strong>8181</strong> on <strong>localhost</strong>. See the guide for <a class="reference external" href="https://web.archive.org/web/20211025084200/https://www.svlsimulator.com/docs/running-simulations/running-simulator/">Running SVL Simulator</a> for more information on how to set up and run the simulator.</p></li>
+<li><p>Click the <strong>Open Browser</strong> button to open the Simulator UI, then click <strong>Sign in</strong>. Enter login credentials or click <strong>Sign Up</strong> to create an account.</p></li>
+<li><p>You will need to add assets such as maps and vehicles to your library to use in simulations. These assets can either be added from the <a class="reference external" href="https://web.archive.org/web/20211025084200/https://www.svlsimulator.com/docs/user-interface/web/store/">Store</a> or uploaded to the cloud. Quickstart scripts require the <strong>BorregasAve</strong> map and the <strong>Lincoln2017MKZ</strong> vehicle, which are included in your library by default.</p></li>
+<li><p>You will need to run a simulation using the <strong>API Only</strong> runtime template to run Python API scripts on your host machine to control the simulation. See the document on <a class="reference external" href="https://web.archive.org/web/20211025084200/https://www.svlsimulator.com/docs/user-interface/web/simulations/">Simulations</a> for information on how to create a simulation.</p></li>
+<li><p>Select the newly created Simulation and click the <strong>Run Simulation</strong> button.</p></li>
+<li><p>Run the following example to see the API in action:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">quickstart</span><span class="o">/</span><span class="mi">05</span><span class="o">-</span><span class="n">ego</span><span class="o">-</span><span class="n">drive</span><span class="o">-</span><span class="ow">in</span><span class="o">-</span><span class="n">circle</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This will load the BorregasAve.unity scene, instantiate one EGO vehicle, then ask you to press Enter to start driving EGO vehicle in a circle. When the script is running, it will apply throttle and steering commands to make the car move.</p>
+</section>
+<section id="core-concepts">
+<h2><a class="toc-backref" href="#contents">Core concepts</a><a class="headerlink" href="#core-concepts" title="Permalink to this heading"></a></h2>
+<p>The Simulator and API communicate by sending json over a websocket server running on port <strong>8181</strong>. The API client can either be on the same machine or on any other machine on the same network.</p>
+<p>API exposes the following main types:</p>
+<ul class="simple">
+<li><p><strong>Simulator</strong> - main object for connecting to simulator and creating other objects</p></li>
+<li><p><strong>Agent</strong> - superclass of vehicles and pedestrian</p></li>
+<li><p><strong>EgoVehicle</strong> - <a class="reference internal" href="#ego-vehicle"><span class="std std-ref">EGO vehicle</span></a> with accurate physics simulation and <a class="reference internal" href="#sensors"><span class="std std-ref">sensors</span></a></p></li>
+<li><p><strong>NpcVehicle</strong> - <a class="reference internal" href="#npc-vehicles"><span class="std std-ref">NPC vehicle</span></a> with simplified physics, useful for creating many background vehicles</p></li>
+<li><p><strong>Pedestrian</strong> - <a class="reference internal" href="#pedestrians"><span class="std std-ref">Pedestrian</span></a> walking on sidewalks</p></li>
+</ul>
+<p>Vehicles and Pedestrian are a subclasses of <code class="docutils literal notranslate"><span class="pre">Agent</span></code> which has common properties like <code class="docutils literal notranslate"><span class="pre">transform</span></code>, <code class="docutils literal notranslate"><span class="pre">position</span></code>, and <code class="docutils literal notranslate"><span class="pre">velocity</span></code>.</p>
+<p>All coordinates in the API return values in the Unity coordinate system. This coordinate system uses meters as a unit of distance and is a left-handed coordinate system where x points left, z points forward, and y points up.</p>
+<p>The Simulator class provides helper methods to convert coordinates to and from latitude/longitude and northing/easting values.</p>
+</section>
+<section id="simulation">
+<h2><a class="toc-backref" href="#contents">Simulation</a><a class="headerlink" href="#simulation" title="Permalink to this heading"></a></h2>
+<p>To connect to the simulator you need to an instance of the <code class="docutils literal notranslate"><span class="pre">Simulator</span></code> class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">lgsvl</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Simulator</span><span class="p">(</span><span class="n">address</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">8181</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can specify a different address as hostname or IP address. By default only port <strong>8181</strong> is used for API connection. Only one client can be connected to simulator at a time.</p>
+<p>Next, load the scene (sometimes called map). This is done by the <code class="docutils literal notranslate"><span class="pre">load</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">scene</span> <span class="o">=</span> <span class="s2">&quot;aae03d2a-b7ca-4a88-9e41-9035287a12cc&quot;</span><span class="p">,</span> <span class="n">seed</span> <span class="o">=</span> <span class="mi">650387</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">scene</span></code> is a string representing the UUID of the <em>Map</em> in the Web UI. Scenes can be added either from the map tab under <strong>Store</strong> or by manually uploading. Some of the well-known scenes available in the <em>Map</em> tab under <strong>Store</strong> are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Map name</p></th>
+<th class="head"><p>UUID</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BorregasAve</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">aae03d2a-b7ca-4a88-9e41-9035287a12cc</span></code></p></td>
+<td><p>a Digital Twin of a real-world suburban street block in Sunnyvale, CA</p></td>
+</tr>
+<tr class="row-odd"><td><p>AutonomouStuff</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2aae5d39-a11c-4516-87c4-cdc9ca784551</span></code></p></td>
+<td><p>small office parking lot in SanJose, CA</p></td>
+</tr>
+<tr class="row-even"><td><p>Shalun</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">97128028-33c7-4411-b1ec-d693ed35071f</span></code></p></td>
+<td><p>an autonomous vehicle testing facility in Taiwan (More information here)</p></td>
+</tr>
+<tr class="row-odd"><td><p>SanFrancisco</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5d272540-f689-4355-83c7-03bf11b6865f</span></code></p></td>
+<td><p>a real world urban environment from San Francisco, CA</p></td>
+</tr>
+<tr class="row-even"><td><p>GoMentum Station</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">979dd7f3-b25b-47f0-ab10-a6effb370138</span></code></p></td>
+<td><p>a Digital Twin of a real-world autonomous vehicle testing facility in Concord, CA</p></td>
+</tr>
+<tr class="row-odd"><td><p>CubeTown</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">06773677-1ce3-492f-9fe2-b3147e126e27</span></code></p></td>
+<td><p>a virtual environment with block obstacles used to perform basic testing of vehicles</p></td>
+</tr>
+<tr class="row-even"><td><p>SingleLaneRoad</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">a6e2d149-6a18-4b83-9029-4411d7b2e69a</span></code></p></td>
+<td><p>a simple two-way single-lane road</p></td>
+</tr>
+</tbody>
+</table>
+<p>Seed (optional) is an Integer (-2,147,483,648 - 2,147,483,647) that determines the “random” behavior of the NPC vehicles and rain effects.</p>
+<p>Check out the <a class="reference external" href="https://web.archive.org/web/20211025084200/https://www.svlsimulator.com/docs/user-interface/web/store/">Store</a> in the Web UI for list of available scenes.</p>
+<p>Once a scene is loaded you can instantiate agents and run simulations. See the <a class="reference internal" href="#agents"><span class="std std-ref">Agents</span></a> section on how to create vehicles and pedestrians.</p>
+<p>Loading scenes takes a while, to reset a scene to the initial state without reloading it call the <code class="docutils literal notranslate"><span class="pre">reset</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will remove any vehicles or callbacks currently registered.</p>
+<p>After setting up the scene in a desired state you can start advancing time. During Python code execution time is stopped in the simulator. To run the simulator in realtime, call the <code class="docutils literal notranslate"><span class="pre">run</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">time_limit</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">run</span></code> accepts an optional argument for a time limit specifying how long to run. The default value of 0 will run infinitely.</p>
+<p>Diagram illustrating API execution:</p>
+<img alt="../_images/python-api-execution.png" src="../_images/python-api-execution.png" />
+<section id="non-real-time-simulation">
+<h3><a class="toc-backref" href="#contents">Non-real-time Simulation</a><a class="headerlink" href="#non-real-time-simulation" title="Permalink to this heading"></a></h3>
+<p>The simulator can be run at faster-than-real-time speeds depending on the performance of the computer running the simulator. This is done by calling the <code class="docutils literal notranslate"><span class="pre">run</span></code> method with the <code class="docutils literal notranslate"><span class="pre">time_scale</span></code> argument:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">time_limit</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">time_scale</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">run</span></code> takes a 2nd optional argument specifying how much faster to run. In the above example, if the computer is fast enough, the run call will finish in 3 seconds (6 divided by 2), but 6 virtual seconds of data would be generated. If only <code class="docutils literal notranslate"><span class="pre">time_scale</span></code> is specified or <code class="docutils literal notranslate"><span class="pre">time_limit</span></code> = 0, then simulation will run continuously at non-realtime speed.</p>
+<p>The value of time_scale can be lower than 1 which gives ability to run simulation in slower than real time.</p>
+</section>
+</section>
+<section id="agents">
+<h2><a class="toc-backref" href="#contents">Agents</a><a class="headerlink" href="#agents" title="Permalink to this heading"></a></h2>
+<p>You can create vehicles and pedestrians by calling the <code class="docutils literal notranslate"><span class="pre">add_agent</span></code> method of the <code class="docutils literal notranslate"><span class="pre">Simulator</span></code> object. Example:</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;511086bd-97ad-4109-b0ad-654ba662fbcf&quot;</span><span class="p">,</span> \
+<span class="n">agent_type</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will create the <code class="docutils literal notranslate"><span class="pre">Lincoln2017MKZ</span></code> vehicle with the <strong>Keyboard Control</strong> sensor configuration. This vehicle and sensor configuration are available by default in <strong>My Library</strong>. In this instance the UUID for the desired sensor configuration is entered for the <code class="docutils literal notranslate"><span class="pre">name</span></code> argument.</p>
+<p>The currently available <code class="docutils literal notranslate"><span class="pre">AgentTypes</span></code> are:</p>
+<ul class="simple">
+<li><p><strong>AgentType.EGO</strong> - EGO vehicle</p></li>
+<li><p><strong>AgentType.NPC</strong> - NPC vehicle</p></li>
+<li><p><strong>AgentType.PEDESTRIAN</strong> - Pedestrian</p></li>
+</ul>
+<p>Ego agents are called by the UUIDs of their sensor configurations in the WebUI. To access the UUID of a sensor configuration click on a particular vehicle in <strong>My Library</strong> to expand the detailed view and click on the <strong>ID</strong> icon for the desired sensor configuration to copy its UUID to the clipboard.</p>
+<p>NPC agents are called by their name directly. Available NPC vehicles:</p>
+<ul class="simple">
+<li><p><strong>Sedan</strong></p></li>
+<li><p><strong>SUV</strong></p></li>
+<li><p><strong>Jeep</strong></p></li>
+<li><p><strong>Hatchback</strong></p></li>
+<li><p><strong>SchoolBus</strong></p></li>
+<li><p><strong>BoxTruck</strong></p></li>
+</ul>
+<p>Similarly, pedestrian agents are also called by their names directly. Available pedestrian types:</p>
+<ul class="simple">
+<li><p><strong>Bob</strong></p></li>
+<li><p><strong>EntrepreneurFemale</strong></p></li>
+<li><p><strong>Howard</strong></p></li>
+<li><p><strong>Johny</strong></p></li>
+<li><p><strong>Pamela</strong></p></li>
+<li><p><strong>Presley</strong></p></li>
+<li><p><strong>Red</strong></p></li>
+<li><p><strong>Robin</strong></p></li>
+<li><p><strong>Stephen</strong></p></li>
+<li><p><strong>Zoe</strong></p></li>
+</ul>
+<p>If an incorrect name is entered, a Python exception will be thrown.</p>
+<p>Optionally you can create agents in specific positions and orientations in the scene. For this you need to use the <code class="docutils literal notranslate"><span class="pre">AgentState</span></code> class. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">state</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentState</span><span class="p">()</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">rotation</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;511086bd-97ad-4109-b0ad-654ba662fbcf&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will create a vehicle at position <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">z</span> <span class="pre">=</span> <span class="pre">30</span></code> which is rotated 90 degrees around the vertical axis. The position and rotation are set in the world coordinates space.</p>
+<p>You can always adjust the position, rotation, velocity and angular velocity of the agent at any later time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">ego</span><span class="o">.</span><span class="n">state</span>
+<span class="n">s</span><span class="o">.</span><span class="n">velocity</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">50</span>
+<span class="n">ego</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">s</span>
+</pre></div>
+</div>
+<p>This will set x component of velocity (in world coordinate space) to -50 meters per second and leave y and z components of velocity unmodified.</p>
+<p>All agents have the following common functionality:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">state</span></code> - property to get or set agent state (position, velocity, …)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transform</span></code> - property to get <code class="docutils literal notranslate"><span class="pre">transform</span></code> member of the state (shortcut for <code class="docutils literal notranslate"><span class="pre">state.transform</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bounding_box</span></code> - property to get bounding box in local coordinate space. Note that bounding box is not centered around (0, 0, 0) - it depends on the actual geometry of the agent.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_collision</span></code> - method to set a callback function to be called when the agent collides with something (other agent or static obstacle), see <a class="reference internal" href="#callbacks"><span class="std std-ref">callbacks</span></a> section for more information.</p></li>
+</ul>
+<section id="ego-vehicle">
+<h3><a class="toc-backref" href="#contents">EGO Vehicle</a><a class="headerlink" href="#ego-vehicle" title="Permalink to this heading"></a></h3>
+<p>EGO vehicle has following additional functionality:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">apply_control</span></code> - method to apply specified throttle, break, steering or other actions to vehicle. Pass sticky=True to apply these values on every simulation update iteration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_sensors</span></code> - method to return list of Python-Api compatible <a class="reference internal" href="#sensors"><span class="std std-ref">sensors</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">connect_bridge</span></code> - method to connect to ROS or Cyber RT bridge</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bridge_connected</span></code> - bool property, <code class="docutils literal notranslate"><span class="pre">True</span></code> if bridge is connected</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set_initial_pose</span></code> - method to publish an initial pose of EGO vehicle to ROS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set_destination</span></code> - method to publish a destination pose of EGO vehicle to ROS</p></li>
+</ul>
+<p>You can control the movement of the EGO vehicle either by manually specifying state, applying manual control, or connecting through the bridge.</p>
+<p>Example to apply constant 20% throttle to EGO vehicle:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;Lincoln2017MKZ (Apollo 5.0)&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">VehicleControl</span><span class="p">()</span>
+<span class="n">c</span><span class="o">.</span><span class="n">throttle</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">ego</span><span class="o">.</span><span class="n">apply_control</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="npc-vehicles">
+<h3><a class="toc-backref" href="#contents">NPC Vehicles</a><a class="headerlink" href="#npc-vehicles" title="Permalink to this heading"></a></h3>
+<p>You can create multiple NPC vehicles on the map to drive along the lanes or follow specific waypoints on the map.</p>
+<p>NPC vehicle has the following additional functionality:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">change_lane</span></code> - method to make the vehicle change lanes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">follow</span></code> - method to make vehicle follow specific waypoints</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">follow_closest_lane</span></code> - method to make vehicle follow lanes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> - method to set callback function which is called for every waypoint the vehicle reaches</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_stop_line</span></code> - method to set callback function which is called when vehicle reaches a stop line at intersection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_lane_change</span></code> - method to set callback function which is called when vehicle decides to change lanes</p></li>
+</ul>
+<p>You can control the movement of an NPC vehicle either by manually specifying state, or instructing it to follow waypoints or lanes.</p>
+<p>To make an NPC follow waypoints prepare a list of <code class="docutils literal notranslate"><span class="pre">DriveWaypoint</span></code> objects and call the <code class="docutils literal notranslate"><span class="pre">follow</span></code> method for the npc vehicle:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npc</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;Sedan&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">NPC</span><span class="p">)</span>
+<span class="n">waypoints</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">DriveWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="mi">5</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">DriveWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">DriveWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">5</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="n">npc</span><span class="o">.</span><span class="n">follow</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Each waypoint has a position in world coordinates, a desired velocity in m/s, a desired angular orientation as a vector of Euler angles, an optional wait-time for the vehicle to stay idle, an bool on whether the NPC should be active while idling, and an optional trigger distance. The NPC will ignore all traffic rules and will not avoid collisions to try to get to the next waypoint. The angular orientation of the NPC will be interpolated in such a manner that it will pass through the waypoint at the angle specified in the <code class="docutils literal notranslate"><span class="pre">DriveWaypoint</span></code>. The trigger distance, if used, provides a method to pause the NPC until an ego vehicle approaches. The NPC will begin to drive as soon as its distance to an ego vehicle drops below the value specified as trigger distance in the <code class="docutils literal notranslate"><span class="pre">DriveWaypoint</span></code>. You can receive information on progress by setting the <code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> callback. Example (see <a class="reference internal" href="#callbacks"><span class="std std-ref">callbacks</span></a> for more details):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npc</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;Sedan&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">NPC</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">on_waypoint</span><span class="p">(</span><span class="n">agent</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;waypoint </span><span class="si">{}</span><span class="s2"> reached&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
+
+<span class="n">npc</span><span class="o">.</span><span class="n">follow</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">npc</span><span class="o">.</span><span class="n">on_waypoint_reached</span><span class="p">(</span><span class="n">on_waypoint</span><span class="p">)</span>
+
+<span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">follow_closest_lane</span></code> will make the NPC vehicle follow whatever lane is the closest. Upon reaching intersections it will randomly decide to either drive straight or turn.</p>
+<p>You can also spawn a pool of NPC vehicles with the same behavior as NPCs added to a non-API simulation. They will follow the map annotations, obey speed limits, obey traffic signals, and attempt to avoid accidents. These NPCs cannot be directly controlled.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">add_random_agents</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">NPC</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="pedestrians">
+<h3><a class="toc-backref" href="#contents">Pedestrians</a><a class="headerlink" href="#pedestrians" title="Permalink to this heading"></a></h3>
+<p>You can create <code class="docutils literal notranslate"><span class="pre">Pedestrian</span></code> agents that will allow you to create pedestrians on sidewalks and make them walk.</p>
+<p>Pedestrians have the following additional functionality:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">walk_randomly</span></code> - method to make pedestrian walk randomly on the sidewalk</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">follow</span></code> - method to make pedestrian follow specific waypoints</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> - method to set callback function which is called for every waypoint reached</p></li>
+</ul>
+<p>You can control the movement of pedestrians either by manually specifying state, or instructing them to follow waypoints or walk randomly.</p>
+<p>To make pedestrians follow waypoints prepare a list of <code class="docutils literal notranslate"><span class="pre">WalkWaypoint</span></code> objects and call the <code class="docutils literal notranslate"><span class="pre">follow</span></code> method for pedestrians:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npc</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">PEDESTRIAN</span><span class="p">)</span>
+<span class="n">waypoints</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">WalkWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">WalkWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="n">lgsvl</span><span class="o">.</span><span class="n">WalkWaypoint</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="n">npc</span><span class="o">.</span><span class="n">follow</span><span class="p">(</span><span class="n">waypoints</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Each waypoint has a position in world coordinates, an optional idle time that the pedestrian will spend standing in-place when it reaches the waypoint, and an optional trigger distance. You can receive information on progress by setting the <code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> callback.</p>
+<p>You can also spawn a pool of pedestrians with the same behavior as pedestrians added to a non-API simulation. They will follow the map annotations and path find. These pedestrians cannot be directly controlled.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">add_random_agents</span><span class="p">(</span><span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">PEDESTRIAN</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="callbacks">
+<h2><a class="toc-backref" href="#contents">Callbacks</a><a class="headerlink" href="#callbacks" title="Permalink to this heading"></a></h2>
+<p>The Python API can invoke callbacks to inform you of specific events that occur during simulator runtime. Callbacks are invoked from inside the <code class="docutils literal notranslate"><span class="pre">Simulator.run()</span></code> method and while a callback is running the simulation time is paused. Once the callback finishes time is resumed and the simulation resumes execution. You can call <code class="docutils literal notranslate"><span class="pre">Simulator.stop()</span></code> to stop further execution and return immediately from the callback.</p>
+<p>The internals of this process are illustrated in the following sequence diagram:</p>
+<img alt="../_images/python-api-callbacks.png" src="../_images/python-api-callbacks.png" />
+<p>Here the code resumes simulation after the first callback, but stops execution when the second callback is handled.</p>
+<p>You set callback functions by calling <code class="docutils literal notranslate"><span class="pre">on_NAME</span></code> method of object, see information below.</p>
+<section id="agent-callbacks">
+<h3><a class="toc-backref" href="#contents"><a class="reference internal" href="#agents"><span class="std std-ref">Agent</span></a> Callbacks</a><a class="headerlink" href="#agent-callbacks" title="Permalink to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">on_collision</span></code> - called when agent collides with something (other agent or stationary obstacle).</p>
+<p>Example usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">on_collision</span><span class="p">(</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent2</span><span class="p">,</span> <span class="n">contact</span><span class="p">):</span>
+    <span class="n">name1</span> <span class="o">=</span> <span class="s2">&quot;STATIC OBSTACLE&quot;</span> <span class="k">if</span> <span class="n">agent1</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">agent1</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">name2</span> <span class="o">=</span> <span class="s2">&quot;STATIC OBSTACLE&quot;</span> <span class="k">if</span> <span class="n">agent2</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">agent2</span><span class="o">.</span><span class="n">name</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> collided with </span><span class="si">{}</span><span class="s2"> at </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="n">name2</span><span class="p">,</span> <span class="n">contact</span><span class="p">))</span>
+
+<span class="n">ego</span><span class="o">.</span><span class="n">on_collision</span><span class="p">(</span><span class="n">on_collision</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Callback receives three arguments: <code class="docutils literal notranslate"><span class="pre">(agent1,</span> <span class="pre">agent2,</span> <span class="pre">contact)</span></code> - the first two are the agents that collide, one of them can be None if it is a stationary obstacle like a building or a traffic light pole, and the third is the world position of the contact point.</p>
+</section>
+<section id="ego-vehicle-callbacks">
+<h3><a class="toc-backref" href="#contents"><a class="reference internal" href="#ego-vehicle"><span class="std std-ref">Ego Vehicle</span></a> Callbacks</a><a class="headerlink" href="#ego-vehicle-callbacks" title="Permalink to this heading"></a></h3>
+<p>In addition to Agent callbacks, <code class="docutils literal notranslate"><span class="pre">EgoVehicle</span></code> has one extra callback.</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_custom</span></code> - called when a Sensor Plugin sends a callback; accepts three arguments: <code class="docutils literal notranslate"><span class="pre">(agent,</span> <span class="pre">kind,</span> <span class="pre">context)</span></code> - agent instance, kind of sensor plugin as string, JSON context</p>
+<p>See <a class="reference external" href="https://web.archive.org/web/20211025084200/https://www.svlsimulator.com/docs/plugins/sensor-plugins/">Sensor Plugins</a> for more information.</p>
+</section>
+<section id="npc-vehicle-callbacks">
+<h3><a class="toc-backref" href="#contents"><a class="reference internal" href="#npc-vehicles"><span class="std std-ref">NPC Vehicle</span></a> Callbacks</a><a class="headerlink" href="#npc-vehicle-callbacks" title="Permalink to this heading"></a></h3>
+<p>In addition to Agent callbacks, <code class="docutils literal notranslate"><span class="pre">NpcVehicle</span></code> has three extra callbacks:</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> - called when vehicle reaches a waypoint; accepts two arguments: <code class="docutils literal notranslate"><span class="pre">(agent,</span> <span class="pre">index)</span></code> - agent instance and waypoint index as integer</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_stop_line</span></code> - called when vehicle stops at a stop line for a traffic light or stop sign; accepts one argument: <code class="docutils literal notranslate"><span class="pre">(agent)</span></code> - agent instance</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_lane_change</span></code> - called when vehicle starts changing lane; accepts one argument: <code class="docutils literal notranslate"><span class="pre">(agent)</span></code> - agent instance</p>
+</section>
+<section id="pedestrian-callbacks">
+<h3><a class="toc-backref" href="#contents"><a class="reference internal" href="#pedestrians"><span class="std std-ref">Pedestrian</span></a> Callbacks</a><a class="headerlink" href="#pedestrian-callbacks" title="Permalink to this heading"></a></h3>
+<p>In addition to <code class="docutils literal notranslate"><span class="pre">Agent</span></code> callbacks, <code class="docutils literal notranslate"><span class="pre">Pedestrian</span></code> has one extra callback.</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_waypoint_reached</span></code> - called when pedestrian reaches waypoint; accepts two arguments: <code class="docutils literal notranslate"><span class="pre">(agent,</span> <span class="pre">index)</span></code> - agent instance and waypoint index as integer.</p>
+</section>
+</section>
+<section id="sensors">
+<h2><a class="toc-backref" href="#contents">Sensors</a><a class="headerlink" href="#sensors" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="#ego-vehicle"><span class="std std-ref">EGO vehicles</span></a> have sensors attached. You can view the configuration of the sensors in the Web Ui. The following sensor classes have been defined to facilitate their use with the Python Api. These classes can only be used if the sensor configuration of the ego vehicle includes the sensor.</p>
+<ul class="simple">
+<li><p><strong>CameraSensor</strong> - see <a class="reference internal" href="#camera-sensor"><span class="std std-ref">Camera</span></a> sensor</p></li>
+<li><p><strong>LidarSensor</strong> - see <a class="reference internal" href="#lidar-sensor"><span class="std std-ref">LiDAR</span></a> sensor</p></li>
+<li><p><strong>ImuSensor</strong> - see <a class="reference internal" href="#imu-sensor"><span class="std std-ref">IMU</span></a> sensor</p></li>
+<li><p><strong>GpsSensor</strong> - see <a class="reference internal" href="#gps-sensor"><span class="std std-ref">GPS</span></a> sensor</p></li>
+<li><p><strong>RadarSensor</strong> - see <a class="reference internal" href="#radar-sensor"><span class="std std-ref">Radar</span></a> sensor</p></li>
+<li><p><strong>CanBusSensor</strong> - see <a class="reference internal" href="#can-bus"><span class="std std-ref">CAN bus</span></a> sensor</p></li>
+<li><p><strong>VideoRecordingSensor</strong> - see <a class="reference internal" href="#video-recording-sensor"><span class="std std-ref">Video Recording</span></a> sensor</p></li>
+</ul>
+<p>Each sensor has the following common members:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> - name of sensor, to differentiate sensors of the same type, for example, to choose one out of multiple cameras attached to EgoVehicle</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transform</span></code> - property that contains position and rotation of a sensor relative to the agent transform</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">enabled</span></code> - bool property, set to <code class="docutils literal notranslate"><span class="pre">True</span></code> if sensor is enabled for capturing and sending data to ROS or Cyber bridge</p></li>
+</ul>
+<section id="camera-sensor">
+<h3><a class="toc-backref" href="#contents">Camera Sensor</a><a class="headerlink" href="#camera-sensor" title="Permalink to this heading"></a></h3>
+<p>The Camera sensor has the following read only properties:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code> - rate at which images are captured &amp; sent to ROS or Cyber bridge</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> - image width</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">height</span></code> - image height</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fov</span></code> - vertical field of view in degrees</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">near_plane</span></code> - distance of near plane</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">far_plane</span></code> - distance of far plane</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">format</span></code> - format of image (“RGB” for 24-bit color image, “DEPTH” - 8-bit grayscale depth buffer, “SEGMENTATION” - 24-bit color image with semantic/instance segmentation)</p></li>
+</ul>
+<p>Camera image can be saved to disk by calling <code class="docutils literal notranslate"><span class="pre">save</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;47b529db-0593-4908-b3e7-4b24a32a0f70&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">sensor</span> <span class="ow">in</span> <span class="n">ego</span><span class="o">.</span><span class="n">get_sensors</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">sensor</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Main Camera&quot;</span><span class="p">:</span>
+        <span class="n">sensor</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;main-camera.png&quot;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">save</span></code> method accepts a path relative to the running simulator, and an optional <code class="docutils literal notranslate"><span class="pre">compression</span></code> for png files (0…9) or <code class="docutils literal notranslate"><span class="pre">quality</span></code> (0..100) for jpeg files.</p>
+</section>
+<section id="lidar-sensor">
+<h3><a class="toc-backref" href="#contents">LiDAR Sensor</a><a class="headerlink" href="#lidar-sensor" title="Permalink to this heading"></a></h3>
+<p>LiDAR sensor has following read only properties:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">min_distance</span></code> - minimal distance for capturing points</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_distance</span></code> - maximum distance for capturing points</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rays</span></code> - how many laser rays (vertically) to use</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rotations</span></code> - frequency of rotation, typically 10Hz</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">measurements</span></code> - how many measurements per rotation each ray is taking</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fov</span></code> - vertical field of view (bottom to top ray) in degrees</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">angle</span></code> - angle LiDAR is tilted (middle of fov view)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compensated</span></code> - bool, whether LiDAR point cloud is compensated</p></li>
+</ul>
+<p>LiDAR point cloud can be saved to disk as a .pcd file by calling <code class="docutils literal notranslate"><span class="pre">save</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ego</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">add_agent</span><span class="p">(</span><span class="s2">&quot;47b529db-0593-4908-b3e7-4b24a32a0f70&quot;</span><span class="p">,</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">AgentType</span><span class="o">.</span><span class="n">EGO</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">sensor</span> <span class="ow">in</span> <span class="n">ego</span><span class="o">.</span><span class="n">get_sensors</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">sensor</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Lidar&quot;</span><span class="p">:</span>
+        <span class="n">sensor</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;lidar.pcd&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A <code class="docutils literal notranslate"><span class="pre">.pcd</span></code> file is in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/pcd_file_format.html">binary Point Cloud Data format</a> where each point has x/y/z coordinates as 4-byte floats and a 1-byte unsigned int as intensity (0…255).</p>
+</section>
+<section id="imu-sensor">
+<h3><a class="toc-backref" href="#contents">IMU Sensor</a><a class="headerlink" href="#imu-sensor" title="Permalink to this heading"></a></h3>
+<p>You can use the IMU sensor to get its position in the vehicle. All measurements an IMU would provide can be obtained by using the <code class="docutils literal notranslate"><span class="pre">transform</span></code> property of the agent.</p>
+</section>
+<section id="gps-sensor">
+<h3><a class="toc-backref" href="#contents">GPS Sensor</a><a class="headerlink" href="#gps-sensor" title="Permalink to this heading"></a></h3>
+<p>You can retrieve the current GPS location from the GPS sensor by calling data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">gps_sensor</span><span class="o">.</span><span class="n">data</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Latitude:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">latitude</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returned data will contain following fields:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">longitude</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">northing</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">easting</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">altitude</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">orientation</span></code> - rotation around up-axis in degrees</p></li>
+</ul>
+</section>
+<section id="radar-sensor">
+<h3><a class="toc-backref" href="#contents">Radar Sensor</a><a class="headerlink" href="#radar-sensor" title="Permalink to this heading"></a></h3>
+<p>Currently the Radar sensor can be used only to get its position and rotation in the vehicle. Radar measurements can be received in ROS or Cyber by setting the <code class="docutils literal notranslate"><span class="pre">enabled</span></code> property of the sensor.</p>
+</section>
+<section id="can-bus">
+<h3><a class="toc-backref" href="#contents">CAN bus</a><a class="headerlink" href="#can-bus" title="Permalink to this heading"></a></h3>
+<p>Currently CAN bus can be used only to get its position and rotation in the vehicle. CAN bus messages can be received in ROS or Cyber by setting the <code class="docutils literal notranslate"><span class="pre">enabled</span></code> property of the sensor.</p>
+</section>
+<section id="video-recording-sensor">
+<h3><a class="toc-backref" href="#contents">Video Recording Sensor</a><a class="headerlink" href="#video-recording-sensor" title="Permalink to this heading"></a></h3>
+<p>The Video Recording sensor is used to record a video of test cases for playback afterward. The following parameters can be set to configure the video recording:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> - width of the video in pixels</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">height</span></code> - height of the video in pixels</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">framerate</span></code> - the number of frames per second in the video</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_distance</span></code> - the minimum distance from the camera for which objects are rendered</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_distance</span></code> - the maximum distance from the camera for which objects are rendered</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fov</span></code> - the vertical field of view of the camera in degrees</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">quality</span></code> - the target constant quality level for VBR rate control (0 to 51, 0 means automatic)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bitrate</span></code> - the average number of bits per second</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_bitrate</span></code> - the maximum number of bits per second</p></li>
+</ul>
+</section>
+</section>
+<section id="weather-and-time-of-day-control">
+<h2><a class="toc-backref" href="#contents">Weather and Time of Day Control</a><a class="headerlink" href="#weather-and-time-of-day-control" title="Permalink to this heading"></a></h2>
+<p>You can control the weather properties of the simulation by reading or writing to the <code class="docutils literal notranslate"><span class="pre">weather</span></code> property. You can set <code class="docutils literal notranslate"><span class="pre">rain</span></code>, <code class="docutils literal notranslate"><span class="pre">fog</span></code>, <code class="docutils literal notranslate"><span class="pre">wetness</span></code>, <code class="docutils literal notranslate"><span class="pre">cloudiness</span></code>, and <code class="docutils literal notranslate"><span class="pre">damage</span></code> (referring to road damage) as a float in 0..1 range. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">weather</span>
+<span class="n">w</span><span class="o">.</span><span class="n">rain</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="c1"># set rain to 50%</span>
+<span class="n">sim</span><span class="o">.</span><span class="n">weather</span> <span class="o">=</span> <span class="n">w</span>
+</pre></div>
+</div>
+<p>Changing time of day allows to control whether the loaded scene appears as day or night. To get the current time read the <code class="docutils literal notranslate"><span class="pre">time_of_day</span></code> property:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current time of day:&quot;</span><span class="p">,</span> <span class="n">sim</span><span class="o">.</span><span class="n">time_of_day</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It will return a float between 0 and 24. To set time of day call <code class="docutils literal notranslate"><span class="pre">set_time_of_day</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sim</span><span class="o">.</span><span class="n">set_time_of_day</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">fixed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will set current time of day to 10 AM of the current date. The date and time of day are important because they determine the position of the sun and directly effect lighting in the scene. The optional bool argument <code class="docutils literal notranslate"><span class="pre">fixed</span></code> indicates whether the simulation should advance this time automatically or freeze it and not change it (<code class="docutils literal notranslate"><span class="pre">fixed=True</span></code>).</p>
+<p>For fine-tuned control of time of day, or to set a custom date along with the time of day call <code class="docutils literal notranslate"><span class="pre">set_datetime</span></code> which takes a Python <code class="docutils literal notranslate"><span class="pre">datetime</span></code> object as input:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span>
+    <span class="n">year</span><span class="o">=</span><span class="mi">2020</span><span class="p">,</span>
+    <span class="n">month</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="n">day</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+    <span class="n">hour</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span>
+    <span class="n">minute</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">second</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">)</span>
+<span class="n">sim</span><span class="o">.</span><span class="n">set_datetime</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="controllable-objects">
+<h2><a class="toc-backref" href="#contents">Controllable Objects</a><a class="headerlink" href="#controllable-objects" title="Permalink to this heading"></a></h2>
+<p>A controllable object is an object that you can control by performing an action using Python APIs. Each controllable object has its own <code class="docutils literal notranslate"><span class="pre">valid</span> <span class="pre">actions</span></code> (e.g., green, yellow, red, trigger, wait, loop) that it can take and is controlled based on <code class="docutils literal notranslate"><span class="pre">control</span> <span class="pre">policy</span></code>, which defines rules for control actions.</p>
+<p>For example, a traffic light is a controllable object, and you can change its behavior by updating control policy: <code class="docutils literal notranslate"><span class="pre">&quot;trigger=50;green=1;yellow=1.5;red=2;loop&quot;</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">trigger=50</span></code> - Wait until an ego vehicle approaches this controllable object within 50 meters</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">green=1</span></code> - Change current state to <code class="docutils literal notranslate"><span class="pre">green</span></code> and wait for 1 second</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">yellow=1.5</span></code> - Change current state to <code class="docutils literal notranslate"><span class="pre">yellow</span></code> and wait for 1.5 second</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">red=2</span></code> - Change current state to <code class="docutils literal notranslate"><span class="pre">red</span></code> and wait for 2 second</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">loop</span></code> - Loop over this control policy from the beginning</p></li>
+</ul>
+<p>Available controllable object types:</p>
+<ul class="simple">
+<li><p>signal</p></li>
+<li><p><a class="reference external" href="https://github.com/lgsvl/TrafficCone">cone</a></p></li>
+</ul>
+<p>All Controllable objects can be added or removed dynamically. When reset() is called, all Controllables are removed and the ones in the map (if any) are added back. Controllable objects can be loaded plugins at runtime. Plugin must include <code class="docutils literal notranslate"><span class="pre">IControllable</span></code> and be built using the Simulator build process from the <code class="docutils literal notranslate"><span class="pre">Assets/External/Controllables</span></code> folder.</p>
+<p>To get a list of controllable objects in a scene:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">controllables</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">get_controllables</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>For a controllable object of interest, you can get following information:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">signal</span> <span class="o">=</span> <span class="n">controllables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Type:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Transform:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">transform</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current state:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">current_state</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valid actions:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">valid_actions</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For control policy, each controllable object always has default control policy (read-only). When you load a scene for the first time or reset a scene to the initial state, a controllable object resets current control policy to default one follows it.</p>
+<p>You can get default control policy and current control policy as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Default control policy:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">default_control_policy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current control policy:&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">control_policy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To change a current control policy, you can create a new control policy and call <code class="docutils literal notranslate"><span class="pre">control</span></code> function as below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">control_policy</span> <span class="o">=</span> <span class="s2">&quot;trigger=50;green=1;yellow=1.5;red=2;loop&quot;</span>
+<span class="n">signal</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">control_policy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To add a plugin controllable and set object state</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">state</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">ObjectState</span><span class="p">()</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">rotation</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">state</span><span class="o">.</span><span class="n">velocity</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">state</span><span class="o">.</span><span class="n">angular_velocity</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mf">6.5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">cone</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">controllable_add</span><span class="p">(</span><span class="s2">&quot;TrafficCone&quot;</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To get plugin controllable object state</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cone</span><span class="o">.</span><span class="n">object_state</span>
+</pre></div>
+</div>
+<p>To set plugin controllable object state</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">state</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">ObjectState</span><span class="p">()</span>
+<span class="n">state</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">cone</span><span class="o">.</span><span class="n">object_state</span> <span class="o">=</span> <span class="n">state</span>
+</pre></div>
+</div>
+</section>
+<section id="helper-functions">
+<h2><a class="toc-backref" href="#contents">Helper Functions</a><a class="headerlink" href="#helper-functions" title="Permalink to this heading"></a></h2>
+<p>Simulator class offers following helper functions:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> - property that returns current version of simulator as string</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">layer</span></code> - property that returns all named Unity physics layers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_scene</span></code> - property that returns currently loaded scene as string, None if none is loaded</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_frame</span></code> - property that returns currently simulated frame number as integer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_time</span></code> - property that returns currently simulation time in seconds as float</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_spawn</span></code> - method that returns list of <code class="docutils literal notranslate"><span class="pre">Spawn</span></code> objects representing good positions to place vehicles in the map. This list can be empty, it depends on how the map is prepared in Unity. Returned <code class="docutils literal notranslate"><span class="pre">Spawn</span></code> objects contain a <code class="docutils literal notranslate"><span class="pre">transform</span></code> which holds <code class="docutils literal notranslate"><span class="pre">position</span></code> and <code class="docutils literal notranslate"><span class="pre">rotation</span></code> members as a <code class="docutils literal notranslate"><span class="pre">Vector</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">destinations</span></code> which holds valid destination points for an ego vehicle starting at the spawn point as an array of <code class="docutils literal notranslate"><span class="pre">transforms</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_agents</span></code> - method that returns a list of currently available agent objects added with <code class="docutils literal notranslate"><span class="pre">add_agent</span></code></p></li>
+</ul>
+<p>To map points in Unity coordinates to GPS coordinates the Simulator class offers the following two functions:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">map_to_gps</span></code> - maps transform (position &amp; rotation) to GPS location, returns same type as <a class="reference internal" href="#gps-sensor"><span class="std std-ref">GPS Sensor</span></a> data method</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">map_from_gps</span></code> - maps GPS location (latitude/longitude or northing/easting) to transform</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raycast</span></code> - shoots a ray from specific location and returns closest object it hits</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">map_from_gps</span></code> accepts two different inputs - latitude/longitude or northing/easting. Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr1</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">map_from_gps</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">longitude</span><span class="o">=-</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">tr2</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">map_from_gps</span><span class="p">(</span><span class="n">northing</span><span class="o">=</span><span class="mi">123455</span><span class="p">,</span> <span class="n">easting</span><span class="o">=</span><span class="mi">552341</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Optionally you can pass altitude and orientation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">raycast</span></code> method can be used in following way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">origin</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">direction</span> <span class="o">=</span> <span class="n">lgsvl</span><span class="o">.</span><span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">hit</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">raycast</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span> <span class="n">direction</span><span class="p">,</span> <span class="n">layer_mask</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">hit</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distance right:&quot;</span><span class="p">,</span> <span class="n">hit</span><span class="o">.</span><span class="n">distance</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will shoot a ray in the positive x-axis direction from the (10, 0, 20) coordinates. A <code class="docutils literal notranslate"><span class="pre">RaycastHit</span></code> object with <code class="docutils literal notranslate"><span class="pre">distance</span></code>, <code class="docutils literal notranslate"><span class="pre">point</span></code> and <code class="docutils literal notranslate"><span class="pre">normal</span></code> fields is returned if something is hit, otherwise <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned.</p>
+<p>When raycasting you should specify a <code class="docutils literal notranslate"><span class="pre">layer_mask</span></code> argument that specifies which objects to check collision with. It corresponds to layers in the Unity project - check the project for actual values or use the layer property.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">layer_mask</span></code></p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Default</p></td>
+<td><p>roads must use this layer*</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>TransparentFX</p></td>
+<td><p>used to ignore FX with transparency*</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Ignore Raycast</p></td>
+<td><p>used to ignore any raycasts against*</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Water</p></td>
+<td><p>not used*</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>UI</p></td>
+<td><p>used to cull UI in scene*</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>PostProcessing</p></td>
+<td><p>used to cull postprocessing effects</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Agent</p></td>
+<td><p>ego vehicles</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>NPC</p></td>
+<td><p>npc vehicles</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Pedestrian</p></td>
+<td><p>pedestrians</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Obstacle</p></td>
+<td><p>sign poles, buildings</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>Sensor</p></td>
+<td><p>used to cull sensor effects</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>GroundTruthRange</p></td>
+<td><p>used to cull ground truth range</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>GroundTruth</p></td>
+<td><p>used to cull ground truth triggers</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>Lane</p></td>
+<td><p>used to cull lane triggers</p></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>SkyEffects</p></td>
+<td><p>used to cull clouds</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> in description means Default Unity Physics Layers</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Python API Quickstart Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, SORA SVL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
