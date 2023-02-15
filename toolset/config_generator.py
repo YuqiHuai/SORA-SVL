@@ -114,6 +114,10 @@ class config_generator(object):
                 asset_guid = self.db.get_plugin_assetGuid_by_id(sensor_id)
                 assert asset_guid
                 try:
+                    sensor_dict['params'] = sensor['params']
+                except(KeyError):
+                    print("No Params for Sensor: {}".format(sensor['name']))
+                try:
                     sensor_dict['transform'] = sensor['transform']
                 except(KeyError):
                     print("No Transform for Sensor: {}".format(sensor['name']))
