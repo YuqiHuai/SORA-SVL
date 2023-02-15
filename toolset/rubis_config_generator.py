@@ -3,6 +3,7 @@ import json
 from datetime import datetime
 import argparse
 from db_utils import WiseDB
+import yaml
 
 
 class config_generator(object):
@@ -19,6 +20,8 @@ class config_generator(object):
         self.bridge_asset = self.db.get_plugin_by_id(self.bridge_id)
         assert self.bridge_asset, 'Bridge does not exist'
         assert self.bridge_asset['data']['category'] == 'bridge', 'Not a bridge'
+
+
 
     def generate_config(self, sensor_config_fp, name, sensor_cid=None):
         '''
@@ -81,7 +84,7 @@ class config_generator(object):
                 asset_guid = 'Sensor not in MongoDB'
                 print(" Sensor Name: {}, Sensor ID: {}, Asset GUID: {}".format(
                     sensor['type'], sensor_id, asset_guid))
-
+            #print(sensor_dict['params'])
         # with open("{}.json".format(cid), 'w') as f:
         #     config_string = json.dump(config_template, f, indent=4)
 
@@ -154,7 +157,7 @@ class config_generator(object):
         print('Done')
 
 
-def testMain():
+def main():
     # Lincoln2017MKZ
     # 73805704-1e46-4eb6-b5f9-ec2244d5951e
     # cyberRT Bridge
@@ -163,34 +166,16 @@ def testMain():
     # vehicle: Lexus2016RXHybrid: 2c4aa799-dfd8-4d1a-86de-beff796bd95c
     # bridge: ROS2 bridge: 05a095cc-bab5-4e7b-981c-314d54351550
     # sensor_config: DuoRos2Ultra12Radar_f21bc787-5045-4a0b-8366-a5fa23bc20d2.json
-    vehicle_Lexus2016RXHybrid = '2c4aa799-dfd8-4d1a-86de-beff796bd95c'
-    bridge_ROS2 = '05a095cc-bab5-4e7b-981c-314d54351550'
-    sensor_config_filename = './sample_data/DuoRos2Ultra12Radar_f21bc787-5045-4a0b-8366-a5fa23bc20d2.json'
-    sensor_config_name = 'DuoRos2Ultra12Radar'
-    sensor_config_cid = 'f21bc787-5045-4a0b-8366-a5fa23bc20d2'
-    config_gen = config_generator(vehicle_Lexus2016RXHybrid, bridge_ROS2)
-    config_gen.generate_config(sensor_config_filename, sensor_config_name, sensor_config_cid)
+
+    cfg_file = __file__.replace('.py', '.yaml')
+    with open(cfg_file, 'r') as f:
+        cfg = yaml.load(f, Loader=yaml.FullLoader) 
+
+    config_gen = config_generator(cfg['vehicle_cid'], cfg['bridge'])
+    config_gen.generate_config(cfg['sensor_config_filename'], cfg['sensor_config_name'])
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--vehicle_id', type=str, help='vehicle cid')
-    parser.add_argument('--bridge_id', type=str, help='bridge cid')
-    parser.add_argument('--sensor_config', type=str,
-                        help='name of configuration file')
-    parser.add_argument('--config_name', type=str,
-                        help='name of configuration')
-
-    args = parser.parse_args()
-    vehicle_id = args.vehicle_id
-    bridge_id = args.bridge_id
-    sensor_config_fp = args.sensor_config
-    config_name = args.config_name
-
-    config_gen = config_generator(vehicle_id, bridge_id)
-    config_gen.generate_config(sensor_config_fp, config_name)
 
 
 if __name__ == '__main__':
-    testMain()
-    # main()
+    main()

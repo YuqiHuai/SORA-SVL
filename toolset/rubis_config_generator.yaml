@@ -1,0 +1,4 @@
+vehicle_cid: 2c4aa799-dfd8-4d1a-86de-beff796bd95c
+bridge: a4af0edd-85ed-4edf-8064-f3c054c26798
+sensor_config_filename: ./sample_data/rubis_car.json
+sensor_config_name: rubis_car5
