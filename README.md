@@ -44,6 +44,9 @@ If you want to contribute to the project, please consider joining our [Slack wor
    api_port: 8181
    cloud_url: "http://localhost"
    ```
+
+   > Note the cloud url starts with `http` (not `https`)
+
 8. Now, SVL Client can be used without WISE.
 
 ## Future Plans
