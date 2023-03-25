@@ -1,4 +1,26 @@
 # SORA-SVL: Local Cloud built for SVL Simulator
+
+<p align="center">
+    <a href="https://github.com/YuqiHuai/SORA-SVL/pulse">
+      <img src="https://img.shields.io/github/last-commit/YuqiHuai/SORA-SVL?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
+    <a href="https://github.com/YuqiHuai/SORA-SVL/releases/latest">
+      <img src="https://img.shields.io/github/v/release/YuqiHuai/SORA-SVL?style=for-the-badge&logo=gitbook&color=59c9a5&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
+    <a href="https://github.com/YuqiHuai/SORA-SVL/stargazers">
+      <img src="https://img.shields.io/github/stars/YuqiHuai/SORA-SVL?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
+    <a href="https://github.com/YuqiHuai/SORA-SVL/issues">
+      <img src="https://img.shields.io/github/issues-closed/YuqiHuai/SORA-SVL?style=for-the-badge&logo=minutemailer&color=f24333&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
+    <a href="https://github.com/YuqiHuai/SORA-SVL/pulls">
+      <img src="https://img.shields.io/github/issues-pr-closed/YuqiHuai/SORA-SVL?style=for-the-badge&logo=minutemailer&color=f24333&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
+    <a href="https://github.com/YuqiHuai/SORA-SVL/graphs/contributors">
+      <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/YuqiHuai/SORA-SVL?style=for-the-badge&color=7D8CC4&logo=processwire&logoColor=D9E0EE&labelColor=302D41">
+    </a>
+</p>
+
 ---
 ## About the Project
 [LGSVL Simulator](https://github.com/lgsvl/simulator) has been a powerful simulator that made many research projects possible. Unfortunately, LG has made the difficult decision to suspend active development of SVL Simulator, as of January 1, 2022. The official statement says the cloud will be up and running through at least **Thursday, June 30, 2022**.
