@@ -78,6 +78,7 @@ If you want to contribute to the project, please consider joining our [Slack wor
 - [ ] Allow creating new vehicle sensor configurations
 - [ ] Add cluster feature to the cloud
 - [x] Allow website to reflect client connection status.
+- [ ] Host assets at a different location
 
 ## Known Issues
 
