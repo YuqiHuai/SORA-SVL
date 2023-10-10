@@ -83,6 +83,7 @@ If you want to contribute to the project, please consider joining our [Slack wor
 ## Known Issues
 
 - It is possible that permission settings related to Docker can cause project to fail (unable to load preview, unable to download assets). See https://github.com/YuqiHuai/SORA-SVL/issues/11#issuecomment-1173008100
+- I recommend installing docker following instructions in https://docs.docker.com/engine/install/ubuntu/
 
 ## Contributing
 
