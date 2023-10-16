@@ -1,5 +1,7 @@
 FROM node
 
+ENV REACT_APP_SERVER_URL="http://localhost"
+
 WORKDIR /app
 
 ADD package.json /app
