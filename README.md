@@ -72,7 +72,9 @@ If you want to contribute to the project, please consider joining our [Slack wor
    cloud_url: "http://localhost"
    ```
 
-   > Note the cloud url starts with `http` (not `https`)
+   > Note the cloud url starts with `http` (not `https`).
+   > 
+   > See documentation from [SVL archive](https://www.svlsimulator.com/docs/user-interface/config-and-cmd-line-params/).
 
 7. Now, SVL Client can be used without WISE.
 
