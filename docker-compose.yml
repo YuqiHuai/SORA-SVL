@@ -7,8 +7,6 @@ services:
       context: ./server
     depends_on:
       - mongo
-    volumes:
-      - ./server/assets:/workdir/assets
     networks:
       - sorasvl
 
@@ -39,13 +37,16 @@ services:
   mongo:
     container_name: sorasvl-mongo
     volumes:
-      - ./mongo/data:/data/db
+      - sorasvl-mongo-data:/data/db
     build:
       context: ./mongo
     ports:
       - "28018:27017"
     networks:
       - sorasvl
+
+volumes:
+  sorasvl-mongo-data:
 
 networks:
   sorasvl:
