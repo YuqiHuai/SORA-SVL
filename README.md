@@ -1,4 +1,4 @@
-# SORA-SVL: Local Cloud built for SVL Simulator
+# SORA-SVL-Server: Local Cloud built for SVL Simulator
 
 <p align="center">
     <a href="https://github.com/YuqiHuai/SORA-SVL/pulse">
@@ -27,10 +27,16 @@
 
 [LGSVL Simulator](https://github.com/lgsvl/simulator) has been a powerful simulator that made many research projects possible. Unfortunately, LG has made the difficult decision to suspend active development of SVL Simulator, as of January 1, 2022. The official statement says the cloud will be up and running through at least **Thursday, June 30, 2022**.
 
-The current version of SVL Simulator cannot be used without a cloud which provides necessary information (e.g. assetGuid) and download endpoints for SVL client.
-As an effort to keep the tool available for future researches, a draft for a local cloud has been started here.
+The current version of the SVL Simulator cannot be used without a cloud that provides necessary information (e.g. assetGuid) and download endpoints for the SVL client.
+As an effort to keep the tool available for future research, a draft for a local cloud has been started here.
 
 If you want to contribute to the project, please consider joining our [Slack workspace](https://join.slack.com/t/sorasvl/shared_invite/zt-1ovwoq5f9-qO~Tv07irNmug7KkoYu46A).
+
+## Disclaimer
+
+Thank you for using and considering citing this project! It is important to know that SORA-SVL is just a web application necessary to use the SVL simulator developed by LG without additional modification.
+To avoid potential confusion, **please avoid describing SORA-SVL as a simulator**! I am also adding the term "server" to the name of this project as of September 25, 2024, to avoid further confusion.
+I would greatly appreciate it if you could cite this work in addition to the appropriate source (the SVL simulator) in your academic work!
 
 ## Built With
 
