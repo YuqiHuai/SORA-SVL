@@ -59,7 +59,7 @@ I would greatly appreciate it if you could cite this work in addition to the app
 
 1. Install Docker
 2. Clone the project
-3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/1bv02d29z4lSB9SWzCBTUt0GjAb876oSR?usp=sharing) and unzip them in `server/assets`. (preview, maps, plugins, vehicles, hdmaps)
+3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/10KX_VKcahLyV40mGoUWhrfjtE02IqOuq) and unzip them in `server/assets`. (preview, maps, plugins, vehicles, hdmaps)
 
    > Since the compressed file for entire maps directory is too large, you will have to manually download map asset individually from the Google Drive folder.
    > Also, when downloading individual asset file, make sure there is no file extension. Google sometimes automatically adds ".zip" to the end, make sure to remove this from the filename. See https://github.com/YuqiHuai/SORA-SVL/issues/33#issuecomment-1429161897
