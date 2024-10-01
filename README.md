@@ -65,6 +65,8 @@ I would greatly appreciate it if you could cite this work in addition to the app
    > Also, when downloading individual asset file, make sure there is no file extension. Google sometimes automatically adds ".zip" to the end, make sure to remove this from the filename. See https://github.com/YuqiHuai/SORA-SVL/issues/33#issuecomment-1429161897
    >
    > UPDATE 2022-06-30: WISE provides geojson for some of the maps. To access those geojson, download `geojson.json` from Google Drive, and then import them into MongoDB.
+   >
+   > UPDATE 2024-09-30: For users in China, please download from [Baidu Drive](https://pan.baidu.com/s/1w_Ik7lPdefAalWR_c22DoQ?pwd=ey7p). Also see https://github.com/YuqiHuai/SORA-SVL/issues/84#issuecomment-2296465522 and https://github.com/YuqiHuai/SORA-SVL/issues/89#issuecomment-2370252260
 
 4. Run `docker compose up --build -d`
 5. Local SVL Cloud will be available at "http://localhost"
