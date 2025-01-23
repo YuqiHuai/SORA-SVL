@@ -1,11 +1,11 @@
-ARG BUILDKIT_SBOM_SCAN_CONTEXT=true
+ARG BUILDKIT_SBOM_SCAN_CONTEXT=false
 
 ##################
 ## dependencies stage
 ##################
-ARG BASEIMAGE=node:23.6
+ARG BASEIMAGE=node:23.6.1-slim
+ARG BUILDKIT_SBOM_SCAN_STAGE=false
 FROM ${BASEIMAGE} AS base
-ARG BUILDKIT_SBOM_SCAN_CONTEXT=false
 
 RUN mkdir -p /app
 RUN chown node:node /app
@@ -14,6 +14,7 @@ USER node
 WORKDIR /app
 
 # install node dependencies
+ENV NODE_ENV=production
 COPY --chown=node:node package.json /app/
 COPY --chown=node:node package-lock.json /app/
 RUN npm install --omit=dev
@@ -38,10 +39,14 @@ RUN node third-party-licenses.js licenses.json
 ###################
 # app stage
 ###################
-FROM base AS app
+FROM ${BASEIMAGE} AS app
 ARG BUILDKIT_SBOM_SCAN_STAGE=true
 
 WORKDIR /app
+RUN chown node:node /app
+
+# copy app
+COPY --from=base --chown=node:node /app/ /app/
 
 # copy licenses
 COPY --from=licenses /app/THIRD_PARTY_LICENSES.md /app/
@@ -57,7 +62,8 @@ COPY --chown=node:node src /app/src
 COPY --chown=node:node .env /app/
 COPY --chown=node:node tailwind.config.js /app/
 COPY --chown=node:node tsconfig.json /app/
-RUN npm run build --production
+ENV NODE_ENV=production
+RUN npm run build --omit=dev
 
 EXPOSE 3000
 ENTRYPOINT ["npm", "exec", "serve", "-s", "build"]
