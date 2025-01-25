@@ -1,47 +1,71 @@
-FROM node:18 AS avp-wise
-WORKDIR /workdir
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
+
+ARG BUILDKIT_SBOM_SCAN_CONTEXT=false
+ARG BUILDKIT_SBOM_SCAN_STAGE=false
+
+##################
+## dependencies stage
+##################
+ARG BASEIMAGE=node:23.6.1-slim
+FROM ${BASEIMAGE} AS base
 
 # download and extract WISE assets
-ADD https://xronos-avp-lgsvl-assets.s3.amazonaws.com/avp-wise.tar.gz /workdir/
-RUN mkdir -p /workdir/assets/
-RUN tar -xvf avp-wise.tar.gz -C /workdir/assets/
+USER root
+ADD https://xronos-avp-lgsvl-assets.s3.amazonaws.com/avp-wise.tar.gz /avp-wise.tar.gz
+RUN chown node:node /avp-wise.tar.gz
 
-FROM node:18 AS base
-WORKDIR /workdir
+USER node
+WORKDIR /app
+RUN mkdir -p /app/assets
+RUN tar -xvf /avp-wise.tar.gz -C /app/assets/
 
-# build npm application
-COPY package.json /workdir/
-COPY package-lock.json /workdir/
-RUN npm install
+# install node dependencies
+ENV NODE_ENV=production
+COPY --chown=node:node package.json /app/
+COPY --chown=node:node package-lock.json /app/
+RUN npm install --omit=dev
 
-## add third-party licenses so this image may be distributed
+###################
+# third-party stage
+###################
 FROM base AS licenses
-WORKDIR /workdir
 
-ADD https://raw.githubusercontent.com/xronos-inc/node-third-party-licenses/refs/tags/v1.0.0/third-party-licenses.js /workdir/
-COPY third-party-licenses/* /workdir/third-party-licenses/
-COPY THIRD_PARTY_LICENSES.md /workdir/THIRD_PARTY_LICENSES.md.in
-RUN npm install license-checker
+USER node
+WORKDIR /app
+
+RUN npm install license-checker@25.0.1
 RUN npx license-checker --production --json > licenses.json
+ADD --chown=node:node https://raw.githubusercontent.com/xronos-inc/node-third-party-licenses/refs/tags/v1.0.0/third-party-licenses.js /app/
+COPY third-party-licenses/* /app/third-party-licenses/
+COPY THIRD_PARTY_LICENSES.md /app/THIRD_PARTY_LICENSES.md.in
 RUN node third-party-licenses.js licenses.json --include THIRD_PARTY_LICENSES.md.in
 
-FROM base AS app
-WORKDIR /workdir
+###################
+# app stage
+###################
+FROM ${BASEIMAGE} AS app
+ARG BUILDKIT_SBOM_SCAN_STAGE=true
+
+USER node
+WORKDIR /app
+
+# copy app
+COPY --from=base --chown=node:node /app/ /app/
 
 # copy licenses
-COPY --from=licenses /workdir/THIRD_PARTY_LICENSES.md /workdir/
-COPY --from=licenses /workdir/third-party-licenses /workdir/third-party-licenses
-COPY LICENSE /workdir/
-
-# copy WISE assets
-COPY --from=avp-wise /workdir/assets /workdir/assets
+COPY --from=licenses --chown=node:node /app/THIRD_PARTY_LICENSES.md /app/
+COPY --from=licenses --chown=node:node /app/third-party-licenses /app/third-party-licenses
+COPY --chown=node:node LICENSE /app/
 
 # deploy static resources and build app
-COPY src /workdir/src
-COPY .env /workdir/
-COPY tsconfig.json /workdir/
-COPY tslint.json /workdir/
-RUN ["npm", "run", "build"]
+COPY --chown=node:node src /app/src
+COPY --chown=node:node .env /app/
+COPY --chown=node:node tsconfig.json /app/
+COPY --chown=node:node tslint.json /app/
+ENV NODE_ENV=production
+RUN npm run build --omit=dev
 
 EXPOSE 3000
 ENTRYPOINT ["npm", "run", "start"]

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+// SPDX-License-Identifier: BSD-3-Clause
+// Modifications Copyright (c) 2025 Xronos Inc.
+
 import express from "express";
 import { collections } from "../services/database.service";
 export const assetsRouter = express.Router();

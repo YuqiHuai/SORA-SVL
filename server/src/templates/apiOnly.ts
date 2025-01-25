@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+// SPDX-License-Identifier: BSD-3-Clause
+// Modifications Copyright (c) 2025 Xronos Inc.
+
 const apiOnly = {
   version: "1.0",
   id: "067538a6-7d91-4624-8eb1-a24a32c2f91d",
