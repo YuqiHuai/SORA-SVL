@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
+
 """
 This script is intended to verify if you have correctly setted up the
 project, by checking the directory structure and expected number of
