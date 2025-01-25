@@ -1,7 +1,9 @@
 {
   "name": "client",
-  "version": "0.2.0",
+  "version": "1.1.0",
   "private": true,
+  "author": "Yuqi Huai",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.4",
@@ -12,8 +14,7 @@
     "react-scripts": "^5.0.1",
     "typescript": "^4.9.5",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "web-vitals": "2.1.4"
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",

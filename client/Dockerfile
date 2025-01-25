@@ -1,10 +1,14 @@
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
+
 ARG BUILDKIT_SBOM_SCAN_CONTEXT=false
+ARG BUILDKIT_SBOM_SCAN_STAGE=false
 
 ##################
 ## dependencies stage
 ##################
 ARG BASEIMAGE=node:23.6.1-slim
-ARG BUILDKIT_SBOM_SCAN_STAGE=false
 FROM ${BASEIMAGE} AS base
 
 RUN mkdir -p /app
@@ -26,7 +30,6 @@ RUN npm install --omit=dev serve@14.2.4
 # third-party stage
 ###################
 FROM base AS licenses
-ARG BUILDKIT_SBOM_SCAN_STAGE=false
 
 USER node
 WORKDIR /app
@@ -42,6 +45,7 @@ RUN node third-party-licenses.js licenses.json
 FROM ${BASEIMAGE} AS app
 ARG BUILDKIT_SBOM_SCAN_STAGE=true
 
+USER node
 WORKDIR /app
 RUN chown node:node /app
 
@@ -49,12 +53,9 @@ RUN chown node:node /app
 COPY --from=base --chown=node:node /app/ /app/
 
 # copy licenses
-COPY --from=licenses /app/THIRD_PARTY_LICENSES.md /app/
-COPY --from=licenses /app/third-party-licenses /app/third-party-licenses
-COPY LICENSE /app/
-
-# non-root container user
-USER node
+COPY --from=licenses --chown=node:node /app/THIRD_PARTY_LICENSES.md /app/
+COPY --from=licenses --chown=node:node /app/third-party-licenses /app/third-party-licenses
+COPY --chown=node:node LICENSE /app/
 
 # build application
 COPY --chown=node:node public /app/public
