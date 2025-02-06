@@ -23,6 +23,16 @@
 
 ---
 
+## Download from Docker Hub
+
+The images built from this source repository are available on Docker Hub:
+
+- [densosvic/sora-svl-server](https://hub.docker.com/repository/docker/densosvic/sora-svl-server)
+- [densosvic/sora-svl-client](https://hub.docker.com/repository/docker/densosvic/sora-svl-client)
+- [densosvic/sora-svl-mongo](https://hub.docker.com/repository/docker/densosvic/sora-svl-mongo)
+- [densosvic/sora-svl-router](https://hub.docker.com/repository/docker/densosvic/sora-svl-router)
+- [densosvic/sora-svl-docs](https://hub.docker.com/repository/docker/densosvic/sora-svl-docs)
+
 ## About the Project
 
 [LGSVL Simulator](https://github.com/lgsvl/simulator) has been a powerful simulator that made many research projects possible. Unfortunately, LG has made the difficult decision to suspend active development of SVL Simulator, as of January 1, 2022. The official statement says the cloud will be up and running through at least **Thursday, June 30, 2022**.
@@ -59,20 +69,11 @@ I would greatly appreciate it if you could cite this work in addition to the app
 
 1. Install Docker
 2. Clone the project
-3. Download assets needed from [Google Drive](https://drive.google.com/drive/folders/10KX_VKcahLyV40mGoUWhrfjtE02IqOuq) and unzip them in `server/assets`. (preview, maps, plugins, vehicles, hdmaps)
+3. Run `docker compose up --build -d`
+4. Local SVL Cloud will be available at "http://localhost"
+5. Add `config.yml` to the root directory of SVL client with the following content:
 
-   > Since the compressed file for entire maps directory is too large, you will have to manually download map asset individually from the Google Drive folder.
-   > Also, when downloading individual asset file, make sure there is no file extension. Google sometimes automatically adds ".zip" to the end, make sure to remove this from the filename. See https://github.com/YuqiHuai/SORA-SVL/issues/33#issuecomment-1429161897
-   >
-   > UPDATE 2022-06-30: WISE provides geojson for some of the maps. To access those geojson, download `geojson.json` from Google Drive, and then import them into MongoDB.
-   >
-   > UPDATE 2024-09-30: For users in China, please download from [Baidu Drive](https://pan.baidu.com/s/1w_Ik7lPdefAalWR_c22DoQ?pwd=ey7p). Also see https://github.com/YuqiHuai/SORA-SVL/issues/84#issuecomment-2296465522 and https://github.com/YuqiHuai/SORA-SVL/issues/89#issuecomment-2370252260
-
-4. Run `docker compose up --build -d`
-5. Local SVL Cloud will be available at "http://localhost"
-6. Add `config.yml` to the root directory of SVL client with the following content:
-
-   ```
+   ```toml
    headless: false
    read_only: false
    api_hostname: "localhost"
@@ -84,7 +85,7 @@ I would greatly appreciate it if you could cite this work in addition to the app
    > 
    > See documentation from [SVL archive](https://www.svlsimulator.com/docs/user-interface/config-and-cmd-line-params/).
 
-7. Now, SVL Client can be used without WISE.
+6. Now, SVL Client can be used without WISE.
 
 ## Future Plans
 
@@ -94,9 +95,15 @@ I would greatly appreciate it if you could cite this work in addition to the app
 - [ ] Allow creating new vehicle sensor configurations
 - [ ] Add cluster feature to the cloud
 - [x] Allow website to reflect client connection status.
-- [ ] Host assets at a different location
+- [x] Host assets at a different location
 
 ## Known Issues
+
+- Unable to download WISE assets during Docker build
+
+  The assets used in this build are downloaded from Amazon AWS S3 buckets hosted in `us-east-1`. These are public files but may not be available in all countries.
+  
+  For users in China, please download from [Baidu Drive](https://pan.baidu.com/s/1w_Ik7lPdefAalWR_c22DoQ?pwd=ey7p) and substitute these files for the downloads in the Dockerfile. Also see https://github.com/YuqiHuai/SORA-SVL/issues/84#issuecomment-2296465522 and https://github.com/YuqiHuai/SORA-SVL/issues/89#issuecomment-2370252260
 
 - It is possible that permission settings related to Docker can cause project to fail (unable to load preview, unable to download assets). See https://github.com/YuqiHuai/SORA-SVL/issues/11#issuecomment-1173008100
 - I recommend installing docker following instructions in https://docs.docker.com/engine/install/ubuntu/
