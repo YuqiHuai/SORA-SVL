@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
+
 version: "3"
 services:
   # API Server
@@ -7,8 +11,6 @@ services:
       context: ./server
     depends_on:
       - mongo
-    volumes:
-      - ./server/assets:/workdir/assets
     networks:
       - sorasvl
 
@@ -39,13 +41,26 @@ services:
   mongo:
     container_name: sorasvl-mongo
     volumes:
-      - ./mongo/data:/data/db
+      - sorasvl-mongo-data:/data/db
     build:
       context: ./mongo
     ports:
       - "28018:27017"
     networks:
       - sorasvl
+
+  # docs
+  docs:
+    container_name: sorasvl-docs
+    build:
+      context: ./docs
+    ports:
+      - "8081:8081"
+    networks:
+      - sorasvl
+
+volumes:
+  sorasvl-mongo-data:
 
 networks:
   sorasvl:

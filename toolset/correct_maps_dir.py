@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
+
 """
 This script is intended to correct problems caused by Google Drive adding
 unnecessary extension to assets in server/assets/maps

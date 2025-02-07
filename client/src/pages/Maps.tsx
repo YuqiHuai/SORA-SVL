@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+// SPDX-License-Identifier: BSD-3-Clause
+// Modifications Copyright (c) 2025 Xronos Inc.
+
 import React, { useState, useEffect } from "react";
 import Grid from "../components/Grid";
 import Layout from "../components/Layout";

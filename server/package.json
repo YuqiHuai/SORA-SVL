@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "start": "node dist/index.js",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Yuqi Huai",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",

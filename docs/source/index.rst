@@ -1,7 +1,6 @@
-.. SORA SVL documentation master file, created by
-   sphinx-quickstart on Mon Feb 13 22:09:29 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+   SPDX-License-Identifier: BSD-3-Clause
+   Modifications Copyright (c) 2025 Xronos Inc.
 
 Home
 ====================================

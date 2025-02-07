@@ -1,50 +1,31 @@
 {
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
+  "author": "Yuqi Huai",
+  "license": "BSD-3-Clause",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.1",
-    "@types/node": "^16.11.36",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4",
-    "http-proxy-middleware": "^2.0.6",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.6.4",
-    "web-vitals": "^2.1.4"
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "autoprefixer": "^10.4.20"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
   }
 }

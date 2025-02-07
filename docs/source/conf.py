@@ -1,14 +1,10 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+# SPDX-FileCopyrightText: (c) 2024 Yuqi Huai.
+# SPDX-License-Identifier: BSD-3-Clause
+# Modifications Copyright (c) 2025 Xronos Inc.
 
 project = 'SORA SVL'
-copyright = '2023, SORA SVL'
-author = 'SORA SVL'
+copyright = '2024, Yuqi Huai'
+author = 'Yuqi Huai'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
