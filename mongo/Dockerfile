@@ -13,7 +13,7 @@ FROM ${BASEIMAGE} AS base
 
 # download and extract WISE assets
 USER root
-ADD https://xronos-avp-lgsvl-assets.s3.amazonaws.com/avp-wise-geojson.tar.gz /avp-wise-geojson.tar.gz
+ADD https://soafee-avp-demo.s3.us-east-1.amazonaws.com/avp-wise-geojson.tar.gz /avp-wise-geojson.tar.gz
 RUN chown mongodb:mongodb /avp-wise-geojson.tar.gz
 RUN mkdir -p /docker-entrypoint-initdb.d/
 RUN chown mongodb:mongodb /docker-entrypoint-initdb.d/

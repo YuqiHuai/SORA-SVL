@@ -13,7 +13,7 @@ FROM ${BASEIMAGE} AS base
 
 # download and extract WISE assets
 USER root
-ADD https://xronos-avp-lgsvl-assets.s3.amazonaws.com/avp-wise.tar.gz /avp-wise.tar.gz
+ADD https://soafee-avp-demo.s3.us-east-1.amazonaws.com/avp-wise.tar.gz /avp-wise.tar.gz
 RUN chown node:node /avp-wise.tar.gz
 
 USER node
