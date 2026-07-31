@@ -19,6 +19,9 @@
     <a href="https://github.com/YuqiHuai/SORA-SVL/graphs/contributors">
       <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/YuqiHuai/SORA-SVL?style=for-the-badge&color=7D8CC4&logo=processwire&logoColor=D9E0EE&labelColor=302D41">
     </a>
+    <a href="https://doi.org/10.5281/zenodo.21650300">
+      <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21650300-3B82F6?style=for-the-badge&logo=zenodo&logoColor=D9E0EE&labelColor=302D41" alt="DOI">
+    </a>
 </p>
 
 ---
@@ -115,3 +118,25 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Citation
+
+If SORA-SVL has been useful in your research, helped reproduce previous work, or contributed to your publications, please consider citing our paper:
+
+```
+@software{huai2026_sora_svl,
+    author = {Yuqi Huai and Sanggu Han and umdreamer and Amar Kulkarni and Nando Caponetto and Seohwan},
+    title = {{YuqiHuai/SORA-SVL: Release v2026.07.28}},
+    year = {2026},
+    version = {v2026.07.28},
+    publisher = {Zenodo},
+    doi = {10.5281/zenodo.21650300},
+    url = {https://doi.org/10.5281/zenodo.21650300}
+}
+```
+
+or
+
+> Huai, Y., Han, S., umdreamer, Kulkarni, A., Caponetto, N., & Seohwan. (2026). YuqiHuai/SORA-SVL: Release v2026.07.28 (Version v2026.07.28) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21650300
+
+Citations help demonstrate the impact of the project and support its continued maintenance and development. Thank you for your support!
