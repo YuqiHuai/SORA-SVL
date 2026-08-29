@@ -3,7 +3,7 @@ const apiOnly = {
   id: "067538a6-7d91-4624-8eb1-a24a32c2f91d",
   name: "API Only",
   ownerId: "4f162739-41d5-45a7-ab84-fafc75d9131d",
-  interactive: true,
+  interactive: false,   // SCTrans: true makes UIManager call PauseSimulation() on start (Managers/UIManager.cs:178-184), requiring a manual Play click; false also disables bridge auto-reconnect (Components/BridgeClient.cs:90)
   headless: false,
   createdAt: "2020-06-08T21:50:08.000Z",
   updatedAt: "2020-06-08T21:50:08.000Z",
